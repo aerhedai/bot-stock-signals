@@ -1,0 +1,218 @@
+{
+  "alerts": {
+    "CMCSA": [
+      {
+        "timestamp": "2026-01-09T17:52:54.861759",
+        "method": "Graham Number",
+        "score": 100,
+        "price": 28.475,
+        "target": 59.985241934995976
+      },
+      {
+        "timestamp": "2026-01-18T17:06:51.653203",
+        "method": "Graham Number",
+        "score": 100,
+        "price": 27.82,
+        "target": 59.985241934995976
+      },
+      {
+        "timestamp": "2026-02-08T17:49:47.176299",
+        "method": "Graham Number",
+        "score": 100,
+        "price": 31.37,
+        "target": 57.1016606588635
+      }
+    ],
+    "VZ": [
+      {
+        "timestamp": "2026-01-09T17:52:54.990170",
+        "method": "Graham Number",
+        "score": 91.22319435931442,
+        "price": 40.705,
+        "target": 51.27323205143207
+      }
+    ],
+    "F": [
+      {
+        "timestamp": "2026-01-09T19:12:49.477198",
+        "method": "Graham Number",
+        "score": 90.29298208941151,
+        "price": 14.13,
+        "target": 17.694901808148018
+      },
+      {
+        "timestamp": "2026-01-18T17:06:51.796574",
+        "method": "Graham Number",
+        "score": 96.28340809738123,
+        "price": 13.6,
+        "target": 17.694901808148018
+      }
+    ],
+    "TFC": [
+      {
+        "timestamp": "2026-01-18T17:06:51.508188",
+        "method": "Graham Number",
+        "score": 90.29678205492849,
+        "price": 49.99,
+        "target": 62.60362269869053
+      }
+    ],
+    "FANG": [
+      {
+        "timestamp": "2026-01-19T13:23:29.054764",
+        "method": "Graham Number",
+        "score": 100,
+        "price": 151.28,
+        "target": 208.93966018925175
+      },
+      {
+        "timestamp": "2026-02-08T17:49:46.427917",
+        "method": "Graham Number",
+        "score": 90.26831704460162,
+        "price": 166.93,
+        "target": 209.0130109586482
+      }
+    ],
+    "APA": [
+      {
+        "timestamp": "2026-01-19T13:23:29.203019",
+        "method": "Graham Number",
+        "score": 100,
+        "price": 25.78,
+        "target": 39.716578402475704
+      },
+      {
+        "timestamp": "2026-02-08T17:49:46.590907",
+        "method": "Graham Number",
+        "score": 100,
+        "price": 27.46,
+        "target": 39.716578402475704
+      }
+    ],
+    "ZION": [
+      {
+        "timestamp": "2026-01-19T13:23:29.356259",
+        "method": "Graham Number",
+        "score": 93.32299117822367,
+        "price": 59.62,
+        "target": 76.10561428041954
+      }
+    ],
+    "DKNG": [
+      {
+        "timestamp": "2026-01-19T13:23:29.517665",
+        "method": "Z-Score",
+        "score": 76.32308653153353,
+        "price": 32.619998931884766,
+        "target": 34.7504997253418
+      }
+    ],
+    "MOS": [
+      {
+        "timestamp": "2026-01-19T13:23:29.664981",
+        "method": "Graham Number",
+        "score": 100,
+        "price": 26.35,
+        "target": 59.13630103413638
+      },
+      {
+        "timestamp": "2026-02-08T17:49:51.477243",
+        "method": "Graham Number",
+        "score": 100,
+        "price": 28.6,
+        "target": 59.13630103413638
+      }
+    ],
+    "NVDA": [
+      {
+        "timestamp": "2026-01-21T17:16:12.962446",
+        "method": "Z-Score",
+        "score": 74.9868872675069,
+        "price": 178.07000732421875,
+        "target": 186.18750076293946
+      }
+    ],
+    "AVGO": [
+      {
+        "timestamp": "2026-01-21T17:16:13.186976",
+        "method": "Linear Regression",
+        "score": 75.08084132140318,
+        "price": 325.0199890136719,
+        "target": 373.20815810491877
+      }
+    ],
+    "H": [
+      {
+        "timestamp": "2026-01-21T17:16:13.329563",
+        "method": "Z-Score",
+        "score": 61.54151913495441,
+        "price": 160.67999267578125,
+        "target": 165.80300216674806
+      }
+    ],
+    "LYV": [
+      {
+        "timestamp": "2026-01-21T17:16:13.480416",
+        "method": "Z-Score",
+        "score": 61.0482626631643,
+        "price": 140.64999389648438,
+        "target": 144.7565010070801
+      }
+    ],
+    "BXP": [
+      {
+        "timestamp": "2026-01-21T17:16:13.658064",
+        "method": "Z-Score",
+        "score": 62.622850401364936,
+        "price": 65.62999725341797,
+        "target": 67.54255065917968
+      }
+    ],
+    "DAL": [
+      {
+        "timestamp": "2026-01-21T17:16:20.832515",
+        "method": "Z-Score",
+        "score": 66.58339990846859,
+        "price": 67.45999908447266,
+        "target": 70.50649909973144
+      }
+    ],
+    "UAL": [
+      {
+        "timestamp": "2026-01-21T17:16:20.976757",
+        "method": "Z-Score",
+        "score": 68.14762322255498,
+        "price": 108.56999969482422,
+        "target": 114.0264991760254
+      }
+    ],
+    "NSC": [
+      {
+        "timestamp": "2026-01-21T17:16:21.114025",
+        "method": "Z-Score",
+        "score": 79.66506376071774,
+        "price": 280.3900146484375,
+        "target": 289.1220001220703
+      }
+    ],
+    "AIG": [
+      {
+        "timestamp": "2026-02-08T17:49:46.802316",
+        "method": "Graham Number",
+        "score": 92.07057817319041,
+        "price": 76.72,
+        "target": 97.15732396479433
+      }
+    ],
+    "ALL": [
+      {
+        "timestamp": "2026-02-08T17:49:46.996329",
+        "method": "Graham Number",
+        "score": 100,
+        "price": 207.55,
+        "target": 306.8856528904536
+      }
+    ]
+  },
+  "last_updated": "2026-02-08T17:49:51.477553"
+}
