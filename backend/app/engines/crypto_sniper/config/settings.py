@@ -19,7 +19,7 @@ load_dotenv(BASE_DIR.parent.parent.parent.parent / '.env')
 # =============================================================================
 TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '')
 TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID', '')
-TELEGRAM_THREAD_ID = os.getenv('TELEGRAM_THREAD_ID', None)  # Topic ID for crypto alerts
+TELEGRAM_THREAD_ID = os.getenv('CRYPTO_SNIPER_TOPIC_ID', None)  # Topic ID for crypto alerts
 
 # =============================================================================
 # MONITORING SETTINGS
