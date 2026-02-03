@@ -8,13 +8,13 @@ export default function SignalTable({ alerts }: Props) {
   const entries = Object.values(alerts).flat();
 
   if (entries.length === 0) {
-    return <p className="text-gray-500 text-sm">No signals recorded yet.</p>;
+    return <p className="text-text-muted text-sm">No signals recorded yet.</p>;
   }
 
   return (
     <div className="overflow-x-auto">
       <table className="w-full text-sm text-left">
-        <thead className="text-xs text-gray-400 uppercase border-b border-gray-700">
+        <thead className="text-xs text-text-secondary uppercase border-b border-border-primary">
           <tr>
             <th className="px-4 py-2">Ticker</th>
             <th className="px-4 py-2">Method</th>
@@ -26,15 +26,15 @@ export default function SignalTable({ alerts }: Props) {
         </thead>
         <tbody>
           {entries.map((e, i) => (
-            <tr key={i} className="border-b border-gray-800 hover:bg-gray-900">
+            <tr key={i} className="border-b border-border-subtle hover:bg-surface-card">
               <td className="px-4 py-2 font-medium">{e.ticker}</td>
               <td className="px-4 py-2">{e.method}</td>
-              <td className="px-4 py-2 text-blue-400">{e.score.toFixed(1)}</td>
+              <td className="px-4 py-2 text-accent">{e.score.toFixed(1)}</td>
               <td className="px-4 py-2">${e.price.toFixed(2)}</td>
               <td className="px-4 py-2">
                 {e.target ? `$${e.target.toFixed(2)}` : "-"}
               </td>
-              <td className="px-4 py-2 text-xs text-gray-400">{e.timestamp}</td>
+              <td className="px-4 py-2 text-xs text-text-secondary">{e.timestamp}</td>
             </tr>
           ))}
         </tbody>
