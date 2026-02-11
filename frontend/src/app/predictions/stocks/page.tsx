@@ -3,9 +3,11 @@
 import { useApi } from "@/hooks/useApi";
 import { getStockSignals, getStockWatchlist, triggerStockScan } from "@/lib/api";
 import SignalTable from "@/components/signals/SignalTable";
+import PageHeader from "@/components/layout/PageHeader";
+import LoadingSkeleton from "@/components/ui/LoadingSkeleton";
 import { useState } from "react";
 
-export default function StocksPage() {
+export default function StockPredictionsPage() {
   const signals = useApi(getStockSignals);
   const watchlist = useApi(getStockWatchlist);
   const [scanning, setScanning] = useState(false);
@@ -27,35 +29,41 @@ export default function StocksPage() {
 
   return (
     <div>
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold">Stock Signals</h1>
-        <button
-          onClick={handleScan}
-          disabled={scanning}
-          className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50 text-sm"
-        >
-          {scanning ? "Scanning..." : "Run Scan"}
-        </button>
-      </div>
+      <PageHeader
+        title="Stock Predictions"
+        action={
+          <button
+            onClick={handleScan}
+            disabled={scanning}
+            className="px-3 py-1.5 bg-accent text-white rounded-lg hover:bg-accent-hover disabled:opacity-50 text-sm transition-colors"
+          >
+            {scanning ? "Scanning..." : "Run Scan"}
+          </button>
+        }
+      />
 
       {scanMsg && (
-        <p className="text-sm text-green-400 mb-4">{scanMsg}</p>
+        <p className="text-sm text-semantic-success mb-4">{scanMsg}</p>
       )}
 
       <section className="mb-8">
-        <h2 className="text-lg font-semibold mb-3">Signal History</h2>
-        {signals.loading && <p className="text-gray-400 text-sm">Loading...</p>}
-        {signals.error && <p className="text-red-400 text-sm">{signals.error}</p>}
+        <p className="text-[11px] font-medium uppercase tracking-wider text-text-muted mb-3">
+          Signal History
+        </p>
+        {signals.loading && <LoadingSkeleton lines={4} />}
+        {signals.error && <p className="text-semantic-error text-sm">{signals.error}</p>}
         {signals.data && <SignalTable alerts={signals.data.alerts} />}
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold mb-3">Watchlist</h2>
-        {watchlist.loading && <p className="text-gray-400 text-sm">Loading...</p>}
-        {watchlist.error && <p className="text-red-400 text-sm">{watchlist.error}</p>}
+        <p className="text-[11px] font-medium uppercase tracking-wider text-text-muted mb-3">
+          Watchlist
+        </p>
+        {watchlist.loading && <LoadingSkeleton lines={3} />}
+        {watchlist.error && <p className="text-semantic-error text-sm">{watchlist.error}</p>}
         {watchlist.data && (
           <div>
-            <p className="text-sm text-gray-400 mb-3">
+            <p className="text-sm text-text-secondary mb-3">
               {watchlist.data.total} tickers across{" "}
               {Object.keys(watchlist.data.sectors).length} sectors
             </p>
@@ -63,10 +71,10 @@ export default function StocksPage() {
               {Object.entries(watchlist.data.sectors).map(([sector, tickers]) => (
                 <div
                   key={sector}
-                  className="border border-gray-700 rounded p-3 bg-gray-900"
+                  className="border border-border-primary rounded-xl p-3 bg-surface-card"
                 >
-                  <h3 className="text-sm font-medium mb-2">{sector}</h3>
-                  <p className="text-xs text-gray-400">
+                  <h3 className="text-sm font-medium mb-1">{sector}</h3>
+                  <p className="text-xs text-text-muted">
                     {tickers.length} tickers
                   </p>
                 </div>
