@@ -6,10 +6,10 @@ interface Props {
 
 export default function NewsCard({ article }: Props) {
   const categoryColor =
-    article.category === "crypto" ? "text-yellow-400" : "text-green-400";
+    article.category === "crypto" ? "text-semantic-warning" : "text-semantic-success";
 
   return (
-    <div className="border border-gray-700 rounded-lg p-4 bg-gray-900">
+    <div className="border border-border-primary rounded-xl p-4 bg-surface-card">
       <div className="flex justify-between items-start mb-2">
         <h3 className="font-medium text-sm leading-tight flex-1">
           {article.headline}
@@ -23,12 +23,12 @@ export default function NewsCard({ article }: Props) {
           href={article.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs text-blue-400 hover:underline"
+          className="text-xs text-accent hover:underline"
         >
           Read more
         </a>
       )}
-      <div className="text-xs text-gray-500 mt-2">{article.sent_at}</div>
+      <div className="text-xs text-text-muted mt-2">{article.sent_at}</div>
     </div>
   );
 }
