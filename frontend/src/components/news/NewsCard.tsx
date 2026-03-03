@@ -1,4 +1,5 @@
 import type { NewsArticle } from "@/lib/types";
+import { formatDateShort } from "@/lib/format";
 
 interface Props {
   article: NewsArticle;
@@ -28,7 +29,7 @@ export default function NewsCard({ article }: Props) {
           Read more
         </a>
       )}
-      <div className="text-xs text-text-muted mt-2">{article.sent_at}</div>
+      <div className="text-xs text-text-muted mt-2">{formatDateShort(article.sent_at)}</div>
     </div>
   );
 }
