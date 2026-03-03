@@ -30,6 +30,9 @@ class ScanStats:
         self.news_total_runs: int = 0
         self.news_last_articles: int = 0
 
+        self.analysis_last_run: Optional[datetime] = None
+        self.analysis_total_runs: int = 0
+
 
 class SchedulerService:
     """Manages scheduled scan jobs using APScheduler."""
@@ -93,6 +96,21 @@ class SchedulerService:
         except Exception as e:
             logger.error(f"News fetch error: {e}", exc_info=True)
 
+    async def _run_market_analysis(self):
+        """Run AI market analysis using recent news headlines."""
+        try:
+            from app.engines.market_analysis.analyzer import MarketAnalyzer
+
+            analyzer = MarketAnalyzer()
+            await analyzer.run_all()
+
+            self.stats.analysis_last_run = datetime.now()
+            self.stats.analysis_total_runs += 1
+
+            logger.info("Market analysis complete")
+        except Exception as e:
+            logger.error(f"Market analysis error: {e}", exc_info=True)
+
     def start(self):
         """Start the scheduler with configured jobs."""
         if self._running:
@@ -118,6 +136,13 @@ class SchedulerService:
             minutes=settings.news_scan_interval,
             id="news_fetch",
             name="News Monitor Fetch",
+        )
+        self.scheduler.add_job(
+            self._run_market_analysis,
+            "interval",
+            minutes=settings.analysis_scan_interval,
+            id="market_analysis",
+            name="Market Analysis",
         )
 
         self.scheduler.start()
