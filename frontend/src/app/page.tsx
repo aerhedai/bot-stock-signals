@@ -1,65 +1,124 @@
 "use client";
 
 import { useApi } from "@/hooks/useApi";
-import { getStatus } from "@/lib/api";
+import { getStatus, getStockSignals, getNewsFeed } from "@/lib/api";
+import { formatDate } from "@/lib/format";
+import PageHeader from "@/components/layout/PageHeader";
+import SummaryCard from "@/components/dashboard/SummaryCard";
+import RecentPredictions from "@/components/dashboard/RecentPredictions";
+import NewsHighlights from "@/components/dashboard/NewsHighlights";
+import StatusBadge from "@/components/ui/StatusBadge";
+import LoadingSkeleton from "@/components/ui/LoadingSkeleton";
+import { TrendingUp, Newspaper, Settings } from "@/components/icons";
 
 export default function Dashboard() {
-  const { data, loading, error } = useApi(getStatus);
+  const status = useApi(getStatus);
+  const signals = useApi(getStockSignals);
+  const news = useApi(getNewsFeed);
 
   return (
     <div>
-      <h1 className="text-2xl font-bold mb-6">Dashboard</h1>
+      <PageHeader title="Dashboard" />
 
-      {loading && <p className="text-gray-400">Loading status...</p>}
-      {error && (
-        <div className="bg-red-900/30 border border-red-700 rounded p-4 mb-4">
-          <p className="text-red-400">Failed to connect to backend: {error}</p>
-          <p className="text-sm text-gray-400 mt-1">
+      {status.error && (
+        <div className="bg-semantic-error/10 border border-semantic-error/20 rounded-xl p-4 mb-6">
+          <p className="text-sm text-semantic-error">
+            Failed to connect to backend: {status.error}
+          </p>
+          <p className="text-xs text-text-muted mt-1">
             Make sure the backend is running on port 8000.
           </p>
         </div>
       )}
 
-      {data && (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {data.services.map((service) => (
-            <div
-              key={service.name}
-              className="border border-gray-700 rounded-lg p-4 bg-gray-900"
-            >
-              <div className="flex justify-between items-center mb-3">
-                <h3 className="font-medium capitalize">
-                  {service.name.replace("_", " ")}
-                </h3>
-                <span
-                  className={`text-xs px-2 py-1 rounded ${
-                    service.running
-                      ? "bg-green-900 text-green-400"
-                      : "bg-gray-800 text-gray-400"
-                  }`}
-                >
-                  {service.running ? "Running" : "Stopped"}
-                </span>
+      {/* Summary cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-6">
+        {signals.loading ? (
+          <div className="border border-border-primary rounded-xl p-4 bg-surface-card">
+            <LoadingSkeleton lines={2} />
+          </div>
+        ) : (
+          <SummaryCard
+            icon={<TrendingUp className="w-4 h-4" />}
+            title="Stock Signals"
+            value={signals.data?.total_alerts ?? 0}
+            subtitle={`${signals.data?.unique_tickers ?? 0} unique tickers`}
+          />
+        )}
+        {news.loading ? (
+          <div className="border border-border-primary rounded-xl p-4 bg-surface-card">
+            <LoadingSkeleton lines={2} />
+          </div>
+        ) : (
+          <SummaryCard
+            icon={<Newspaper className="w-4 h-4" />}
+            title="News Articles"
+            value={news.data?.total ?? 0}
+            subtitle={`${news.data?.stock_count ?? 0} stock, ${news.data?.crypto_count ?? 0} crypto`}
+          />
+        )}
+        {status.loading ? (
+          <div className="border border-border-primary rounded-xl p-4 bg-surface-card">
+            <LoadingSkeleton lines={2} />
+          </div>
+        ) : (
+          <SummaryCard
+            icon={<Settings className="w-4 h-4" />}
+            title="Services"
+            value={status.data?.services.filter((s) => s.running).length ?? 0}
+            subtitle={`of ${status.data?.services.length ?? 0} running`}
+          />
+        )}
+      </div>
+
+      {/* Service status */}
+      {status.data && (
+        <div className="mb-6">
+          <p className="text-[11px] font-medium uppercase tracking-wider text-text-muted mb-3">
+            Service Status
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            {status.data.services.map((service) => (
+              <div
+                key={service.name}
+                className="border border-border-primary rounded-xl p-4 bg-surface-card"
+              >
+                <div className="flex justify-between items-center mb-2">
+                  <h3 className="text-sm font-medium capitalize">
+                    {service.name.replace("_", " ")}
+                  </h3>
+                  <StatusBadge status={service.running ? "running" : "stopped"} />
+                </div>
+                <div className="text-xs text-text-muted space-y-0.5">
+                  <p>Total runs: {service.total_runs}</p>
+                  <p>
+                    Last run: {formatDate(service.last_run)}
+                  </p>
+                </div>
               </div>
-              <div className="text-sm text-gray-400 space-y-1">
-                <p>Total runs: {service.total_runs}</p>
-                <p>
-                  Last run:{" "}
-                  {service.last_run
-                    ? new Date(service.last_run).toLocaleString()
-                    : "Never"}
-                </p>
-                <p>
-                  Next run:{" "}
-                  {service.next_run
-                    ? new Date(service.next_run).toLocaleString()
-                    : "-"}
-                </p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       )}
+
+      {/* Two-column: Recent predictions + News highlights */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+        {signals.loading ? (
+          <div className="border border-border-primary rounded-xl p-4 bg-surface-card">
+            <LoadingSkeleton lines={5} />
+          </div>
+        ) : signals.data ? (
+          <RecentPredictions alerts={signals.data.alerts} />
+        ) : null}
+
+        {news.loading ? (
+          <div className="border border-border-primary rounded-xl p-4 bg-surface-card">
+            <LoadingSkeleton lines={3} />
+          </div>
+        ) : news.data ? (
+          <NewsHighlights articles={news.data.articles} />
+        ) : null}
+      </div>
     </div>
   );
 }
