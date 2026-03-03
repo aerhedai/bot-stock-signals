@@ -5,23 +5,19 @@ Provides two main interfaces:
 - generate(): one-shot text generation (news analysis, summaries, etc.)
 - run_agent(): multi-turn agentic loop with function calling tools
 
+Uses the google-genai SDK (google.genai), the unified replacement for the
+deprecated vertexai.generative_models API.
+
 Authentication is handled via the GOOGLE_APPLICATION_CREDENTIALS env var,
 which should point to a service account JSON key file.
 """
 
 import logging
-import json
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Any, Callable, Optional
 
-import vertexai
-from vertexai.generative_models import (
-    GenerativeModel,
-    GenerationConfig,
-    Tool,
-    FunctionDeclaration,
-    Part,
-)
+from google import genai
+from google.genai import types
 
 from app.config import settings
 
@@ -51,8 +47,8 @@ class AgentTool:
     parameters: dict  # JSON Schema for the function parameters
     handler: Callable[..., Any]
 
-    def to_function_declaration(self) -> FunctionDeclaration:
-        return FunctionDeclaration(
+    def to_function_declaration(self) -> types.FunctionDeclaration:
+        return types.FunctionDeclaration(
             name=self.name,
             description=self.description,
             parameters=self.parameters,
@@ -68,24 +64,22 @@ class AIService:
     """
 
     def __init__(self):
-        self._initialised = False
-        self._model: Optional[GenerativeModel] = None
+        self._client: Optional[genai.Client] = None
 
     def _ensure_init(self):
-        if self._initialised:
+        if self._client is not None:
             return
         if not settings.vertex_project:
             raise RuntimeError(
                 "VERTEX_PROJECT is not set. Add it to your .env file."
             )
-        vertexai.init(
+        self._client = genai.Client(
+            vertexai=True,
             project=settings.vertex_project,
             location=settings.vertex_location,
         )
-        self._model = GenerativeModel(settings.vertex_model)
-        self._initialised = True
         logger.info(
-            "Vertex AI initialised (project=%s, location=%s, model=%s)",
+            "Vertex AI client initialised (project=%s, location=%s, model=%s)",
             settings.vertex_project,
             settings.vertex_location,
             settings.vertex_model,
@@ -106,14 +100,15 @@ class AIService:
             max_tokens: Maximum tokens in the response.
         """
         self._ensure_init()
-        config = GenerationConfig(
+        config = types.GenerateContentConfig(
             temperature=temperature,
             max_output_tokens=max_tokens,
         )
         try:
-            response = await self._model.generate_content_async(
-                prompt,
-                generation_config=config,
+            response = await self._client.aio.models.generate_content(
+                model=settings.vertex_model,
+                contents=prompt,
+                config=config,
             )
             return response.text.strip()
         except Exception:
@@ -142,34 +137,39 @@ class AIService:
         """
         self._ensure_init()
 
-        declarations = [t.to_function_declaration() for t in tools]
         tool_map = {t.name: t.handler for t in tools}
-        vertex_tools = [Tool(function_declarations=declarations)]
-
-        config = GenerationConfig(temperature=temperature)
-        model = GenerativeModel(
-            settings.vertex_model,
-            tools=vertex_tools,
-            generation_config=config,
+        vertex_tool = types.Tool(
+            function_declarations=[t.to_function_declaration() for t in tools]
+        )
+        config = types.GenerateContentConfig(
+            tools=[vertex_tool],
+            temperature=temperature,
         )
 
-        chat = model.start_chat()
+        chat = self._client.aio.chats.create(
+            model=settings.vertex_model,
+            config=config,
+        )
+
         message = query
 
         for turn in range(max_turns):
-            response = await chat.send_message_async(message)
+            response = await chat.send_message(message)
             candidate = response.candidates[0]
 
             # Check if the model wants to call a function
             function_calls = [
                 part.function_call
                 for part in candidate.content.parts
-                if part.function_call.name
+                if part.function_call and part.function_call.name
             ]
 
             if not function_calls:
                 # No more tool calls — return the final text
-                return candidate.content.parts[0].text.strip()
+                text_parts = [
+                    p.text for p in candidate.content.parts if p.text
+                ]
+                return " ".join(text_parts).strip()
 
             # Execute each requested function and collect results
             function_responses = []
@@ -187,15 +187,14 @@ class AIService:
                         result = {"error": str(e)}
 
                 function_responses.append(
-                    Part.from_function_response(name=fc.name, response=result)
+                    types.Part.from_function_response(
+                        name=fc.name, response=result
+                    )
                 )
 
             message = function_responses
 
-            if turn == max_turns - 1:
-                logger.warning("run_agent() hit max_turns=%d without a final text response", max_turns)
-                return ""
-
+        logger.warning("run_agent() hit max_turns=%d without a final text response", max_turns)
         return ""
 
 
