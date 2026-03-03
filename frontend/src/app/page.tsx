@@ -2,6 +2,7 @@
 
 import { useApi } from "@/hooks/useApi";
 import { getStatus, getStockSignals, getNewsFeed } from "@/lib/api";
+import { formatDate } from "@/lib/format";
 import PageHeader from "@/components/layout/PageHeader";
 import SummaryCard from "@/components/dashboard/SummaryCard";
 import RecentPredictions from "@/components/dashboard/RecentPredictions";
@@ -91,10 +92,7 @@ export default function Dashboard() {
                 <div className="text-xs text-text-muted space-y-0.5">
                   <p>Total runs: {service.total_runs}</p>
                   <p>
-                    Last run:{" "}
-                    {service.last_run
-                      ? new Date(service.last_run).toLocaleString()
-                      : "Never"}
+                    Last run: {formatDate(service.last_run)}
                   </p>
                 </div>
               </div>
