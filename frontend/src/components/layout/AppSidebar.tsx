@@ -10,6 +10,7 @@ import {
   Newspaper,
   Settings,
   Circle,
+  BrainCircuit,
 } from "@/components/icons";
 
 const sections = [
@@ -24,6 +25,7 @@ const sections = [
     links: [
       { href: "/predictions", icon: TrendingUp, label: "Predictions" },
       { href: "/news", icon: Newspaper, label: "News" },
+      { href: "/analysis", icon: BrainCircuit, label: "AI Analysis" },
     ],
   },
   {

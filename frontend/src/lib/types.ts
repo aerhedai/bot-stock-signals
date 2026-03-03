@@ -85,3 +85,15 @@ export interface NewsFeedResponse {
   crypto_count: number;
   articles: NewsArticle[];
 }
+
+export interface MarketAnalysisResponse {
+  category: string;
+  analysis: string;
+  headline_count: number;
+  generated_at: string;
+}
+
+export interface AnalysisTriggerResponse {
+  triggered: boolean;
+  message: string;
+}

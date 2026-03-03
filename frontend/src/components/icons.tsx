@@ -129,6 +129,31 @@ export function ExternalLink(props: IconProps) {
   );
 }
 
+export function BrainCircuit(props: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <path d="M12 4.5a2.5 2.5 0 0 0-4.96-.46 2.5 2.5 0 0 0-1.98 3 2.5 2.5 0 0 0-1.32 4.24 3 3 0 0 0 .34 5.58 2.5 2.5 0 0 0 2.96 3.08A2.5 2.5 0 0 0 12 19.5" />
+      <path d="M12 4.5a2.5 2.5 0 0 1 4.96-.46 2.5 2.5 0 0 1 1.98 3 2.5 2.5 0 0 1 1.32 4.24 3 3 0 0 1-.34 5.58 2.5 2.5 0 0 1-2.96 3.08A2.5 2.5 0 0 1 12 19.5" />
+      <circle cx="12" cy="12" r="3" />
+      <line x1="12" x2="12" y1="9" y2="3" />
+      <line x1="6.5" x2="12" y1="13" y2="12" />
+      <line x1="17.5" x2="12" y1="13" y2="12" />
+      <line x1="12" x2="12" y1="15" y2="21" />
+    </svg>
+  );
+}
+
 export function Circle(props: IconProps) {
   return (
     <svg
