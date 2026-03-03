@@ -31,7 +31,7 @@ class AlertHistory:
 
     def __init__(self, db_path: str = None):
         """
-        Initialize alert history manager.
+        Initialise alert history manager.
 
         Args:
             db_path: Path to JSON database file
@@ -158,7 +158,7 @@ class TelegramBot:
     """
 
     def __init__(self):
-        """Initialize Telegram bot."""
+        """Initialise Telegram bot."""
         self.token = settings.TELEGRAM_BOT_TOKEN
         self.chat_id = settings.TELEGRAM_CHAT_ID
         self.thread_id = settings.TELEGRAM_THREAD_ID
@@ -375,7 +375,7 @@ if __name__ == '__main__':
     print("Testing Telegram Bot Interface")
     print("=" * 60)
 
-    # Initialize bot
+    # Initialise bot
     bot = get_telegram_bot()
 
     # Test alert history

@@ -129,7 +129,7 @@ class MarketAnalyzer:
         )
 
         ai = get_ai_service()
-        text = await ai.generate(prompt, temperature=0.5, max_tokens=256)
+        text = await ai.generate(prompt, temperature=0.5, max_tokens=1024)
 
         result = MarketAnalysisResult(
             category=category,

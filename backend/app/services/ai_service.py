@@ -26,14 +26,16 @@ logger = logging.getLogger(__name__)
 # Shared prompt templates used across features
 PROMPT_TEMPLATES = {
     "market_analysis_stocks": (
-        "You are a concise financial analyst. Based on the following recent stock market news headlines, "
-        "write a single short paragraph (3-5 sentences) summarising the current state of the stock market. "
-        "Focus on themes, sectors, and sentiment. Do not make specific price predictions.\n\nHeadlines:\n{headlines}"
+        "You are a financial analyst. Based on the following recent stock market news headlines, "
+        "write a detailed paragraph (5-7 sentences) summarising the current state of the stock market. "
+        "Cover the key themes, affected sectors, overall sentiment, and any notable risks or opportunities. "
+        "Do not make specific price predictions.\n\nHeadlines:\n{headlines}"
     ),
     "market_analysis_crypto": (
-        "You are a concise crypto analyst. Based on the following recent crypto news headlines, "
-        "write a single short paragraph (3-5 sentences) summarising the current state of the crypto market. "
-        "Focus on dominant narratives, sentiment, and major assets mentioned. Do not make specific price predictions.\n\nHeadlines:\n{headlines}"
+        "You are a crypto analyst. Based on the following recent crypto news headlines, "
+        "write a detailed paragraph (5-7 sentences) summarising the current state of the crypto market. "
+        "Cover dominant narratives, sentiment, major assets mentioned, and any notable risks or opportunities. "
+        "Do not make specific price predictions.\n\nHeadlines:\n{headlines}"
     ),
 }
 
@@ -89,7 +91,7 @@ class AIService:
         self,
         prompt: str,
         temperature: float = 0.4,
-        max_tokens: int = 512,
+        max_tokens: int = 1024,
     ) -> str:
         """
         One-shot text generation. Returns the model's response as a string.
@@ -103,6 +105,7 @@ class AIService:
         config = types.GenerateContentConfig(
             temperature=temperature,
             max_output_tokens=max_tokens,
+            thinking_config=types.ThinkingConfig(thinking_budget=0),
         )
         try:
             response = await self._client.aio.models.generate_content(

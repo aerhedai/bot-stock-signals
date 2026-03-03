@@ -58,7 +58,7 @@ class EMATrigger:
     Technical trigger using Exponential Moving Average.
 
     Only alerts when price closes above the 20-EMA, indicating
-    momentum is shifting in our favor after finding undervaluation.
+    momentum is shifting in our favour after finding undervaluation.
     """
 
     def __init__(self):

@@ -230,7 +230,7 @@ Check logs for the "📊 Statistics" section after each scan.
 
 1. **Monitor for 1 week** - Observe signal patterns
 2. **Read README.md** - Understand how strategies work
-3. **Review PERFORMANCE_REPORT.md** - Optimization recommendations
+3. **Review PERFORMANCE_REPORT.md** - Optimisation recommendations
 4. **Adjust settings** - Fine-tune thresholds in `.env`
 
 ---
@@ -262,7 +262,7 @@ When a valid signal is detected, you'll receive a Telegram message like:
 ## Support
 
 - **Documentation**: See README.md for detailed info
-- **Performance**: See PERFORMANCE_REPORT.md for optimization
+- **Performance**: See PERFORMANCE_REPORT.md for optimisation
 - **Issues**: Check logs first, then debug with `--once` mode
 
 ---

@@ -125,7 +125,7 @@ Setup:
         sys.exit(1)
 
     # Create monitor
-    logger.info("Initializing news monitor...")
+    logger.info("Initialising news monitor...")
     monitor = NewsMonitor()
 
     if args.once:

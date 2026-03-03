@@ -42,7 +42,7 @@ async def get_stock_signals(store=Depends(get_alert_store)):
 
 @router.get("/watchlist", response_model=WatchlistResponse)
 async def get_stock_watchlist():
-    """Get stock tickers organized by sector."""
+    """Get stock tickers organised by sector."""
     from app.engines.stock_sniper.config.tickers import (
         WATCHLIST,
         TECHNOLOGY, FINANCE, HEALTHCARE, CONSUMER,

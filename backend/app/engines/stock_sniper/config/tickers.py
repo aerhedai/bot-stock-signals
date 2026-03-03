@@ -2,7 +2,7 @@
 Stock Tickers Watchlist
 
 A diversified list of 455 unique stocks across multiple sectors for the Sniper Bot to scan.
-Organized by sector for better diversification and risk management.
+Organised by sector for better diversification and risk management.
 """
 
 # =============================================================================

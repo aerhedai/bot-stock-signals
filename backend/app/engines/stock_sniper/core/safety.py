@@ -2,7 +2,7 @@
 Safety Module - Market Regime & Earnings Trap Checks
 
 This module implements safety mechanisms to prevent trading during
-unfavorable market conditions or before major catalysts.
+unfavourable market conditions or before major catalysts.
 """
 
 import logging
@@ -46,7 +46,7 @@ class MarketRegimeChecker:
 
     def check_market_regime(self) -> Tuple[bool, Optional[float], Optional[float]]:
         """
-        Check if market is in favorable regime.
+        Check if market is in favourable regime.
 
         Returns:
             Tuple of (is_healthy, spy_price, spy_200sma)

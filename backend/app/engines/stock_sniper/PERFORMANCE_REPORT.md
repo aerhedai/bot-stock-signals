@@ -1,4 +1,4 @@
-# Stock Sniper Bot - Performance Analysis & Optimization Report
+# Stock Sniper Bot - Performance Analysis & Optimisation Report
 
 **Document Version:** 1.0
 **Date:** January 8, 2026
@@ -8,11 +8,11 @@
 
 ## Executive Summary
 
-This report analyzes the Stock Sniper Bot's architecture, performance characteristics, and provides recommendations for optimization based on production runtime expectations.
+This report analyses the Stock Sniper Bot's architecture, performance characteristics, and provides recommendations for optimisation based on production runtime expectations.
 
 ### Key Findings
 
-- **Scan Speed**: ~10-15 seconds for 50 stocks (with parallel optimization: ~5-8 seconds)
+- **Scan Speed**: ~10-15 seconds for 50 stocks (with parallel optimisation: ~5-8 seconds)
 - **API Efficiency**: ~100-150 yfinance API calls per scan
 - **Memory Footprint**: ~50-100MB during scan operations
 - **Signal Rate**: 1-5 signals per day (expected in normal market conditions)
@@ -45,7 +45,7 @@ Total per stock: 2.3-4.0s
 - Worst case: 50 × 4.0s = 200s (~3.3 minutes)
 - Average: ~150s (2.5 minutes)
 
-**With Optimizations** (see recommendations)
+**With Optimisations** (see recommendations)
 - Parallel processing: 50-60s (1 minute)
 - API caching: 30-40s (30-40 seconds)
 
@@ -268,7 +268,7 @@ Out of Memory:
 
 ---
 
-## Optimization Recommendations
+## Optimisation Recommendations
 
 ### Priority 1: High Impact, Low Effort
 
@@ -290,7 +290,7 @@ def scan_multiple(self, tickers: List[str]) -> List[SniperSignal]:
 
 **Impact**:
 - Scan time: 150s → 20-30s (80% reduction)
-- CPU usage: Better multi-core utilization
+- CPU usage: Better multi-core utilisation
 - Risk: API rate limiting (mitigate with max_workers tuning)
 
 **Estimated Development Time**: 2-3 hours
@@ -333,7 +333,7 @@ class CachedDataFetcher:
 
 ---
 
-#### 3. Optimize Data Fetching
+#### 3. Optimise Data Fetching
 
 **Current**: Separate API calls for each strategy
 **Proposed**: Single fetch, shared data
@@ -363,6 +363,7 @@ ema_result = self.ema_trigger.check_with_history(history)
 ### Priority 2: Medium Impact, Medium Effort
 
 #### 4. Implement Smart Watchlist Filtering
+
 
 **Concept**: Pre-filter watchlist before full scan
 
@@ -484,7 +485,7 @@ class Backtester:
 ```
 
 **Impact**:
-- Strategy optimization: Data-driven adjustments
+- Strategy optimisation: Data-driven adjustments
 - Confidence: Validate changes before production
 - Development: Significant time investment
 
@@ -512,7 +513,7 @@ if model.predict_proba(signal_features)[0][1] > 0.7:
 
 **Impact**:
 - Signal quality: Potentially significant improvement
-- Complexity: High (requires labeled training data)
+- Complexity: High (requires labelled training data)
 - Maintenance: Regular retraining needed
 
 **Estimated Development Time**: 40-60 hours
@@ -550,7 +551,7 @@ Cloud (AWS/GCP/Azure):
 VPS (DigitalOcean, Linode):
 - Droplet: $6-10/month plan
 - 1 GB RAM sufficient for current implementation
-- 2 GB RAM recommended with optimizations
+- 2 GB RAM recommended with optimisations
 
 Local (Raspberry Pi):
 - Raspberry Pi 4 (4 GB RAM) ✅
@@ -574,7 +575,7 @@ Local (Raspberry Pi):
 - Scan time: 150s → 1500s (25 minutes)
 - API calls: 2000 per scan
 - **Challenges**: API rate limiting, scan duration too long
-- **Solution Required**: Parallel processing + caching (Priority 1 optimizations)
+- **Solution Required**: Parallel processing + caching (Priority 1 optimisations)
 
 **50 → 5000 stocks (S&P 500 + Russell 2000)**
 - Scan time: 150s × 100 = ~4 hours per scan
@@ -659,7 +660,7 @@ Total: ~$17/month
 **Ongoing Maintenance**
 - Weekly monitoring: 1 hour
 - Monthly updates: 2 hours
-- Quarterly optimization: 4 hours
+- Quarterly optimisation: 4 hours
 - **Total**: ~70 hours/year
 
 **At $50/hour**: $3,500/year maintenance cost
@@ -729,7 +730,7 @@ Total: ~$17/month
 
 ### Implement Within 3 Months
 
-1. **Optimize data fetching** (Priority 1, Rec #3)
+1. **Optimise data fetching** (Priority 1, Rec #3)
    - Further API reduction
    - Code quality improvement
 
@@ -744,7 +745,7 @@ Total: ~$17/month
 ### Long-Term (6+ Months)
 
 1. **Backtesting framework** (Priority 3, Rec #7)
-   - Essential for strategy optimization
+   - Essential for strategy optimisation
    - Large time investment
 
 2. **Machine learning** (Priority 3, Rec #8)
@@ -769,7 +770,7 @@ The Stock Sniper Bot, as implemented, represents a **production-ready, professio
 
 ### Current Limitations
 
-- ⚠️ Sequential scanning (can be optimized)
+- ⚠️ Sequential scanning (can be optimised)
 - ⚠️ No data caching (excessive API calls)
 - ⚠️ No backtesting (can't validate strategy changes)
 - ⚠️ No performance dashboard (limited visibility)
@@ -786,7 +787,7 @@ The Stock Sniper Bot, as implemented, represents a **production-ready, professio
 
 ### Final Recommendation
 
-**Deploy now with default configuration.** Monitor for 1-2 weeks to establish baseline performance, then implement Priority 1 optimizations (parallel scanning + caching) for significant performance gains.
+**Deploy now with default configuration.** Monitor for 1-2 weeks to establish baseline performance, then implement Priority 1 optimisations (parallel scanning + caching) for significant performance gains.
 
 The current implementation provides excellent value as a stock screening tool. It will save hours of manual analysis daily and surface opportunities that might otherwise be missed.
 

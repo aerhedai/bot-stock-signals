@@ -69,12 +69,12 @@ class CryptoMonitor:
     """
 
     def __init__(self):
-        """Initialize the crypto monitor."""
+        """Initialise the crypto monitor."""
         self.indicators = TechnicalIndicators()
         self.valuation = CryptoValuation()
         self.btc_data_cache = None  # Cache BTC data for relative strength
         self.btc_cache_time = None
-        logger.info("CryptoMonitor initialized with two-layer approach")
+        logger.info("CryptoMonitor initialised with two-layer approach")
 
     def fetch_crypto_data(
         self,
@@ -273,7 +273,7 @@ class CryptoMonitor:
 
     def analyze_crypto(self, symbol: str) -> Optional[CryptoSignal]:
         """
-        Analyze a cryptocurrency using two-layer approach.
+        Analyse a cryptocurrency using two-layer approach.
 
         Layer 1: Check if undervalued
         Layer 2: Check for technical trigger
@@ -281,7 +281,7 @@ class CryptoMonitor:
         Only returns signal if BOTH layers confirm.
 
         Args:
-            symbol: Crypto symbol to analyze
+            symbol: Crypto symbol to analyse
 
         Returns:
             CryptoSignal if both layers confirm, None otherwise
@@ -412,7 +412,7 @@ class CryptoMonitor:
             return signal
 
         except Exception as e:
-            logger.error(f"Error analyzing {symbol}: {e}", exc_info=True)
+            logger.error(f"Error analysing {symbol}: {e}", exc_info=True)
             return None
 
     def scan_multiple(self, symbols: List[str]) -> List[CryptoSignal]:
@@ -433,7 +433,7 @@ class CryptoMonitor:
 
         for i, symbol in enumerate(symbols, 1):
             try:
-                logger.debug(f"[{i}/{len(symbols)}] Analyzing {symbol}...")
+                logger.debug(f"[{i}/{len(symbols)}] Analysing {symbol}...")
 
                 signal = self.analyze_crypto(symbol)
                 if signal:

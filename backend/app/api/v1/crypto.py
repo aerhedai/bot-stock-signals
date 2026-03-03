@@ -24,7 +24,7 @@ async def get_crypto_signals(store=Depends(get_alert_store)):
 
 @router.get("/watchlist", response_model=CryptoWatchlistResponse)
 async def get_crypto_watchlist():
-    """Get crypto watchlist organized by category."""
+    """Get crypto watchlist organised by category."""
     from app.engines.crypto_sniper.config.crypto_list import (
         CRYPTO_WATCHLIST, MAJOR_CRYPTOS, DEFI_CRYPTOS, ALT_CRYPTOS, STABLECOINS,
     )

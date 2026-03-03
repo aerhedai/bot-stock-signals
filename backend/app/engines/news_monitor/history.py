@@ -24,7 +24,7 @@ class NewsHistory:
 
     def __init__(self, db_path: str, retention_days: int = 7):
         """
-        Initialize news history manager.
+        Initialise news history manager.
 
         Args:
             db_path: Path to JSON database file

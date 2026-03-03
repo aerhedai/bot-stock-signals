@@ -37,7 +37,7 @@ class NewsConfig:
     DATA_DIR = MODULE_ROOT / 'data'
     NEWS_HISTORY_FILE = DATA_DIR / 'news_history.json'
 
-    # Crypto keywords for categorization
+    # Crypto keywords for categorisation
     CRYPTO_KEYWORDS = [
         'bitcoin', 'btc', 'ethereum', 'eth', 'crypto', 'cryptocurrency',
         'blockchain', 'defi', 'nft', 'altcoin', 'dogecoin', 'doge',

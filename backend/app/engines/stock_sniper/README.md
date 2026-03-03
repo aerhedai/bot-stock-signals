@@ -252,7 +252,7 @@ The bot monitors **50 diversified stocks** across sectors:
 - **Energy/Industrials** (7): XOM, CVX, BA, CAT, GE, DE, UPS
 - **Staples/Materials** (7): PG, KO, PEP, PM, CL, COST, FCX
 
-**Customize**: Edit `config/tickers.py` to add/remove stocks.
+**Customise**: Edit `config/tickers.py` to add/remove stocks.
 
 ---
 
@@ -540,7 +540,7 @@ Potential future enhancements:
 - [ ] Portfolio position sizing recommendations
 - [ ] Web dashboard for monitoring
 - [ ] Integration with broker APIs for auto-trading
-- [ ] Machine learning for strategy optimization
+- [ ] Machine learning for strategy optimisation
 - [ ] Multi-timeframe analysis
 - [ ] Options strategy suggestions
 - [ ] Risk management rules

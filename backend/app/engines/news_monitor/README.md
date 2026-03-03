@@ -5,7 +5,7 @@ Automated system that monitors real-time financial news for stocks and cryptocur
 ## Features
 
 - **Real-time News**: Fetches latest financial news from Finnhub API (60 requests/minute free tier)
-- **Smart Categorization**: Automatically categorizes news as stock or crypto using keyword analysis
+- **Smart Categorisation**: Automatically categorises news as stock or crypto using keyword analysis
 - **Separate Topics**: Sends stock news and crypto news to different Telegram topics/threads
 - **Duplicate Prevention**: Tracks sent articles to avoid sending duplicates
 - **Configurable Intervals**: Set custom fetch intervals (default: 5 minutes)
@@ -115,14 +115,14 @@ The system fetches news from Finnhub API in two categories:
 1. **General Financial News**: Latest market news
 2. **Crypto-Specific News**: Cryptocurrency and blockchain news
 
-### Categorization Logic
+### Categorisation Logic
 
-Each article is analyzed using keyword matching:
+Each article is analysed using keyword matching:
 
 **Crypto Keywords**: bitcoin, ethereum, crypto, blockchain, defi, nft, etc.
 **Stock Keywords**: stock, shares, nasdaq, earnings, dividend, ipo, etc.
 
-The system counts keyword matches and categorizes accordingly.
+The system counts keyword matches and categorises accordingly.
 
 ### Message Format
 
@@ -152,7 +152,7 @@ Articles are never sent twice. History is automatically cleaned after 7 days.
 
 ```
 news_monitor/
-├── __init__.py          # Module initialization
+├── __init__.py          # Module initialisation
 ├── config.py            # Configuration management
 ├── fetcher.py           # Finnhub API integration
 ├── formatter.py         # Telegram message formatting
@@ -248,7 +248,7 @@ sudo systemctl start news-monitor
 sudo systemctl status news-monitor
 ```
 
-### Custom Categorization
+### Custom Categorisation
 
 Edit `news_monitor/config.py` to modify keyword lists:
 - `CRYPTO_KEYWORDS`: Add/remove crypto-related terms

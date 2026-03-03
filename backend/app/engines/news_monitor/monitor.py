@@ -23,11 +23,11 @@ class NewsMonitor:
     """
     Main news monitoring service.
 
-    Fetches news from Finnhub, categorizes, and sends to appropriate Telegram topics.
+    Fetches news from Finnhub, categorises, and sends to appropriate Telegram topics.
     """
 
     def __init__(self):
-        """Initialize news monitor."""
+        """Initialise news monitor."""
         self.fetcher = NewsFetcher()
         self.formatter = NewsFormatter()
         self.history = NewsHistory(str(config.NEWS_HISTORY_FILE))
@@ -39,7 +39,7 @@ class NewsMonitor:
 
         self.base_url = f"https://api.telegram.org/bot{self.bot_token}"
 
-        logger.info("News Monitor initialized")
+        logger.info("News Monitor initialised")
 
     def send_telegram_message(self, text: str, topic_id: int = None) -> bool:
         """

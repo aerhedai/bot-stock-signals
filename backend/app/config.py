@@ -62,7 +62,7 @@ class Settings(BaseSettings):
     stock_scan_interval: int = 60
     crypto_scan_interval: int = 30
     news_scan_interval: int = 5
-    analysis_scan_interval: int = 30
+    analysis_scan_interval: int = 1440
 
     model_config = {
         "env_file": str(Path(__file__).resolve().parent.parent.parent / ".env"),
