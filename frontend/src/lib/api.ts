@@ -9,6 +9,8 @@ import type {
   CryptoAlertHistory,
   CryptoWatchlistResponse,
   NewsFeedResponse,
+  MarketAnalysisResponse,
+  AnalysisTriggerResponse,
 } from "./types";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
@@ -48,3 +50,11 @@ export const getNewsFeed = () =>
   fetchApi<NewsFeedResponse>("/api/v1/news/feed");
 export const triggerNewsFetch = () =>
   fetchApi<ScanResultResponse>("/api/v1/news/fetch", { method: "POST" });
+
+// Market Analysis
+export const getStockAnalysis = () =>
+  fetchApi<MarketAnalysisResponse>("/api/v1/analysis/stocks");
+export const getCryptoAnalysis = () =>
+  fetchApi<MarketAnalysisResponse>("/api/v1/analysis/crypto");
+export const triggerAnalysis = () =>
+  fetchApi<AnalysisTriggerResponse>("/api/v1/analysis/trigger", { method: "POST" });
