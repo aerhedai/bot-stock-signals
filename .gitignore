@@ -30,6 +30,12 @@ ENV/
 .env
 bottoken.json
 
+# GCP service account keys
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+
 # IDE
 .vscode/
 .idea/
