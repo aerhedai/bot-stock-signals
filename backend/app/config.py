@@ -45,6 +45,11 @@ class Settings(BaseSettings):
     log_level: str = Field("INFO", alias="LOG_LEVEL")
     database_url: str = Field("sqlite:///bot.db", alias="DATABASE_URL")
 
+    # Vertex AI
+    vertex_project: str = Field("", alias="VERTEX_PROJECT")
+    vertex_location: str = Field("us-central1", alias="VERTEX_LOCATION")
+    vertex_model: str = Field("gemini-2.5-flash", alias="VERTEX_MODEL")
+
     # Stock algorithm thresholds
     algo_pe_threshold: float = Field(15.0, alias="ALGO_PE_THRESHOLD")
     algo_peg_threshold: float = Field(1.0, alias="ALGO_PEG_THRESHOLD")
@@ -57,6 +62,7 @@ class Settings(BaseSettings):
     stock_scan_interval: int = 60
     crypto_scan_interval: int = 30
     news_scan_interval: int = 5
+    analysis_scan_interval: int = 30
 
     model_config = {
         "env_file": str(Path(__file__).resolve().parent.parent.parent / ".env"),
