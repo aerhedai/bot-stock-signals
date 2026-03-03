@@ -2,6 +2,7 @@
 
 import { useApi } from "@/hooks/useApi";
 import { getHealth, getStatus } from "@/lib/api";
+import { formatDate } from "@/lib/format";
 import PageHeader from "@/components/layout/PageHeader";
 import StatusBadge from "@/components/ui/StatusBadge";
 import LoadingSkeleton from "@/components/ui/LoadingSkeleton";
@@ -37,7 +38,7 @@ export default function SettingsPage() {
               </div>
               <p>
                 <span className="text-text-muted">Timestamp:</span>{" "}
-                <span className="text-text-secondary">{health.data.timestamp}</span>
+                <span className="text-text-secondary">{formatDate(health.data.timestamp)}</span>
               </p>
             </div>
           )}
@@ -65,10 +66,7 @@ export default function SettingsPage() {
                     {service.name.replace("_", " ")}
                   </h3>
                   <p className="text-xs text-text-muted mt-0.5">
-                    {service.total_runs} runs &middot; Last:{" "}
-                    {service.last_run
-                      ? new Date(service.last_run).toLocaleString()
-                      : "Never"}
+                    {service.total_runs} runs &middot; Last: {formatDate(service.last_run)}
                   </p>
                 </div>
                 <StatusBadge status={service.running ? "running" : "stopped"} />

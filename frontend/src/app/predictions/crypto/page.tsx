@@ -2,6 +2,7 @@
 
 import { useApi } from "@/hooks/useApi";
 import { getCryptoSignals, getCryptoWatchlist, triggerCryptoScan } from "@/lib/api";
+import { formatDateShort } from "@/lib/format";
 import PageHeader from "@/components/layout/PageHeader";
 import LoadingSkeleton from "@/components/ui/LoadingSkeleton";
 import EmptyState from "@/components/ui/EmptyState";
@@ -71,7 +72,7 @@ export default function CryptoPredictionsPage() {
                     className="flex justify-between items-center border border-border-primary rounded-xl p-3 bg-surface-card"
                   >
                     <span className="font-medium text-sm">{symbol}</span>
-                    <span className="text-xs text-text-secondary">{ts}</span>
+                    <span className="text-xs text-text-secondary">{formatDateShort(ts)}</span>
                   </div>
                 ))}
               </div>
