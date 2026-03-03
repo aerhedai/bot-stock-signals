@@ -2,6 +2,7 @@
 
 import { useApi } from "@/hooks/useApi";
 import { getStatus } from "@/lib/api";
+import { formatDate } from "@/lib/format";
 
 export default function Dashboard() {
   const { data, loading, error } = useApi(getStatus);
@@ -44,16 +45,10 @@ export default function Dashboard() {
               <div className="text-sm text-gray-400 space-y-1">
                 <p>Total runs: {service.total_runs}</p>
                 <p>
-                  Last run:{" "}
-                  {service.last_run
-                    ? new Date(service.last_run).toLocaleString()
-                    : "Never"}
+                  Last run: {formatDate(service.last_run)}
                 </p>
                 <p>
-                  Next run:{" "}
-                  {service.next_run
-                    ? new Date(service.next_run).toLocaleString()
-                    : "-"}
+                  Next run: {formatDate(service.next_run)}
                 </p>
               </div>
             </div>

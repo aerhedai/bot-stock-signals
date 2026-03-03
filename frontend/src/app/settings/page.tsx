@@ -2,6 +2,7 @@
 
 import { useApi } from "@/hooks/useApi";
 import { getHealth } from "@/lib/api";
+import { formatDate } from "@/lib/format";
 
 export default function SettingsPage() {
   const health = useApi(getHealth);
@@ -29,7 +30,7 @@ export default function SettingsPage() {
               </p>
               <p>
                 <span className="text-gray-400">Timestamp:</span>{" "}
-                {health.data.timestamp}
+                {formatDate(health.data.timestamp)}
               </p>
             </div>
           )}

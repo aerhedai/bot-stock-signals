@@ -1,4 +1,5 @@
 import type { StockSignal } from "@/lib/types";
+import { formatDateShort } from "@/lib/format";
 
 interface Props {
   ticker: string;
@@ -29,7 +30,7 @@ export default function SignalCard({ ticker, signal }: Props) {
         </div>
         <div>
           <span className="text-gray-400">Time: </span>
-          <span className="text-xs">{signal.timestamp}</span>
+          <span className="text-xs">{formatDateShort(signal.timestamp)}</span>
         </div>
       </div>
     </div>

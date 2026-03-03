@@ -1,4 +1,5 @@
 import type { StockSignal } from "@/lib/types";
+import { formatDate } from "@/lib/format";
 
 interface Props {
   alerts: Record<string, StockSignal[]>;
@@ -34,7 +35,7 @@ export default function SignalTable({ alerts }: Props) {
               <td className="px-4 py-2">
                 {e.target ? `$${e.target.toFixed(2)}` : "-"}
               </td>
-              <td className="px-4 py-2 text-xs text-gray-400">{e.timestamp}</td>
+              <td className="px-4 py-2 text-xs text-gray-400">{formatDate(e.timestamp)}</td>
             </tr>
           ))}
         </tbody>

@@ -2,6 +2,7 @@
 
 import { useApi } from "@/hooks/useApi";
 import { getCryptoSignals, getCryptoWatchlist, triggerCryptoScan } from "@/lib/api";
+import { formatDateShort } from "@/lib/format";
 import { useState } from "react";
 
 export default function CryptoPage() {
@@ -60,7 +61,7 @@ export default function CryptoPage() {
                     className="flex justify-between items-center border border-gray-700 rounded p-3 bg-gray-900"
                   >
                     <span className="font-medium">{symbol}</span>
-                    <span className="text-xs text-gray-400">{ts}</span>
+                    <span className="text-xs text-gray-400">{formatDateShort(ts)}</span>
                   </div>
                 ))}
               </div>
