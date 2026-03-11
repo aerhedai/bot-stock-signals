@@ -1,24 +1,16 @@
 """Market analysis API endpoints."""
 
-from datetime import datetime
-
 from fastapi import APIRouter, HTTPException
 
 from app.models.analysis import AnalysisTriggerResponse, MarketAnalysisResponse
 
 router = APIRouter(prefix="/analysis", tags=["analysis"])
 
-# Lazy singleton — avoids importing at module load time so the app starts
-# cleanly even if Vertex AI credentials aren't configured yet.
-_analyzer = None
-
 
 def _get_analyzer():
-    global _analyzer
-    if _analyzer is None:
-        from app.engines.market_analysis.analyzer import MarketAnalyzer
-        _analyzer = MarketAnalyzer()
-    return _analyzer
+    # Deferred import keeps startup clean if Vertex AI credentials are absent.
+    from app.engines.market_analysis.analyzer import get_analyzer
+    return get_analyzer()
 
 
 @router.get("/stocks", response_model=MarketAnalysisResponse)

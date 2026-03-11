@@ -240,3 +240,18 @@ class MarketAnalyzer:
     def get_cached(self, category: str) -> Optional[MarketAnalysisResult]:
         """Return the latest cached result without triggering generation."""
         return self._cache.get(category)
+
+
+# ---------------------------------------------------------------------------
+# Singleton
+# ---------------------------------------------------------------------------
+
+_instance: Optional[MarketAnalyzer] = None
+
+
+def get_analyzer() -> MarketAnalyzer:
+    """Return the shared MarketAnalyzer instance, creating it on first call."""
+    global _instance
+    if _instance is None:
+        _instance = MarketAnalyzer()
+    return _instance
