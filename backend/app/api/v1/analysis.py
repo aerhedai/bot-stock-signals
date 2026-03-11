@@ -59,10 +59,12 @@ async def get_crypto_analysis():
 async def trigger_analysis():
     """Trigger fresh AI market analysis for both stocks and crypto."""
     try:
-        await _get_analyzer().run_all()
+        stock_reasoning, crypto_reasoning = await _get_analyzer().run_all()
         return AnalysisTriggerResponse(
             triggered=True,
-            message="Market analysis updated for stocks and crypto.",
+            message="Market analysis agent completed.",
+            stocks_reasoning=stock_reasoning,
+            crypto_reasoning=crypto_reasoning,
         )
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
