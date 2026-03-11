@@ -147,6 +147,7 @@ class AIService:
         config = types.GenerateContentConfig(
             tools=[vertex_tool],
             temperature=temperature,
+            thinking_config=types.ThinkingConfig(thinking_budget=0),
         )
 
         chat = self._client.aio.chats.create(

@@ -15,3 +15,5 @@ class MarketAnalysisResponse(BaseModel):
 class AnalysisTriggerResponse(BaseModel):
     triggered: bool
     message: str
+    stocks_reasoning: str = ""
+    crypto_reasoning: str = ""

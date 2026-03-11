@@ -2,7 +2,7 @@
 MarketAnalyzer — generates AI market summaries from recent news headlines.
 
 Reads from the news monitor's history file, groups headlines by category,
-and calls AIService.generate() using shared prompt templates.
+and uses the AgentOrchestrator to decide whether a fresh summary is needed.
 Results are cached in memory and persisted to a local JSON file so the
 last analysis survives a server restart.
 """
@@ -15,7 +15,8 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Optional
 
-from app.services.ai_service import PROMPT_TEMPLATES, get_ai_service
+from app.services.ai_service import AgentTool
+from app.services.agent_orchestrator import get_orchestrator
 
 logger = logging.getLogger(__name__)
 
@@ -40,12 +41,16 @@ class MarketAnalyzer:
     Categories map to the two sides of the news feed: 'stock' and 'crypto'.
     Analysis is triggered on a schedule via the scheduler, and also available
     on-demand through the POST /api/v1/analysis/trigger endpoint.
+
+    Uses the AgentOrchestrator so the agent decides whether to update the
+    cached summary rather than blindly regenerating it on every call.
     """
 
     def __init__(self, news_history_path: Optional[Path] = None):
         self._news_path = news_history_path or _NEWS_HISTORY_PATH
         self._cache: dict[str, MarketAnalysisResult] = {}
         self._load_cache()
+        self._register_tools()
 
     # ------------------------------------------------------------------
     # Cache persistence
@@ -108,45 +113,129 @@ class MarketAnalyzer:
             return []
 
     # ------------------------------------------------------------------
-    # Analysis generation
+    # Agent tool registration
     # ------------------------------------------------------------------
 
-    async def analyze(self, category: str) -> Optional[MarketAnalysisResult]:
-        """
-        Generate fresh AI analysis for 'stock' or 'crypto'.
+    def _register_tools(self):
+        get_orchestrator().register_tools([
+            AgentTool(
+                name="get_market_headlines",
+                description="Fetch recent news headlines for 'stock' or 'crypto' category.",
+                parameters={
+                    "type": "object",
+                    "properties": {
+                        "category": {"type": "string", "enum": ["stock", "crypto"]},
+                        "max_age_hours": {
+                            "type": "integer",
+                            "description": "Look-back window in hours (default 24).",
+                        },
+                    },
+                    "required": ["category"],
+                },
+                handler=self._tool_get_headlines,
+            ),
+            AgentTool(
+                name="get_market_analysis",
+                description="Read the current cached market analysis for 'stock' or 'crypto'.",
+                parameters={
+                    "type": "object",
+                    "properties": {
+                        "category": {"type": "string", "enum": ["stock", "crypto"]},
+                    },
+                    "required": ["category"],
+                },
+                handler=self._tool_get_current_analysis,
+            ),
+            AgentTool(
+                name="update_market_analysis",
+                description=(
+                    "Write a new market analysis to cache. Call only if the current analysis "
+                    "is outdated or missing. 5-7 sentences, no price predictions."
+                ),
+                parameters={
+                    "type": "object",
+                    "properties": {
+                        "category": {"type": "string", "enum": ["stock", "crypto"]},
+                        "analysis": {"type": "string"},
+                        "headline_count": {"type": "integer"},
+                    },
+                    "required": ["category", "analysis", "headline_count"],
+                },
+                handler=self._tool_update_analysis,
+            ),
+        ])
 
-        Returns the cached result if there are no headlines to analyse.
-        Returns None if there are no headlines and no cached result.
-        """
-        headlines = self._get_recent_headlines(category)
-        if not headlines:
-            logger.info("No recent %s headlines — returning cached result", category)
-            return self._cache.get(category)
+    # ------------------------------------------------------------------
+    # Tool handlers (synchronous — called by the agent loop)
+    # ------------------------------------------------------------------
 
-        template_key = f"market_analysis_{'stocks' if category == 'stock' else 'crypto'}"
-        prompt = PROMPT_TEMPLATES[template_key].format(
-            headlines="\n".join(f"- {h}" for h in headlines)
-        )
+    def _tool_get_headlines(self, category: str, max_age_hours: int = 24) -> dict:
+        headlines = self._get_recent_headlines(category, max_age_hours=max_age_hours)
+        return {
+            "category": category,
+            "headline_count": len(headlines),
+            "headlines": headlines,
+        }
 
-        ai = get_ai_service()
-        text = await ai.generate(prompt, temperature=0.5, max_tokens=1024)
+    def _tool_get_current_analysis(self, category: str) -> dict:
+        cached = self._cache.get(category)
+        if cached is None:
+            return {"category": category, "exists": False, "analysis": None}
+        return {
+            "category": category,
+            "exists": True,
+            "analysis": cached.analysis,
+            "headline_count": cached.headline_count,
+            "generated_at": cached.generated_at.isoformat(),
+        }
 
+    def _tool_update_analysis(
+        self, category: str, analysis: str, headline_count: int
+    ) -> dict:
         result = MarketAnalysisResult(
             category=category,
-            analysis=text,
-            headline_count=len(headlines),
+            analysis=analysis,
+            headline_count=headline_count,
         )
         self._cache[category] = result
         self._save_cache()
-
         logger.info(
-            "Generated %s analysis from %d headlines", category, len(headlines)
+            "Agent updated %s analysis (%d headlines)", category, headline_count
         )
-        return result
+        return {"success": True}
 
-    async def run_all(self):
-        """Analyse stocks and crypto in parallel."""
-        await asyncio.gather(self.analyze("stock"), self.analyze("crypto"))
+    # ------------------------------------------------------------------
+    # Analysis generation
+    # ------------------------------------------------------------------
+
+    async def analyze(self, category: str) -> str:
+        """
+        Run the agent to decide whether the cached analysis needs updating.
+
+        The agent reads the current headlines and cached summary, then either
+        updates the cache via update_market_analysis or leaves it unchanged.
+        Returns the agent's 1-2 sentence reasoning.
+        """
+        label = "stock market" if category == "stock" else "crypto market"
+        task = (
+            f"You are maintaining an up-to-date {label} analysis summary.\n\n"
+            f"Steps:\n"
+            f"1. Call get_market_headlines(category='{category}') to see available news.\n"
+            f"2. Call get_market_analysis(category='{category}') to read the existing summary.\n"
+            f"3. Decide: do the headlines include significant new developments not reflected "
+            f"in the current analysis? (new regulatory events, major moves, sentiment shifts)\n"
+            f"4. If yes — call update_market_analysis with a fresh 5-7 sentence summary "
+            f"covering key themes, sentiment, and risks. No price predictions.\n"
+            f"5. If no — do NOT call update_market_analysis.\n"
+            f"6. Reply with 1-2 sentences: what you decided and why."
+        )
+        tool_names = ["get_market_headlines", "get_market_analysis", "update_market_analysis"]
+        reasoning = await get_orchestrator().run_task(task, tool_names=tool_names)
+        return reasoning or f"Agent completed {category} analysis."
+
+    async def run_all(self) -> tuple[str, str]:
+        """Analyse stocks and crypto in parallel. Returns agent reasoning for each."""
+        return await asyncio.gather(self.analyze("stock"), self.analyze("crypto"))
 
     def get_cached(self, category: str) -> Optional[MarketAnalysisResult]:
         """Return the latest cached result without triggering generation."""
