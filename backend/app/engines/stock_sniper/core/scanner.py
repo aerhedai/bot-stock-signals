@@ -6,6 +6,7 @@ to identify high-probability undervalued stock opportunities.
 """
 
 import logging
+import time
 import yfinance as yf
 import pandas as pd
 import numpy as np
@@ -281,6 +282,9 @@ class SniperScanner:
 
         for ticker in tickers:
             try:
+                if scanned > 0:
+                    time.sleep(settings.REQUEST_DELAY_SECONDS)
+
                 signal = self.scan_single(ticker, verbose=verbose)
 
                 if signal and signal.is_valid_signal:
