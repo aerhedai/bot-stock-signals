@@ -118,6 +118,8 @@ class DashboardOrchestrator:
         raw = data.get("alerts", {})
         flat: list[dict] = []
         for ticker, entries in raw.items():
+            if isinstance(entries, dict):
+                entries = [entries]
             for e in entries:
                 flat.append({
                     "ticker": ticker,
@@ -147,6 +149,8 @@ class DashboardOrchestrator:
         raw = data.get("alerts", {})
         flat: list[DashboardStockSignal] = []
         for ticker, entries in raw.items():
+            if isinstance(entries, dict):
+                entries = [entries]
             for e in entries:
                 flat.append(DashboardStockSignal(
                     ticker=ticker,
