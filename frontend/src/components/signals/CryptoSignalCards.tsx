@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useMemo } from "react";
-import type { CryptoSignal } from "@/lib/types";
+import { useState, useMemo, useEffect } from "react";
+import type { CryptoSignal, NewsArticle } from "@/lib/types";
 import { formatDateShort } from "@/lib/format";
 import CryptoDetailChart from "@/components/charts/CryptoDetailChart";
+import { getTickerNews } from "@/lib/api";
 
 type SortKey = "score_desc" | "score_asc" | "date_desc" | "date_asc" | "symbol_asc";
 
@@ -64,8 +65,75 @@ function ChevronIcon({ open }: { open: boolean }) {
   );
 }
 
+type PanelTab = "chart" | "news";
+
+function CryptoNewsPanel({ symbol }: { symbol: string }) {
+  const ticker = symbol.replace("-USD", "").replace("-USDT", "");
+  const [articles, setArticles] = useState<NewsArticle[] | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+
+  const load = async () => {
+    if (loaded) return;
+    setLoading(true);
+    try {
+      const data = await getTickerNews(ticker);
+      setArticles(data.articles);
+    } catch {
+      setArticles([]);
+    } finally {
+      setLoading(false);
+      setLoaded(true);
+    }
+  };
+
+  useEffect(() => { load(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  if (loading) {
+    return (
+      <div className="py-4 text-center text-xs text-text-muted animate-pulse">
+        Loading news…
+      </div>
+    );
+  }
+
+  if (!articles || articles.length === 0) {
+    return (
+      <div className="py-4 text-center text-xs text-text-muted">
+        No recent company news found for {ticker}.
+      </div>
+    );
+  }
+
+  return (
+    <div className="space-y-2">
+      {articles.map((a) => (
+        <div key={a.id} className="rounded-lg bg-surface-root p-3">
+          <p className="text-xs font-medium text-text-primary leading-snug mb-1.5 line-clamp-2">
+            {a.headline}
+          </p>
+          <div className="flex items-center justify-between gap-2">
+            <span className="text-[10px] text-text-muted">{formatDateShort(a.sent_at)}</span>
+            {a.url && (
+              <a
+                href={a.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[10px] text-accent hover:underline flex-shrink-0"
+              >
+                Read more →
+              </a>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function CryptoSignalCard({ sig }: { sig: CryptoSignal }) {
   const [expanded, setExpanded] = useState(false);
+  const [panelTab, setPanelTab] = useState<PanelTab>("chart");
 
   return (
     <div className="border border-border-primary rounded-xl bg-surface-card overflow-hidden">
@@ -158,18 +226,41 @@ function CryptoSignalCard({ sig }: { sig: CryptoSignal }) {
         </div>
       </button>
 
-      {/* Expandable chart section */}
+      {/* Expandable panel */}
       {expanded && (
-        <div className="px-4 pb-4 border-t border-border-subtle bg-surface-card">
-          <CryptoDetailChart
-            symbol={sig.symbol}
-            fairValue={sig.fair_value_estimate}
-            entryPrice={sig.current_price}
-            signalTimestamp={sig.timestamp}
-            rsi={sig.rsi}
-            change24h={sig.change_24h}
-            change7d={sig.change_7d}
-          />
+        <div className="border-t border-border-subtle bg-surface-card">
+          {/* Tab bar */}
+          <div className="flex items-center gap-1 px-4 pt-3 pb-0">
+            {(["chart", "news"] as PanelTab[]).map((tab) => (
+              <button
+                key={tab}
+                onClick={() => setPanelTab(tab)}
+                className={`px-3 py-1 text-xs font-medium rounded-md transition-colors capitalize ${
+                  panelTab === tab
+                    ? "bg-accent text-white"
+                    : "text-text-muted hover:text-text-primary hover:bg-surface-hover"
+                }`}
+              >
+                {tab}
+              </button>
+            ))}
+          </div>
+
+          <div className="px-4 pb-4 pt-3">
+            {panelTab === "chart" ? (
+              <CryptoDetailChart
+                symbol={sig.symbol}
+                fairValue={sig.fair_value_estimate}
+                entryPrice={sig.current_price}
+                signalTimestamp={sig.timestamp}
+                rsi={sig.rsi}
+                change24h={sig.change_24h}
+                change7d={sig.change_7d}
+              />
+            ) : (
+              <CryptoNewsPanel symbol={sig.symbol} />
+            )}
+          </div>
         </div>
       )}
     </div>

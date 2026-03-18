@@ -189,6 +189,50 @@ class NewsMonitor:
             logger.error(f"Error in fetch_and_send: {e}", exc_info=True)
             return {'total': 0, 'new': 0, 'error': str(e)}
 
+    def fetch_ticker_news(self, tickers: List[str], articles_per_ticker: int = 5) -> Dict[str, int]:
+        """
+        Fetch and store company-specific news for a list of tickers.
+
+        Articles are stored in news history with their ticker association so the
+        agent and frontend can query per-ticker headlines. Nothing is sent to
+        Telegram — this is a background enrichment pass only.
+
+        Args:
+            tickers: List of stock ticker symbols to fetch news for
+            articles_per_ticker: Max articles to fetch per ticker
+
+        Returns:
+            Statistics dict with total fetched and new stored counts
+        """
+        stats = {'tickers': len(tickers), 'total': 0, 'new': 0, 'duplicate': 0}
+
+        for ticker in tickers:
+            articles = self.fetcher.fetch_company_news(ticker, limit=articles_per_ticker)
+            stats['total'] += len(articles)
+
+            for article in articles:
+                if self.history.is_sent(article.id):
+                    stats['duplicate'] += 1
+                    continue
+
+                self.history.mark_sent(
+                    news_id=article.id,
+                    category='stock',
+                    headline=article.headline,
+                    url=article.url,
+                    ticker=ticker,
+                )
+                stats['new'] += 1
+
+            # Brief pause to stay well within Finnhub's rate limit
+            time.sleep(0.3)
+
+        logger.info(
+            "Ticker news fetch complete: %d tickers, %d new, %d duplicate",
+            len(tickers), stats['new'], stats['duplicate'],
+        )
+        return stats
+
     def run_once(self) -> Dict[str, int]:
         """Run one cycle of news monitoring."""
         return self.fetch_and_send()

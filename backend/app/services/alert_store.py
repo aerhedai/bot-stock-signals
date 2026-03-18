@@ -4,7 +4,7 @@ Unified read/write for JSON alert files across all engine modules.
 
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
 
@@ -68,3 +68,26 @@ def save_crypto_alerts(alerts: dict[str, Any]) -> None:
 def get_news_history() -> dict[str, Any]:
     """Read news history from JSON."""
     return _read_json(_NEWS_HISTORY)
+
+
+def get_recent_signal_tickers(days: int = 30) -> list[str]:
+    """
+    Return unique stock tickers that have fired a signal within the last `days` days.
+
+    Used by the ticker news fetcher to know which companies to pull news for.
+    """
+    cutoff = datetime.now() - timedelta(days=days)
+    raw = _read_json(_STOCK_ALERTS).get("alerts", {})
+    tickers: list[str] = []
+    for ticker, entries in raw.items():
+        if isinstance(entries, dict):
+            entries = [entries]
+        for entry in entries:
+            ts_str = entry.get("timestamp", "")
+            try:
+                if datetime.fromisoformat(ts_str) >= cutoff:
+                    tickers.append(ticker)
+                    break
+            except ValueError:
+                pass
+    return tickers

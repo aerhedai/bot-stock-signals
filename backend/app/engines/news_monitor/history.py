@@ -9,7 +9,7 @@ import json
 import logging
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Dict, Set, Optional
+from typing import Dict, List, Set, Optional
 
 logger = logging.getLogger(__name__)
 
@@ -22,7 +22,7 @@ class NewsHistory:
     cleans up old entries (default: 7 days).
     """
 
-    def __init__(self, db_path: str, retention_days: int = 7):
+    def __init__(self, db_path: str, retention_days: int = 14):
         """
         Initialise news history manager.
 
@@ -105,26 +105,57 @@ class NewsHistory:
         """
         return news_id in self.sent_ids
 
-    def mark_sent(self, news_id: str, category: str, headline: str, url: Optional[str] = None):
+    def mark_sent(
+        self,
+        news_id: str,
+        category: str,
+        headline: str,
+        url: Optional[str] = None,
+        ticker: Optional[str] = None,
+    ):
         """
-        Mark a news article as sent.
+        Mark a news article as sent/stored.
 
         Args:
             news_id: Unique identifier for the news article
             category: Category (stock or crypto)
             headline: News headline
             url: Optional URL to the article
+            ticker: Optional ticker symbol for company-specific news
         """
-        self.history[news_id] = {
+        entry: Dict = {
             'sent_at': datetime.now().isoformat(),
             'category': category,
             'headline': headline,
-            'url': url
+            'url': url,
         }
+        if ticker:
+            entry['ticker'] = ticker.upper()
+        self.history[news_id] = entry
         self.sent_ids.add(news_id)
         self._save_history()
 
         logger.debug(f"Marked news as sent: {news_id[:50]}")
+
+    def get_ticker_history(self, ticker: str, limit: int = 15) -> List[dict]:
+        """
+        Return recent stored articles for a specific ticker symbol.
+
+        Args:
+            ticker: Stock ticker symbol (case-insensitive)
+            limit: Maximum number of articles to return
+
+        Returns:
+            List of article dicts ordered by sent_at descending
+        """
+        upper = ticker.upper()
+        matches = [
+            {"id": nid, **entry}
+            for nid, entry in self.history.items()
+            if entry.get("ticker", "").upper() == upper
+        ]
+        matches.sort(key=lambda x: x.get("sent_at", ""), reverse=True)
+        return matches[:limit]
 
     def get_stats(self) -> Dict[str, int]:
         """Get statistics about sent news."""

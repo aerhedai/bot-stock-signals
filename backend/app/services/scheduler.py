@@ -30,6 +30,9 @@ class ScanStats:
         self.news_total_runs: int = 0
         self.news_last_articles: int = 0
 
+        self.ticker_news_last_run: Optional[datetime] = None
+        self.ticker_news_total_runs: int = 0
+
         self.analysis_last_run: Optional[datetime] = None
         self.analysis_total_runs: int = 0
 
@@ -143,6 +146,30 @@ class SchedulerService:
         except Exception as e:
             logger.error(f"News fetch error: {e}", exc_info=True)
 
+    async def _run_ticker_news_fetch(self):
+        """Fetch and store company-specific news for recently active signal tickers."""
+        try:
+            from app.engines.news_monitor.monitor import NewsMonitor
+            from app.services.alert_store import get_recent_signal_tickers
+
+            tickers = get_recent_signal_tickers(days=30)
+            if not tickers:
+                logger.info("Ticker news fetch skipped: no recent signal tickers")
+                return
+
+            monitor = NewsMonitor()
+            stats = await asyncio.to_thread(monitor.fetch_ticker_news, tickers)
+
+            self.stats.ticker_news_last_run = datetime.now()
+            self.stats.ticker_news_total_runs += 1
+
+            logger.info(
+                "Ticker news fetch complete: %d tickers, %d new articles",
+                len(tickers), stats.get("new", 0),
+            )
+        except Exception as e:
+            logger.error(f"Ticker news fetch error: {e}", exc_info=True)
+
     async def _run_market_analysis(self):
         """Run AI market analysis using recent news headlines."""
         try:
@@ -183,6 +210,13 @@ class SchedulerService:
             minutes=settings.news_scan_interval,
             id="news_fetch",
             name="News Monitor Fetch",
+        )
+        self.scheduler.add_job(
+            self._run_ticker_news_fetch,
+            "interval",
+            minutes=60,
+            id="ticker_news_fetch",
+            name="Ticker News Fetch",
         )
         self.scheduler.add_job(
             self._run_market_analysis,
