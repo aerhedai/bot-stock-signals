@@ -2,11 +2,11 @@ import Link from "next/link";
 import type { StockSignal } from "@/lib/types";
 
 interface Props {
-  alerts: Record<string, StockSignal[]>;
+  alerts: Record<string, StockSignal>;
 }
 
 export default function RecentPredictions({ alerts }: Props) {
-  const entries = Object.values(alerts).flat().slice(0, 5);
+  const entries = Object.values(alerts).slice(0, 5);
 
   return (
     <div className="border border-border-primary rounded-xl bg-surface-card">

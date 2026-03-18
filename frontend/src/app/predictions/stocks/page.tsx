@@ -48,7 +48,7 @@ export default function StockPredictionsPage() {
 
       <section className="mb-8">
         <p className="text-[11px] font-medium uppercase tracking-wider text-text-muted mb-3">
-          Signal History
+          Predictions
         </p>
         {signals.loading && <LoadingSkeleton lines={4} />}
         {signals.error && <p className="text-semantic-error text-sm">{signals.error}</p>}

@@ -389,10 +389,10 @@ class CryptoMonitor:
                 trigger_type=trigger['type'],
                 trigger_description=trigger['description'],
 
-                # Price changes
-                change_1h=changes.get('1d'),  # Using daily data now
-                change_24h=changes.get('7d'),
-                change_7d=changes.get('30d'),
+                # Price changes (daily data — 1d candle = closest approximation to 24 h)
+                change_1h=None,
+                change_24h=changes.get('1d'),
+                change_7d=changes.get('7d'),
 
                 # Technical indicators
                 rsi=rsi,

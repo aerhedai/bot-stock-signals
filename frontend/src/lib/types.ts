@@ -29,16 +29,19 @@ export interface ScanResultResponse {
 export interface StockSignal {
   ticker: string;
   method: string;
+  time_horizon: string;
   score: number;
   price: number;
   target: number | null;
+  reason: string;
+  ema_value: number | null;
   timestamp: string;
 }
 
 export interface StockAlertHistory {
   total_alerts: number;
   unique_tickers: number;
-  alerts: Record<string, StockSignal[]>;
+  alerts: Record<string, StockSignal>;
 }
 
 export interface WatchlistResponse {
@@ -53,8 +56,16 @@ export interface CryptoSignal {
   current_price: number;
   valuation_method: string;
   valuation_score: number;
+  fair_value_estimate: number | null;
+  discount_percentage: number | null;
   trigger_type: string;
+  trigger_description: string;
+  rsi: number | null;
+  bollinger_position: string | null;
+  change_24h: number | null;
+  change_7d: number | null;
   severity: string;
+  confidence: string;
   combined_score: number;
   timestamp: string;
 }
@@ -66,7 +77,7 @@ export interface CryptoWatchlistResponse {
 
 export interface CryptoAlertHistory {
   total_alerts: number;
-  alerts: Record<string, string>;
+  alerts: Record<string, CryptoSignal>;
 }
 
 export interface NewsArticle {

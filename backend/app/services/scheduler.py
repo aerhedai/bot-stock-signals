@@ -47,11 +47,31 @@ class SchedulerService:
         try:
             from app.engines.stock_sniper.config import WATCHLIST
             from app.engines.stock_sniper.core import get_scanner
+            from app.services.alert_store import get_stock_alerts, save_stock_alerts
 
             scanner = get_scanner()
             signals = await asyncio.to_thread(
                 scanner.scan_multiple, WATCHLIST, False, False
             )
+
+            # Upsert each signal into the alerts store (overwrite per ticker)
+            existing = get_stock_alerts().get("alerts", {})
+            for sig in signals:
+                existing[sig.ticker] = {
+                    "timestamp": sig.timestamp.isoformat(),
+                    "method": sig.strategy_result.method_name,
+                    "time_horizon": sig.strategy_result.time_horizon.value,
+                    "score": sig.strategy_result.score,
+                    "price": sig.strategy_result.current_price,
+                    "target": sig.strategy_result.target_price,
+                    "reason": sig.strategy_result.reason,
+                    "ema_value": (
+                        sig.trigger_result.ema_value
+                        if sig.trigger_result else None
+                    ),
+                }
+            if signals:
+                save_stock_alerts(existing)
 
             self.stats.stock_last_run = datetime.now()
             self.stats.stock_total_runs += 1
@@ -66,11 +86,38 @@ class SchedulerService:
         try:
             from app.engines.crypto_sniper.config import CRYPTO_WATCHLIST
             from app.engines.crypto_sniper.core import CryptoMonitor
+            from app.services.alert_store import get_crypto_alerts, save_crypto_alerts
 
             monitor = CryptoMonitor()
             signals = await asyncio.to_thread(
                 monitor.scan_multiple, CRYPTO_WATCHLIST
             )
+
+            # Upsert each signal into the alerts store (overwrite per symbol)
+            existing = get_crypto_alerts().get("alerts", {})
+            for sig in signals:
+                existing[sig.symbol] = {
+                    "symbol": sig.symbol,
+                    "name": sig.name,
+                    "category": sig.category,
+                    "current_price": sig.current_price,
+                    "valuation_method": sig.valuation_method,
+                    "valuation_score": sig.valuation_score,
+                    "fair_value_estimate": sig.fair_value_estimate,
+                    "discount_percentage": sig.discount_percentage,
+                    "trigger_type": sig.trigger_type,
+                    "trigger_description": sig.trigger_description,
+                    "rsi": sig.rsi,
+                    "bollinger_position": sig.bollinger_position,
+                    "change_24h": sig.change_24h,
+                    "change_7d": sig.change_7d,
+                    "severity": sig.severity,
+                    "confidence": sig.confidence,
+                    "combined_score": sig.combined_score,
+                    "timestamp": sig.timestamp.isoformat(),
+                }
+            if signals:
+                save_crypto_alerts(existing)
 
             self.stats.crypto_last_run = datetime.now()
             self.stats.crypto_total_runs += 1
