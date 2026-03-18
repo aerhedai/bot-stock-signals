@@ -13,6 +13,7 @@ import type {
   AnalysisTriggerResponse,
 } from "./types";
 
+
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
 async function fetchApi<T>(path: string, options?: RequestInit): Promise<T> {

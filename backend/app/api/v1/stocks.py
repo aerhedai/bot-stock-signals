@@ -15,28 +15,34 @@ router = APIRouter(prefix="/stocks", tags=["stocks"])
 
 @router.get("/signals", response_model=StockAlertHistoryResponse)
 async def get_stock_signals(store=Depends(get_alert_store)):
-    """Get stock alert history from JSON."""
+    """Get the latest stock prediction per ticker."""
     data = store.get_stock_alerts()
     raw_alerts = data.get("alerts", {})
 
-    alerts = {}
-    total = 0
-    for ticker, entries in raw_alerts.items():
-        alerts[ticker] = [
-            StockSignalResponse(
-                ticker=ticker,
-                method=e.get("method", ""),
-                score=e.get("score", 0),
-                price=e.get("price", 0),
-                target=e.get("target"),
-                timestamp=e.get("timestamp", ""),
-            )
-            for e in entries
-        ]
-        total += len(entries)
+    alerts: dict[str, StockSignalResponse] = {}
+    for ticker, entry in raw_alerts.items():
+        # Support old list format — take the most recent entry
+        if isinstance(entry, list):
+            if not entry:
+                continue
+            entry = entry[-1]
+
+        alerts[ticker] = StockSignalResponse(
+            ticker=ticker,
+            method=entry.get("method", ""),
+            time_horizon=entry.get("time_horizon", ""),
+            score=entry.get("score", 0),
+            price=entry.get("price", 0),
+            target=entry.get("target"),
+            reason=entry.get("reason", ""),
+            ema_value=entry.get("ema_value"),
+            timestamp=entry.get("timestamp", ""),
+        )
 
     return StockAlertHistoryResponse(
-        total_alerts=total, unique_tickers=len(raw_alerts), alerts=alerts
+        total_alerts=len(alerts),
+        unique_tickers=len(alerts),
+        alerts=alerts,
     )
 
 
