@@ -55,29 +55,52 @@ async def get_news_feed(store=Depends(get_alert_store)):
 
 @router.get("/ticker/{ticker}", response_model=TickerNewsFeedResponse)
 async def get_ticker_news(ticker: str):
-    """Get recent news articles for a specific stock ticker (last 14 days)."""
+    """
+    Get recent news articles for a specific stock ticker (last 14 days).
+
+    Checks stored history first. If fewer than 3 articles are found, fetches
+    live from Finnhub and stores the results so subsequent calls are instant.
+    """
+    import asyncio
     from app.engines.news_monitor.config import config
     from app.engines.news_monitor.history import NewsHistory
+    from app.engines.news_monitor.fetcher import NewsFetcher
 
+    upper = ticker.upper()
     history = NewsHistory(str(config.NEWS_HISTORY_FILE))
-    raw = history.get_ticker_history(ticker.upper(), limit=20)
+    raw = history.get_ticker_history(upper, limit=20)
+
+    if len(raw) < 3:
+        # Nothing useful cached — fetch live from Finnhub and store
+        fetcher = NewsFetcher()
+        live = await asyncio.to_thread(fetcher.fetch_company_news, upper, 15)
+        for article in live:
+            if not history.is_sent(article.id):
+                history.mark_sent(
+                    news_id=article.id,
+                    category="stock",
+                    headline=article.headline,
+                    url=article.url,
+                    ticker=upper,
+                )
+        raw = history.get_ticker_history(upper, limit=20)
 
     articles = [
         NewsArticleResponse(
             id=entry.get("id", ""),
             headline=entry.get("headline", ""),
             summary="",
-            source="",
+            source=entry.get("source", ""),
             url=entry.get("url", "") or "",
             category="stock",
             sent_at=entry.get("sent_at", ""),
-            ticker=ticker.upper(),
+            ticker=upper,
         )
         for entry in raw
     ]
 
     return TickerNewsFeedResponse(
-        ticker=ticker.upper(),
+        ticker=upper,
         total=len(articles),
         articles=articles,
     )
