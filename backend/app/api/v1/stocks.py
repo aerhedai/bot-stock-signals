@@ -12,7 +12,7 @@ from app.dependencies import get_scheduler, get_alert_store
 from app.models.common import ScanResultResponse
 from app.models.stocks import (
     StockAlertHistoryResponse, StockSignalResponse, WatchlistResponse,
-    StockChartResponse, StockChartPoint,
+    StockChartResponse, StockChartPoint, AiInsightResponse,
 )
 from app.services.scheduler import SchedulerService
 
@@ -90,6 +90,56 @@ async def get_stock_chart(ticker: str, store=Depends(get_alert_store)):
         target_price=target_price,
         signal_date=signal_date,
         signal_price=signal_price,
+    )
+
+
+@router.get("/ai-insight/{ticker}", response_model=AiInsightResponse)
+async def get_stock_ai_insight(ticker: str, store=Depends(get_alert_store)):
+    """Generate an AI-powered insight for a stock ticker based on signal data and recent news."""
+    from app.services.ai_service import get_ai_service
+    from app.services import alert_store as store_svc
+
+    raw_alerts = store.get_stock_alerts().get("alerts", {})
+    entry = raw_alerts.get(ticker)
+    if isinstance(entry, list):
+        entry = entry[-1] if entry else None
+
+    if not entry:
+        raise HTTPException(status_code=404, detail=f"No signal found for {ticker}")
+
+    # Gather relevant news headlines
+    news_data = store_svc.get_news_history()
+    all_articles = list(news_data.get("news", {}).values())
+    ticker_lower = ticker.lower()
+    related = [
+        a["headline"] for a in all_articles
+        if isinstance(a, dict) and ticker_lower in a.get("headline", "").lower()
+    ][:5]
+
+    news_section = "\n".join(f"- {h}" for h in related) if related else "No recent news found for this ticker."
+
+    prompt = (
+        f"You are a financial analyst providing a concise insight for a trading signal.\n\n"
+        f"Ticker: {ticker}\n"
+        f"Valuation method: {entry.get('method', 'N/A')}\n"
+        f"Signal score: {entry.get('score', 'N/A')}/100\n"
+        f"Entry price: ${entry.get('price', 'N/A')}\n"
+        f"Target price: ${entry.get('target', 'N/A')}\n"
+        f"Time horizon: {entry.get('time_horizon', 'N/A')}\n"
+        f"Reason: {entry.get('reason', 'N/A')}\n\n"
+        f"Related recent news headlines:\n{news_section}\n\n"
+        f"Write 3-4 sentences covering: (1) why this ticker is interesting right now based on the signal, "
+        f"(2) any relevant catalysts or risks from the news, (3) what to watch for. "
+        f"Be specific and actionable. Do not repeat the raw numbers already shown in the UI."
+    )
+
+    ai = get_ai_service()
+    insight = await ai.generate(prompt, temperature=0.5, max_tokens=300)
+
+    return AiInsightResponse(
+        ticker=ticker,
+        insight=insight,
+        generated_at=datetime.now().isoformat(),
     )
 
 

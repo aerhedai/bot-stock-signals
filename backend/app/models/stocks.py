@@ -44,3 +44,9 @@ class StockChartResponse(BaseModel):
     target_price: Optional[float] = None
     signal_date: Optional[str] = None
     signal_price: Optional[float] = None
+
+
+class AiInsightResponse(BaseModel):
+    ticker: str
+    insight: str
+    generated_at: str

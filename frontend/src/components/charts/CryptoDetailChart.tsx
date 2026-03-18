@@ -6,7 +6,8 @@ import {
   XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 } from "recharts";
 import type { CryptoChartData } from "@/lib/types";
-import { getCryptoChart } from "@/lib/api";
+import { getCryptoChart, getCryptoAiInsight } from "@/lib/api";
+import { BrainCircuit } from "@/components/icons";
 
 interface Props {
   symbol: string;
@@ -56,6 +57,9 @@ export default function CryptoDetailChart({ symbol, fairValue, entryPrice, signa
   const [chart, setChart] = useState<CryptoChartData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [insight, setInsight] = useState<string | null>(null);
+  const [insightLoading, setInsightLoading] = useState(false);
+  const [insightError, setInsightError] = useState<string | null>(null);
 
   useEffect(() => {
     setLoading(true);
@@ -65,6 +69,16 @@ export default function CryptoDetailChart({ symbol, fairValue, entryPrice, signa
       .catch(() => setError("Failed to load chart data"))
       .finally(() => setLoading(false));
   }, [symbol]);
+
+  const fetchInsight = () => {
+    if (insight || insightLoading) return;
+    setInsightLoading(true);
+    setInsightError(null);
+    getCryptoAiInsight(symbol)
+      .then(r => setInsight(r.insight))
+      .catch(() => setInsightError("Could not generate insight. Try again later."))
+      .finally(() => setInsightLoading(false));
+  };
 
   if (loading) {
     return (
@@ -207,6 +221,37 @@ export default function CryptoDetailChart({ symbol, fairValue, entryPrice, signa
           <RsiGauge rsi={rsi} />
         </div>
       )}
+
+      {/* AI Insight */}
+      <div className="mt-4 border-t border-border-subtle pt-3">
+        {!insight && !insightLoading && (
+          <button
+            onClick={fetchInsight}
+            className="flex items-center gap-1.5 text-xs text-accent hover:text-accent-hover transition-colors"
+          >
+            <BrainCircuit className="w-3.5 h-3.5" />
+            Get AI insight
+          </button>
+        )}
+        {insightLoading && (
+          <div className="flex items-center gap-2 text-xs text-text-muted">
+            <span className="inline-block w-3 h-3 border border-accent border-t-transparent rounded-full animate-spin" />
+            Generating insight…
+          </div>
+        )}
+        {insightError && (
+          <p className="text-xs text-semantic-error">{insightError}</p>
+        )}
+        {insight && (
+          <div className="bg-accent/5 border border-accent/20 rounded-lg p-3">
+            <div className="flex items-center gap-1.5 mb-1.5">
+              <BrainCircuit className="w-3 h-3 text-accent" />
+              <p className="text-[10px] uppercase tracking-wider text-accent font-medium">AI Insight</p>
+            </div>
+            <p className="text-xs text-text-secondary leading-relaxed">{insight}</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

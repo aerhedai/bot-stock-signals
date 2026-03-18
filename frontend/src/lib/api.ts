@@ -13,6 +13,8 @@ import type {
   AnalysisTriggerResponse,
   StockChartData,
   CryptoChartData,
+  DashboardResponse,
+  AiInsightResponse,
 } from "./types";
 
 
@@ -65,3 +67,13 @@ export const getCryptoAnalysis = () =>
   fetchApi<MarketAnalysisResponse>("/api/v1/analysis/crypto");
 export const triggerAnalysis = () =>
   fetchApi<AnalysisTriggerResponse>("/api/v1/analysis/trigger", { method: "POST" });
+
+// Dashboard (single unified endpoint)
+export const getDashboard = () =>
+  fetchApi<DashboardResponse>("/api/v1/dashboard");
+
+// AI Insights
+export const getStockAiInsight = (ticker: string) =>
+  fetchApi<AiInsightResponse>(`/api/v1/stocks/ai-insight/${ticker}`);
+export const getCryptoAiInsight = (symbol: string) =>
+  fetchApi<AiInsightResponse>(`/api/v1/crypto/ai-insight/${encodeURIComponent(symbol)}`);

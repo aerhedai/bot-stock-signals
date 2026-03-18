@@ -139,3 +139,40 @@ export interface CryptoChartData {
   signal_date: string | null;
   signal_price: number | null;
 }
+
+export interface DashboardStockSignal {
+  ticker: string;
+  method: string;
+  score: number;
+  price: number;
+  target: number | null;
+  timestamp: string;
+}
+
+export interface DashboardCryptoSignal {
+  symbol: string;
+  timestamp: string;
+}
+
+export interface DashboardNewsItem {
+  headline: string;
+  category: string;
+  sent_at: string;
+  url: string;
+}
+
+export interface DashboardResponse {
+  generated_at: string;
+  agent_reasoning: string;
+  stock_signals: DashboardStockSignal[];
+  crypto_signals: DashboardCryptoSignal[];
+  news: DashboardNewsItem[];
+  stock_analysis: MarketAnalysisResponse | null;
+  crypto_analysis: MarketAnalysisResponse | null;
+}
+
+export interface AiInsightResponse {
+  ticker: string;
+  insight: string;
+  generated_at: string;
+}

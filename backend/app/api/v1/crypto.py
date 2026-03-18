@@ -12,7 +12,7 @@ from app.dependencies import get_scheduler, get_alert_store
 from app.models.common import ScanResultResponse
 from app.models.crypto import (
     CryptoAlertHistoryResponse, CryptoSignalResponse, CryptoWatchlistResponse,
-    CryptoChartResponse, CryptoChartPoint,
+    CryptoChartResponse, CryptoChartPoint, CryptoAiInsightResponse,
 )
 from app.services.scheduler import SchedulerService
 
@@ -119,6 +119,64 @@ async def get_crypto_chart(symbol: str, store=Depends(get_alert_store)):
         fair_value=fair_value,
         signal_date=signal_date,
         signal_price=signal_price,
+    )
+
+
+@router.get("/ai-insight/{symbol:path}", response_model=CryptoAiInsightResponse)
+async def get_crypto_ai_insight(symbol: str, store=Depends(get_alert_store)):
+    """Generate an AI-powered insight for a crypto symbol based on signal data and recent news."""
+    from app.services.ai_service import get_ai_service
+    from app.services import alert_store as store_svc
+
+    raw_alerts = store.get_crypto_alerts().get("alerts", {})
+    entry = raw_alerts.get(symbol)
+    if isinstance(entry, str):
+        entry = None
+
+    if not entry:
+        raise HTTPException(status_code=404, detail=f"No signal found for {symbol}")
+
+    # Gather relevant news headlines
+    news_data = store_svc.get_news_history()
+    all_articles = list(news_data.get("news", {}).values())
+    name = entry.get("name", symbol).lower()
+    sym_short = symbol.replace("-USD", "").lower()
+    related = [
+        a["headline"] for a in all_articles
+        if isinstance(a, dict) and (
+            sym_short in a.get("headline", "").lower()
+            or name in a.get("headline", "").lower()
+        )
+    ][:5]
+
+    news_section = "\n".join(f"- {h}" for h in related) if related else "No recent news found for this asset."
+
+    discount = entry.get("discount_percentage")
+    discount_str = f"{discount:.1f}% discount to fair value" if discount else "N/A"
+
+    prompt = (
+        f"You are a crypto analyst providing a concise insight for a trading signal.\n\n"
+        f"Asset: {entry.get('name', symbol)} ({sym_short.upper()})\n"
+        f"Category: {entry.get('category', 'N/A')}\n"
+        f"Valuation method: {entry.get('valuation_method', 'N/A')}\n"
+        f"Combined score: {entry.get('combined_score', 'N/A')}/100\n"
+        f"Trigger: {entry.get('trigger_type', 'N/A')} — {entry.get('trigger_description', '')}\n"
+        f"Fair value discount: {discount_str}\n"
+        f"RSI: {entry.get('rsi', 'N/A')}\n"
+        f"Bollinger position: {entry.get('bollinger_position', 'N/A')}\n\n"
+        f"Related recent news headlines:\n{news_section}\n\n"
+        f"Write 3-4 sentences covering: (1) why this asset is interesting right now based on the signal, "
+        f"(2) any relevant catalysts or risks from the news, (3) key technical levels to watch. "
+        f"Be specific and actionable. Do not repeat the raw numbers already shown in the UI."
+    )
+
+    ai = get_ai_service()
+    insight = await ai.generate(prompt, temperature=0.5, max_tokens=300)
+
+    return CryptoAiInsightResponse(
+        ticker=symbol,
+        insight=insight,
+        generated_at=datetime.now().isoformat(),
     )
 
 

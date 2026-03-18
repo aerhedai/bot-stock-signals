@@ -50,3 +50,9 @@ class CryptoChartResponse(BaseModel):
     fair_value: Optional[float] = None
     signal_date: Optional[str] = None
     signal_price: Optional[float] = None
+
+
+class CryptoAiInsightResponse(BaseModel):
+    ticker: str
+    insight: str
+    generated_at: str
