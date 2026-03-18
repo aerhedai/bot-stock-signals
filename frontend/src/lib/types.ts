@@ -108,3 +108,34 @@ export interface AnalysisTriggerResponse {
   triggered: boolean;
   message: string;
 }
+
+export interface StockChartPoint {
+  date: string;
+  price: number;
+  ema20: number | null;
+}
+
+export interface StockChartData {
+  ticker: string;
+  data: StockChartPoint[];
+  target_price: number | null;
+  signal_date: string | null;
+  signal_price: number | null;
+}
+
+export interface CryptoChartPoint {
+  date: string;
+  price: number;
+  bb_upper: number | null;
+  bb_mid: number | null;
+  bb_lower: number | null;
+  rsi: number | null;
+}
+
+export interface CryptoChartData {
+  symbol: string;
+  data: CryptoChartPoint[];
+  fair_value: number | null;
+  signal_date: string | null;
+  signal_price: number | null;
+}

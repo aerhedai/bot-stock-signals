@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import type { StockSignal } from "@/lib/types";
 import { formatDateShort } from "@/lib/format";
+import StockDetailChart from "@/components/charts/StockDetailChart";
 
 type SortKey = "score_desc" | "score_asc" | "date_desc" | "date_asc" | "ticker_asc";
 
@@ -40,6 +41,107 @@ function HorizonBadge({ horizon }: { horizon: string }) {
     <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${colour}`}>
       {label}
     </span>
+  );
+}
+
+function ChevronIcon({ open }: { open: boolean }) {
+  return (
+    <svg
+      className={`w-4 h-4 text-text-muted transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+      fill="none" viewBox="0 0 24 24" stroke="currentColor"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+    </svg>
+  );
+}
+
+function StockSignalCard({ sig }: { sig: StockSignal }) {
+  const [expanded, setExpanded] = useState(false);
+
+  const upside =
+    sig.target && sig.price > 0
+      ? ((sig.target - sig.price) / sig.price) * 100
+      : null;
+
+  return (
+    <div className="border border-border-primary rounded-xl bg-surface-card overflow-hidden">
+      {/* Clickable card header */}
+      <button
+        className="w-full text-left p-4 hover:bg-surface-hover transition-colors"
+        onClick={() => setExpanded(v => !v)}
+      >
+        {/* Header row */}
+        <div className="flex items-start justify-between gap-3 mb-3">
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="text-base font-bold text-text-primary">{sig.ticker}</span>
+            <HorizonBadge horizon={sig.time_horizon} />
+            <span className="text-xs text-text-muted bg-surface-active px-2 py-0.5 rounded">
+              {sig.method}
+            </span>
+          </div>
+          <div className="flex items-center gap-2">
+            <ScoreBadge score={sig.score} />
+            <ChevronIcon open={expanded} />
+          </div>
+        </div>
+
+        {/* Price row */}
+        <div className="flex items-center gap-4 mb-2 text-sm">
+          <div>
+            <span className="text-text-muted text-xs">Price</span>
+            <p className="font-semibold text-text-primary">${sig.price.toFixed(2)}</p>
+          </div>
+          {sig.target && (
+            <>
+              <div className="text-text-muted">→</div>
+              <div>
+                <span className="text-text-muted text-xs">Target</span>
+                <p className="font-semibold text-text-primary">
+                  ${sig.target.toFixed(2)}
+                  {upside !== null && (
+                    <span className={`ml-1 text-xs font-medium ${upside >= 0 ? "text-semantic-success" : "text-semantic-error"}`}>
+                      ({upside >= 0 ? "+" : ""}{upside.toFixed(1)}%)
+                    </span>
+                  )}
+                </p>
+              </div>
+            </>
+          )}
+          {sig.ema_value && (
+            <div className="ml-auto text-right">
+              <span className="text-text-muted text-xs">EMA(20)</span>
+              <p className="text-sm text-text-secondary">${sig.ema_value.toFixed(2)}</p>
+            </div>
+          )}
+        </div>
+
+        {/* Reason */}
+        {sig.reason && (
+          <p className="text-xs text-text-secondary leading-relaxed border-t border-border-subtle pt-2 mt-2 line-clamp-2">
+            {sig.reason}
+          </p>
+        )}
+
+        {/* Footer */}
+        <div className="flex items-center justify-between mt-2 pt-2 border-t border-border-subtle">
+          <span className="text-xs text-text-muted">{sig.time_horizon}</span>
+          <span className="text-xs text-text-muted">{formatDateShort(sig.timestamp)}</span>
+        </div>
+      </button>
+
+      {/* Expandable chart section */}
+      {expanded && (
+        <div className="px-4 pb-4 border-t border-border-subtle bg-surface-card">
+          <StockDetailChart
+            ticker={sig.ticker}
+            targetPrice={sig.target}
+            entryPrice={sig.price}
+            signalTimestamp={sig.timestamp}
+            timeHorizon={sig.time_horizon}
+          />
+        </div>
+      )}
+    </div>
   );
 }
 
@@ -89,74 +191,9 @@ export default function SignalTable({ alerts }: Props) {
 
       {/* Signal cards */}
       <div className="space-y-3">
-        {entries.map((sig) => {
-          const upside =
-            sig.target && sig.price > 0
-              ? ((sig.target - sig.price) / sig.price) * 100
-              : null;
-
-          return (
-            <div
-              key={sig.ticker}
-              className="border border-border-primary rounded-xl p-4 bg-surface-card hover:bg-surface-hover transition-colors"
-            >
-              {/* Header row */}
-              <div className="flex items-start justify-between gap-3 mb-3">
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span className="text-base font-bold text-text-primary">{sig.ticker}</span>
-                  <HorizonBadge horizon={sig.time_horizon} />
-                  <span className="text-xs text-text-muted bg-surface-active px-2 py-0.5 rounded">
-                    {sig.method}
-                  </span>
-                </div>
-                <ScoreBadge score={sig.score} />
-              </div>
-
-              {/* Price row */}
-              <div className="flex items-center gap-4 mb-2 text-sm">
-                <div>
-                  <span className="text-text-muted text-xs">Price</span>
-                  <p className="font-semibold text-text-primary">${sig.price.toFixed(2)}</p>
-                </div>
-                {sig.target && (
-                  <>
-                    <div className="text-text-muted">→</div>
-                    <div>
-                      <span className="text-text-muted text-xs">Target</span>
-                      <p className="font-semibold text-text-primary">
-                        ${sig.target.toFixed(2)}
-                        {upside !== null && (
-                          <span className={`ml-1 text-xs font-medium ${upside >= 0 ? "text-semantic-success" : "text-semantic-error"}`}>
-                            ({upside >= 0 ? "+" : ""}{upside.toFixed(1)}%)
-                          </span>
-                        )}
-                      </p>
-                    </div>
-                  </>
-                )}
-                {sig.ema_value && (
-                  <div className="ml-auto text-right">
-                    <span className="text-text-muted text-xs">EMA(20)</span>
-                    <p className="text-sm text-text-secondary">${sig.ema_value.toFixed(2)}</p>
-                  </div>
-                )}
-              </div>
-
-              {/* Reason */}
-              {sig.reason && (
-                <p className="text-xs text-text-secondary leading-relaxed border-t border-border-subtle pt-2 mt-2 line-clamp-2">
-                  {sig.reason}
-                </p>
-              )}
-
-              {/* Footer */}
-              <div className="flex items-center justify-between mt-2 pt-2 border-t border-border-subtle">
-                <span className="text-xs text-text-muted">{sig.time_horizon}</span>
-                <span className="text-xs text-text-muted">{formatDateShort(sig.timestamp)}</span>
-              </div>
-            </div>
-          );
-        })}
+        {entries.map((sig) => (
+          <StockSignalCard key={sig.ticker} sig={sig} />
+        ))}
       </div>
     </div>
   );

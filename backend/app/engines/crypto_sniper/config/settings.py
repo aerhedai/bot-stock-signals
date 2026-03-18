@@ -65,6 +65,12 @@ ALERT_COOLDOWN_MINUTES = int(os.getenv('ALERT_COOLDOWN_MINUTES', 60))
 ALERT_HISTORY_FILE = str(BASE_DIR / 'data' / 'alerts.json')
 
 # =============================================================================
+# SCANNING CONFIGURATION
+# =============================================================================
+
+REQUEST_DELAY_SECONDS = 0.5  # Delay between API requests to avoid rate limiting
+
+# =============================================================================
 # DATA SETTINGS
 # =============================================================================
 

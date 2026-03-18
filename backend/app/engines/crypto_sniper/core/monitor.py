@@ -8,6 +8,7 @@ Two-layer approach:
 """
 
 import logging
+import time
 import yfinance as yf
 from datetime import datetime, timedelta
 from typing import List, Optional, Dict, Any
@@ -433,6 +434,9 @@ class CryptoMonitor:
 
         for i, symbol in enumerate(symbols, 1):
             try:
+                if i > 1:
+                    time.sleep(settings.REQUEST_DELAY_SECONDS)
+
                 logger.debug(f"[{i}/{len(symbols)}] Analysing {symbol}...")
 
                 signal = self.analyze_crypto(symbol)

@@ -5,6 +5,7 @@ import { getCryptoSignals, getCryptoWatchlist, triggerCryptoScan } from "@/lib/a
 import CryptoSignalCards from "@/components/signals/CryptoSignalCards";
 import PageHeader from "@/components/layout/PageHeader";
 import LoadingSkeleton from "@/components/ui/LoadingSkeleton";
+import ScanOverlay from "@/components/ui/ScanOverlay";
 import { useState } from "react";
 
 export default function CryptoPredictionsPage() {
@@ -82,6 +83,13 @@ export default function CryptoPredictionsPage() {
           </div>
         )}
       </section>
+
+      {scanning && (
+        <ScanOverlay
+          title="Scanning Crypto…"
+          subtitle="Analysing cryptocurrencies against valuation strategies."
+        />
+      )}
     </div>
   );
 }

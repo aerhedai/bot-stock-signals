@@ -5,6 +5,7 @@ import { getStockSignals, getStockWatchlist, triggerStockScan } from "@/lib/api"
 import SignalTable from "@/components/signals/SignalTable";
 import PageHeader from "@/components/layout/PageHeader";
 import LoadingSkeleton from "@/components/ui/LoadingSkeleton";
+import ScanOverlay from "@/components/ui/ScanOverlay";
 import { useState } from "react";
 
 export default function StockPredictionsPage() {
@@ -83,6 +84,13 @@ export default function StockPredictionsPage() {
           </div>
         )}
       </section>
+
+      {scanning && (
+        <ScanOverlay
+          title="Scanning Stocks…"
+          subtitle="Analysing tickers against valuation strategies. This takes a few minutes."
+        />
+      )}
     </div>
   );
 }

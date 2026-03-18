@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import type { CryptoSignal } from "@/lib/types";
 import { formatDateShort } from "@/lib/format";
+import CryptoDetailChart from "@/components/charts/CryptoDetailChart";
 
 type SortKey = "score_desc" | "score_asc" | "date_desc" | "date_asc" | "symbol_asc";
 
@@ -48,6 +49,129 @@ function ChangeChip({ label, value }: { label: string; value: number | null }) {
       <p className={`text-xs font-semibold ${positive ? "text-semantic-success" : "text-semantic-error"}`}>
         {positive ? "+" : ""}{value.toFixed(2)}%
       </p>
+    </div>
+  );
+}
+
+function ChevronIcon({ open }: { open: boolean }) {
+  return (
+    <svg
+      className={`w-4 h-4 text-text-muted transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+      fill="none" viewBox="0 0 24 24" stroke="currentColor"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+    </svg>
+  );
+}
+
+function CryptoSignalCard({ sig }: { sig: CryptoSignal }) {
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <div className="border border-border-primary rounded-xl bg-surface-card overflow-hidden">
+      {/* Clickable card header */}
+      <button
+        className="w-full text-left p-4 hover:bg-surface-hover transition-colors"
+        onClick={() => setExpanded(v => !v)}
+      >
+        {/* Header */}
+        <div className="flex items-start justify-between gap-3 mb-3">
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="text-base font-bold text-text-primary">{sig.name}</span>
+            <span className="text-xs text-text-muted">{sig.symbol.replace("-USD", "")}</span>
+            <span className="text-xs text-text-muted bg-surface-active px-2 py-0.5 rounded">{sig.category}</span>
+            <SeverityBadge severity={sig.severity} />
+          </div>
+          <div className="flex items-center gap-2">
+            <ScoreBadge score={sig.combined_score} />
+            <ChevronIcon open={expanded} />
+          </div>
+        </div>
+
+        {/* Price + fair value */}
+        <div className="flex items-center gap-4 mb-3 text-sm">
+          <div>
+            <span className="text-text-muted text-xs">Price</span>
+            <p className="font-semibold text-text-primary">
+              ${sig.current_price.toLocaleString(undefined, { maximumFractionDigits: 4 })}
+            </p>
+          </div>
+          {sig.fair_value_estimate && (
+            <>
+              <div className="text-text-muted">→</div>
+              <div>
+                <span className="text-text-muted text-xs">Fair Value</span>
+                <p className="font-semibold text-text-primary">
+                  ${sig.fair_value_estimate.toLocaleString(undefined, { maximumFractionDigits: 4 })}
+                  {sig.discount_percentage !== null && (
+                    <span className="ml-1 text-xs font-medium text-semantic-success">
+                      ({sig.discount_percentage.toFixed(1)}% disc.)
+                    </span>
+                  )}
+                </p>
+              </div>
+            </>
+          )}
+        </div>
+
+        {/* Method + trigger */}
+        <div className="grid grid-cols-2 gap-2 mb-3 text-xs">
+          <div className="bg-surface-root rounded-lg px-3 py-2">
+            <p className="text-text-muted mb-0.5">Valuation</p>
+            <p className="font-medium text-text-primary">{sig.valuation_method}</p>
+            <p className="text-text-muted">Score: {sig.valuation_score.toFixed(1)}</p>
+          </div>
+          <div className="bg-surface-root rounded-lg px-3 py-2">
+            <p className="text-text-muted mb-0.5">Trigger</p>
+            <p className="font-medium text-text-primary capitalize">{sig.trigger_type.replace(/_/g, " ")}</p>
+            {sig.trigger_description && (
+              <p className="text-text-muted truncate">{sig.trigger_description}</p>
+            )}
+          </div>
+        </div>
+
+        {/* Technical row */}
+        <div className="flex items-center gap-4 flex-wrap border-t border-border-subtle pt-3">
+          {sig.rsi !== null && (
+            <div className="text-center">
+              <p className="text-[10px] text-text-muted mb-0.5">RSI</p>
+              <p className={`text-xs font-semibold ${
+                sig.rsi <= 30 ? "text-semantic-success" :
+                sig.rsi >= 70 ? "text-semantic-error" :
+                "text-text-secondary"
+              }`}>
+                {sig.rsi.toFixed(1)}
+              </p>
+            </div>
+          )}
+          {sig.bollinger_position && (
+            <div className="text-center">
+              <p className="text-[10px] text-text-muted mb-0.5">Bollinger</p>
+              <p className="text-xs font-medium text-text-secondary capitalize">
+                {sig.bollinger_position.replace(/_/g, " ")}
+              </p>
+            </div>
+          )}
+          <ChangeChip label="24 h" value={sig.change_24h} />
+          <ChangeChip label="7 d" value={sig.change_7d} />
+          <span className="text-xs text-text-muted ml-auto">{formatDateShort(sig.timestamp)}</span>
+        </div>
+      </button>
+
+      {/* Expandable chart section */}
+      {expanded && (
+        <div className="px-4 pb-4 border-t border-border-subtle bg-surface-card">
+          <CryptoDetailChart
+            symbol={sig.symbol}
+            fairValue={sig.fair_value_estimate}
+            entryPrice={sig.current_price}
+            signalTimestamp={sig.timestamp}
+            rsi={sig.rsi}
+            change24h={sig.change_24h}
+            change7d={sig.change_7d}
+          />
+        </div>
+      )}
     </div>
   );
 }
@@ -99,94 +223,7 @@ export default function CryptoSignalCards({ alerts }: Props) {
       {/* Signal cards */}
       <div className="space-y-3">
         {entries.map((sig) => (
-          <div
-            key={sig.symbol}
-            className="border border-border-primary rounded-xl p-4 bg-surface-card hover:bg-surface-hover transition-colors"
-          >
-            {/* Header */}
-            <div className="flex items-start justify-between gap-3 mb-3">
-              <div className="flex items-center gap-2 flex-wrap">
-                <span className="text-base font-bold text-text-primary">
-                  {sig.name}
-                </span>
-                <span className="text-xs text-text-muted">{sig.symbol.replace("-USD", "")}</span>
-                <span className="text-xs text-text-muted bg-surface-active px-2 py-0.5 rounded">
-                  {sig.category}
-                </span>
-                <SeverityBadge severity={sig.severity} />
-              </div>
-              <ScoreBadge score={sig.combined_score} />
-            </div>
-
-            {/* Price + fair value */}
-            <div className="flex items-center gap-4 mb-3 text-sm">
-              <div>
-                <span className="text-text-muted text-xs">Price</span>
-                <p className="font-semibold text-text-primary">
-                  ${sig.current_price.toLocaleString(undefined, { maximumFractionDigits: 4 })}
-                </p>
-              </div>
-              {sig.fair_value_estimate && (
-                <>
-                  <div className="text-text-muted">→</div>
-                  <div>
-                    <span className="text-text-muted text-xs">Fair Value</span>
-                    <p className="font-semibold text-text-primary">
-                      ${sig.fair_value_estimate.toLocaleString(undefined, { maximumFractionDigits: 4 })}
-                      {sig.discount_percentage !== null && (
-                        <span className="ml-1 text-xs font-medium text-semantic-success">
-                          ({sig.discount_percentage.toFixed(1)}% disc.)
-                        </span>
-                      )}
-                    </p>
-                  </div>
-                </>
-              )}
-            </div>
-
-            {/* Method + trigger */}
-            <div className="grid grid-cols-2 gap-2 mb-3 text-xs">
-              <div className="bg-surface-root rounded-lg px-3 py-2">
-                <p className="text-text-muted mb-0.5">Valuation</p>
-                <p className="font-medium text-text-primary">{sig.valuation_method}</p>
-                <p className="text-text-muted">Score: {sig.valuation_score.toFixed(1)}</p>
-              </div>
-              <div className="bg-surface-root rounded-lg px-3 py-2">
-                <p className="text-text-muted mb-0.5">Trigger</p>
-                <p className="font-medium text-text-primary capitalize">{sig.trigger_type.replace(/_/g, " ")}</p>
-                {sig.trigger_description && (
-                  <p className="text-text-muted truncate">{sig.trigger_description}</p>
-                )}
-              </div>
-            </div>
-
-            {/* Technical row */}
-            <div className="flex items-center gap-4 flex-wrap border-t border-border-subtle pt-3">
-              {sig.rsi !== null && (
-                <div className="text-center">
-                  <p className="text-[10px] text-text-muted mb-0.5">RSI</p>
-                  <p className={`text-xs font-semibold ${
-                    sig.rsi <= 30 ? "text-semantic-success" :
-                    sig.rsi >= 70 ? "text-semantic-error" :
-                    "text-text-secondary"
-                  }`}>
-                    {sig.rsi.toFixed(1)}
-                  </p>
-                </div>
-              )}
-              {sig.bollinger_position && (
-                <div className="text-center">
-                  <p className="text-[10px] text-text-muted mb-0.5">Bollinger</p>
-                  <p className="text-xs font-medium text-text-secondary capitalize">
-                    {sig.bollinger_position.replace(/_/g, " ")}
-                  </p>
-                </div>
-              )}
-              <ChangeChip label="24 h" value={sig.change_24h} />
-              <ChangeChip label="7 d" value={sig.change_7d} />
-              <span className="text-xs text-text-muted ml-auto">{formatDateShort(sig.timestamp)}</span>
-            </div>
-          </div>
+          <CryptoSignalCard key={sig.symbol} sig={sig} />
         ))}
       </div>
     </div>

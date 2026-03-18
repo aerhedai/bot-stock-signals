@@ -11,6 +11,8 @@ import type {
   NewsFeedResponse,
   MarketAnalysisResponse,
   AnalysisTriggerResponse,
+  StockChartData,
+  CryptoChartData,
 } from "./types";
 
 
@@ -33,6 +35,8 @@ export const getStatus = () =>
 // Stocks
 export const getStockSignals = () =>
   fetchApi<StockAlertHistory>("/api/v1/stocks/signals");
+export const getStockChart = (ticker: string) =>
+  fetchApi<StockChartData>(`/api/v1/stocks/chart/${ticker}`);
 export const getStockWatchlist = () =>
   fetchApi<WatchlistResponse>("/api/v1/stocks/watchlist");
 export const triggerStockScan = () =>
@@ -41,6 +45,8 @@ export const triggerStockScan = () =>
 // Crypto
 export const getCryptoSignals = () =>
   fetchApi<CryptoAlertHistory>("/api/v1/crypto/signals");
+export const getCryptoChart = (symbol: string) =>
+  fetchApi<CryptoChartData>(`/api/v1/crypto/chart/${encodeURIComponent(symbol)}`);
 export const getCryptoWatchlist = () =>
   fetchApi<CryptoWatchlistResponse>("/api/v1/crypto/watchlist");
 export const triggerCryptoScan = () =>

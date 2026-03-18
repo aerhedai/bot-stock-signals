@@ -1,7 +1,7 @@
 """Pydantic models for stock-related API responses."""
 
 from pydantic import BaseModel
-from typing import Optional
+from typing import Optional, List
 
 
 class StockSignalResponse(BaseModel):
@@ -30,3 +30,17 @@ class StockAlertHistoryResponse(BaseModel):
     total_alerts: int
     unique_tickers: int
     alerts: dict[str, StockSignalResponse]
+
+
+class StockChartPoint(BaseModel):
+    date: str
+    price: float
+    ema20: Optional[float] = None
+
+
+class StockChartResponse(BaseModel):
+    ticker: str
+    data: List[StockChartPoint]
+    target_price: Optional[float] = None
+    signal_date: Optional[str] = None
+    signal_price: Optional[float] = None

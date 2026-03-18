@@ -1,7 +1,7 @@
 """Pydantic models for crypto-related API responses."""
 
 from pydantic import BaseModel
-from typing import Optional
+from typing import Optional, List
 
 
 class CryptoSignalResponse(BaseModel):
@@ -33,3 +33,20 @@ class CryptoWatchlistResponse(BaseModel):
 class CryptoAlertHistoryResponse(BaseModel):
     total_alerts: int
     alerts: dict[str, CryptoSignalResponse]
+
+
+class CryptoChartPoint(BaseModel):
+    date: str
+    price: float
+    bb_upper: Optional[float] = None
+    bb_mid: Optional[float] = None
+    bb_lower: Optional[float] = None
+    rsi: Optional[float] = None
+
+
+class CryptoChartResponse(BaseModel):
+    symbol: str
+    data: List[CryptoChartPoint]
+    fair_value: Optional[float] = None
+    signal_date: Optional[str] = None
+    signal_price: Optional[float] = None

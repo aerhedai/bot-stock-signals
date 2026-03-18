@@ -2,12 +2,18 @@
 
 import asyncio
 from datetime import datetime
+from math import isnan
 
-from fastapi import APIRouter, Depends
+import pandas as pd
+import yfinance as yf
+from fastapi import APIRouter, Depends, HTTPException
 
 from app.dependencies import get_scheduler, get_alert_store
 from app.models.common import ScanResultResponse
-from app.models.stocks import StockAlertHistoryResponse, StockSignalResponse, WatchlistResponse
+from app.models.stocks import (
+    StockAlertHistoryResponse, StockSignalResponse, WatchlistResponse,
+    StockChartResponse, StockChartPoint,
+)
 from app.services.scheduler import SchedulerService
 
 router = APIRouter(prefix="/stocks", tags=["stocks"])
@@ -43,6 +49,47 @@ async def get_stock_signals(store=Depends(get_alert_store)):
         total_alerts=len(alerts),
         unique_tickers=len(alerts),
         alerts=alerts,
+    )
+
+
+@router.get("/chart/{ticker}", response_model=StockChartResponse)
+async def get_stock_chart(ticker: str, store=Depends(get_alert_store)):
+    """Return 60 days of daily price + EMA-20 data for a ticker."""
+    def _fetch():
+        hist = yf.Ticker(ticker).history(period="60d", interval="1d")
+        if hist.empty:
+            return None
+        closes = hist["Close"]
+        ema20 = closes.ewm(span=20, adjust=False).mean()
+        points = []
+        for date, price, ema in zip(hist.index, closes, ema20):
+            points.append(StockChartPoint(
+                date=date.strftime("%Y-%m-%d"),
+                price=round(float(price), 4),
+                ema20=None if isnan(float(ema)) else round(float(ema), 4),
+            ))
+        return points
+
+    points = await asyncio.to_thread(_fetch)
+    if points is None:
+        raise HTTPException(status_code=404, detail=f"No data found for {ticker}")
+
+    # Pull signal metadata from the alert store
+    raw_alerts = store.get_stock_alerts().get("alerts", {})
+    entry = raw_alerts.get(ticker)
+    if isinstance(entry, list):
+        entry = entry[-1] if entry else None
+
+    target_price = entry.get("target") if entry else None
+    signal_date = entry.get("timestamp", "")[:10] if entry else None
+    signal_price = entry.get("price") if entry else None
+
+    return StockChartResponse(
+        ticker=ticker,
+        data=points,
+        target_price=target_price,
+        signal_date=signal_date,
+        signal_price=signal_price,
     )
 
 
