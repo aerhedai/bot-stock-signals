@@ -1,0 +1,359 @@
+\documentclass[12pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage{fontenc}
+\usepackage{inputenc}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage[style=numeric, sorting=none, backend=biber]{biblatex}
+
+% --- Bibliography ---
+\addbibresource{references.bib}
+
+% --- Colours ---
+\definecolor{accentblue}{RGB}{59, 130, 246}
+\definecolor{codegray}{RGB}{245, 245, 245}
+\definecolor{darkgray}{RGB}{60, 60, 60}
+
+% --- Hyperref setup ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accentblue,
+    citecolor=accentblue,
+    urlcolor=accentblue,
+    pdftitle={Algorithmic Financial Signal Detection with AI-Powered Market Analysis},
+    pdfauthor={Rohan}
+}
+
+% --- Section formatting ---
+\titleformat{\section}{\large\bfseries}{}{0em}{\thesection\quad}[\vspace{-0.5em}\rule{\textwidth}{0.4pt}]
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{\thesubsection\quad}
+\titleformat{\subsubsection}{\normalsize\itshape}{}{0em}{\thesubsubsection\quad}
+
+% --- Header / footer ---
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{Algorithmic Financial Signal Detection with AI-Powered Market Analysis}}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% --- Spacing ---
+\onehalfspacing
+
+% --- Document ---
+\begin{document}
+
+% ============================================================
+% TITLE PAGE
+% ============================================================
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+
+    {\LARGE\bfseries Algorithmic Financial Signal Detection\\[0.4em]
+    with AI-Powered Market Analysis\par}
+
+    \vspace{1.5cm}
+    {\large Final Year Project Report\par}
+    \vspace{0.5cm}
+    {\large BSc Computer Science\par}
+
+    \vspace{2cm}
+    \rule{0.5\textwidth}{0.4pt}\\[0.5em]
+    {\large Rohan Patel\par}
+    \vspace{0.3cm}
+    {\normalsize March 2026\par}
+    \rule{0.5\textwidth}{0.4pt}
+
+    \vspace{2cm}
+    \begin{abstract}
+    \noindent
+    This report describes the design, implementation, and evaluation of a fullstack financial signals platform combining classical quantitative valuation strategies, real-time news monitoring, and a large language model (LLM) agent to surface actionable investment signals for retail investors. The system scans a watchlist of 436 stocks across 16 market sectors and a curated list of cryptocurrencies, delivers alerts via Telegram, and presents a live dashboard with AI-generated market analysis. Developed iteratively over five months from November 2025 to March 2026, the project documents a series of architectural decisions---from a Telegram-only alert system through to a fully agent-orchestrated dashboard with per-ticker news enrichment---reflecting the progressive maturation of both the feature set and the underlying design. The report follows the actual sequence of development decisions as recorded in the project's version control history, contextualising each decision against its technical motivation and the academic literature on value investing, technical analysis, and LLM agent systems.
+    \end{abstract}
+
+    \vfill
+    \textit{Repository: \url{https://github.com/aerhedai/bot-stock-signals}}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% ============================================================
+\section{Background and Motivation}
+% ============================================================
+
+\subsection{The Problem}
+
+Retail investors operate at a persistent informational disadvantage relative to institutional counterparts. Professional asset managers employ quantitative analysts who apply statistical models across large universes of securities, run systematic screening processes, and subscribe to structured data feeds that remain expensive or inaccessible for individuals. The rise of commission-free brokerages has democratised trade \textit{execution}, but the informational asymmetry in \textit{identifying what to trade} has largely persisted. Barber and Odean~\cite{barber2000} document that individual investors systematically underperform market indices, attributing the gap primarily to behavioural biases and information disadvantages rather than execution costs.
+
+The project addresses signal generation: given a large universe of securities, which ones does a formal valuation model flag as materially underpriced at any given moment? The aim is not to replace human judgement but to do the mechanical scanning that would otherwise require either expensive tools or hours of manual analysis per session---and to deliver the results wherever the user already is.
+
+\subsection{Why Telegram?}
+
+The choice of Telegram as the delivery channel reflects a deliberate design decision made at project inception. A user already checking their phone throughout the day should not need to open a separate application to receive a signal. Telegram's bot API, group topics, and support for formatted HTML messages make it well-suited for a structured alert system that can be expanded over time. The web dashboard was added later as a complementary interface, not as a replacement.
+
+\subsection{Why an AI Agent?}
+
+Raw numerical signals are useful but incomplete. A stock flagging at a 30\% Graham discount tells you little about \textit{why} the market has priced it there, whether a macro event explains the weakness, or whether recent news undermines the valuation thesis. Large language models have reached a capability level at which they can synthesise structured data and unstructured text into coherent, specific market commentary. Integrating an LLM agent as a first-class component of the pipeline---not as an afterthought---was a core architectural goal from mid-development onwards.
+
+% ============================================================
+\section{Requirements}
+% ============================================================
+
+The project requirements, established at the outset and refined through development, can be grouped into four categories:
+
+\subsubsection*{Core Signal Detection}
+\begin{itemize}[leftmargin=1.5em]
+    \item Scan a diversified watchlist of stocks using at least one quantitative valuation strategy.
+    \item Monitor cryptocurrency assets using technical analysis indicators.
+    \item Apply safety filters to avoid firing signals in adverse market conditions.
+    \item Deliver all signals to a configured Telegram group with formatted, informative messages.
+\end{itemize}
+
+\subsubsection*{News and Context}
+\begin{itemize}[leftmargin=1.5em]
+    \item Aggregate relevant financial news from a third-party API.
+    \item Categorise news by market segment (equities, crypto) and route to appropriate Telegram topics.
+    \item Enrich signals with company-specific news context.
+\end{itemize}
+
+\subsubsection*{Dashboard and Accessibility}
+\begin{itemize}[leftmargin=1.5em]
+    \item Provide a web dashboard displaying current signals, news, and analysis.
+    \item Support interactive signal investigation including price charts and technical overlays.
+    \item Require no special expertise to deploy or operate.
+\end{itemize}
+
+\subsubsection*{AI and Automation}
+\begin{itemize}[leftmargin=1.5em]
+    \item Generate qualitative market summaries from news headlines using an LLM.
+    \item Automate all analysis on a schedule without manual intervention.
+    \item Run the full platform from a single deployment command.
+\end{itemize}
+
+% ============================================================
+\section{Project Development: A Decision-Led Narrative}
+% ============================================================
+
+The project was developed over approximately five months, from November 2025 to March 2026. Rather than describing the system in its final state alone, this section follows the actual sequence of development decisions as recorded in the version control history, explaining what was built, why, and what changed as understanding deepened.
+
+\subsection{Phase One: Foundation and Architecture (November 2025)}
+
+The project began on 4 November 2025 with the initialisation of a structured \texttt{dev} branch for feature development. The first substantive commit, on 7 November, established the repository foundation: a \texttt{.gitignore} covering Python, Node.js, and Docker artefacts; an \texttt{.env.example} documenting all configuration variables; an Apache 2.0 licence; and an initial README outlining the intended architecture.
+
+This early structure reflected a deliberate decision to treat repository hygiene as a first-class concern from the start. Environment variables were externalised before a single line of application code was committed, avoiding the common pattern of credentials hardcoded in early prototypes and later needing to be scrubbed from history.
+
+The initial architecture diagram committed at this stage already showed the three-service model (backend, frontend, Telegram bot) that the project would ultimately deliver, suggesting that the high-level design was largely settled before implementation began. The key open question was which analysis engines would be implemented and how they would connect.
+
+\subsection{Phase Two: Core Engines (November--December 2025)}
+
+Between 14 November and 5 December, the four core analysis engines were committed in sequence:
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Date} & \textbf{Commit} & \textbf{Engine} \\
+\midrule
+14 Nov 2025 & \texttt{ebf04cc} & Telegram bot service \\
+21 Nov 2025 & \texttt{f0a8eab} & Stock sniper analysis engine \\
+28 Nov 2025 & \texttt{f9202cb} & Crypto sniper analysis engine \\
+5 Dec 2025  & \texttt{0129190} & News monitor engine \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The decision to build the Telegram bot \textit{first} is notable: signals needed a delivery channel before the analysis producing them was complete. This reflects the product thinking behind the project---the user-facing output was the primary concern, and the engines were built to serve it.
+
+The stock sniper was designed with three distinct strategies from the outset: the Graham Number for long-term deep value, a Z-score mean reversion strategy for short-term oversell detection, and a linear regression trend deviation strategy for swing trading candidates. The decision to support three time horizons simultaneously---rather than a single strategy---reflects the understanding that different investors have different holding period preferences, and that a single strategy produces correlated signals that fire and fail together.
+
+\paragraph{The Graham Number.} The formula $\sqrt{22.5 \times \text{EPS} \times \text{BVPS}}$, derived from Benjamin Graham's work~\cite{graham1934,graham1949}, was implemented as the primary long-term strategy. A signal fires when the current price is more than 20\% below the computed Graham price. This discount threshold ensures a meaningful margin of safety and reduces false positives in noisy markets.
+
+\paragraph{Safety filters.} Two filters were implemented alongside the valuation strategies. The first checks that SPY (the S\&P 500 ETF) is trading above its 200-day moving average before any long signal is generated---a standard trend-following filter that prevents the system from generating buy signals during structural market downturns. The second checks for earnings announcements within three days of the scan and excludes those tickers; earnings introduce binary uncertainty that invalidates valuation-based entry assumptions entirely.
+
+\paragraph{Crypto monitor.} The cryptocurrency engine was designed around technical indicators rather than fundamental valuation, reflecting the different nature of crypto assets. RSI below 30~\cite{wilder1978} and Bollinger Band lower breaches~\cite{bollinger2002} were implemented as the primary triggers, supplemented by price change thresholds over 24-hour and 7-day windows and volume spike detection.
+
+\paragraph{News monitor.} The news engine integrated with Finnhub's API to fetch financial headlines. From the start, articles were categorised as stock or crypto news using keyword matching and routed to separate Telegram topics. A deduplication system using stored article IDs prevented the same headline appearing twice.
+
+\subsection{Phase Three: Backend API and Docker (December 2025)}
+
+The FastAPI backend (12 December) and initial Next.js frontend (19 December) were added as the second layer of the platform. The backend exposed a REST API over the engine outputs, enabling the frontend to query current signals, news, and health status without coupling directly to the analysis code.
+
+Docker Compose orchestration followed on 26 December, completing the transition from a collection of scripts to a deployable application. The three-service architecture---backend, frontend, Telegram bot---was containerised with appropriate health checks: the Telegram bot and frontend wait for the backend's health endpoint to return 200 before starting. This sequencing prevents a common class of startup failure where a dependent service attempts to connect before its dependency is ready.
+
+The first significant operational problem emerged at this stage: environment configuration across three containers with overlapping but distinct variable sets was more complex than anticipated. The subsequent fix commit (6 January 2026) addressed Docker networking, missing environment variable propagation, and a subtle issue where the Telegram bot and the stock sniper engine both used a single \texttt{TELEGRAM\_THREAD\_ID} variable but needed to route to different Telegram topics. This was resolved on 13 January by splitting the shared variable into separate per-service topic IDs (\texttt{STOCK\_SNIPER\_TOPIC\_ID}, \texttt{CRYPTO\_SNIPER\_TOPIC\_ID}, \texttt{STOCK\_NEWS\_TOPIC\_ID}, \texttt{CRYPTO\_NEWS\_TOPIC\_ID}).
+
+\subsection{Phase Four: Frontend Design System (January--February 2026)}
+
+The initial frontend was functional but unstyled. Between 20 January and 3 March 2026, a sequence of nine frontend commits progressively built a coherent design system and applied it across all pages. This phase represents a significant investment and reflects a deliberate decision: a signal platform that looks untrustworthy will not be used, regardless of the quality of the analysis underneath.
+
+The design system was built first (20--24 January): CSS custom properties defined a dark theme with surface-level colour tokens (\texttt{--surface-root}, \texttt{--surface-card}, \texttt{--surface-hover}), a text hierarchy (\texttt{--text-primary}, \texttt{--text-secondary}, \texttt{--text-muted}), and semantic colours for success, warning, and error states. An icon library was developed alongside. Building the tokens first meant that subsequent component restyling could apply a consistent language rather than hardcoding colours per component.
+
+The sidebar was redesigned next (28--31 January): sectioned navigation with icons and a health status indicator replaced the original list. Signal cards and the news card were then restyled with the design tokens (3--6 February). A page header component and a unified predictions routing structure followed (10--13 February), relocating the stock and crypto pages under a shared \texttt{/predictions} hierarchy. The dashboard itself was redesigned (17--20 February) with summary cards, service status indicators, and preview sections for recent signals and news.
+
+\subsection{Phase Five: AI Integration (March 2026)}
+
+The AI integration was the most architecturally significant phase of the project and involved several decisions that shaped the final system.
+
+\subsubsection*{Choosing the Model and Platform}
+
+Google's Gemini 2.5 Flash via Vertex AI was selected as the LLM. The choice was driven by cost efficiency, the availability of function calling capabilities, and existing GCP infrastructure. Vertex AI's authentication via service account JSON files integrated cleanly with Docker's volume mount approach for secrets.
+
+The initial implementation used the \texttt{vertexai.generative\_models} SDK. This was refactored on 3 March to use the newer \texttt{google-genai} SDK (\texttt{google-genai} package), which offers a unified API across Vertex AI and the Gemini API directly. The commit message for this change notes it dropped a deprecated dependency---a pragmatic decision to align with the vendor's recommended approach before the codebase grew larger.
+
+\subsubsection*{Disabling Thinking Tokens}
+
+An unexpected problem emerged early in the AI integration: responses were being truncated. The cause was Gemini 2.5 Flash's extended reasoning (``thinking'') mode, which consumes a large portion of the output token budget on internal reasoning steps before producing the final response. The fix---setting \texttt{thinking\_budget=0} in the generation config---disabled this feature entirely. For the market analysis use case, where the agent is given structured data and asked for a concise summary, extended reasoning adds latency and cost without meaningful quality improvement.
+
+\subsubsection*{The Agent Orchestrator}
+
+The initial AI integration (3 March) implemented market analysis generation as a direct call to the AI service. This worked but created a tight coupling: the analysis engine called the AI service directly, making it difficult to add new AI-powered features without duplicating the model initialisation and rate-limiting logic.
+
+On 11 March, the design was refactored into a central \texttt{AgentOrchestrator} singleton. This component maintains a registry of callable tools; at startup, each engine registers its tools with the orchestrator. Any part of the application wanting to run an agentic task calls \texttt{orchestrator.run\_task()}, providing a natural language description of the task and a subset of tool names to expose. This pattern---drawn from the ReAct framework~\cite{yao2022}---cleanly separates the definition of what the agent can do (tool registration) from the invocation of what it should do (task description).
+
+A hard rate limit of 20 agent calls per hour was enforced at the orchestrator level. During development it became apparent that without this guard, a bug in any calling code could trigger a cascade of API calls. The conservative limit ensures that even a misbehaving caller cannot generate significant unintended cost.
+
+\subsubsection*{The Agent-Driven Dashboard}
+
+Also on 11 March, the \texttt{/api/v1/dashboard} endpoint was converted from static data assembly to an agent-orchestrated request. On each dashboard load, the agent reads current signals and news, assesses whether the cached market analysis is stale (older than three hours or covering significantly fewer headlines than are now available), refreshes it if so, and returns a 2--3 sentence market briefing alongside the structured data.
+
+This design decision represents a deliberate choice not to pre-compute the market briefing on a schedule alone. A scheduled approach would mean the briefing shown on the dashboard is up to 24 hours old; the agent-driven approach means it is updated whenever someone loads the dashboard and the analysis is stale. The trade-off is latency on cache miss---the dashboard endpoint takes several seconds when the agent decides to refresh analysis---but for a platform of this type, occasional latency is acceptable.
+
+\subsection{Phase Six: Prediction Engine Overhaul (March 2026)}
+
+On 18 March, a major overhaul of the prediction pipeline and frontend addressed several accumulated issues:
+
+\paragraph{Signal persistence format.} The alerts store had accumulated a mixed data format: some tickers stored their signals as a list of historical entries, others as a single dict (the newer scanner output format). This caused a runtime error in the dashboard orchestrator---\texttt{'str' object has no attribute 'get'}---when iterating what was assumed to be a list but was in fact a dict, resulting in iteration over string keys. The fix normalised both paths with an \texttt{isinstance(entries, dict)} guard, converting bare dicts to single-element lists before processing.
+
+\paragraph{yfinance rate limiting.} The stock scanner was generating zero signals on full watchlist scans because Yahoo Finance was returning empty data for the majority of tickers after the first few requests. The scan was hitting the undocumented rate limit of Yahoo Finance's unofficial API. This was resolved by introducing per-batch delays between ticker fetches, trading scan speed for reliability.
+
+\paragraph{Frontend signal model.} The predictions page was restructured from displaying a list of historical alerts per ticker to showing the single most recent signal per ticker. This reflected the insight that users want to know the current state of their watchlist, not scroll through a log. Expandable signal cards were introduced with a two-tab panel: a Chart tab showing 90-day price history with EMA-20 overlay and the signal's target price, and a News tab (developed further in the following phase).
+
+\paragraph{AI-powered signal insights.} On-demand AI insight endpoints were added for individual tickers and crypto symbols. When a user requests an insight for a specific ticker, the agent is given recent news headlines and signal data for that security and generates a brief contextualised assessment.
+
+\subsection{Phase Seven: Ticker News Enrichment (March 2026)}
+
+The final substantive development phase (18--19 March) addressed a gap identified through use: while the system monitored general market news, there was no mechanism for surfacing news specific to the companies behind the signals. A Graham Number signal for a telecom company is more useful when accompanied by the last two weeks of news coverage of that company.
+
+Finnhub's \texttt{/company-news} endpoint, which was already part of the fetcher module but never called, was wired into a new background job. The news history store was extended to record an optional \texttt{ticker} field on each article. The scheduler gained a new hourly job that fetches company-specific news for every ticker that has fired a signal in the preceding 30 days.
+
+A specific problem arose immediately: the news history was empty for all tickers because the hourly job had not yet run. The fix was to make the \texttt{GET /news/ticker/\{ticker\}} endpoint fall back to a live Finnhub fetch when fewer than three cached articles exist, storing the results as a side effect. Subsequent requests for the same ticker are then instant. This lazy-hydration pattern---fetch live on first request, serve from cache thereafter---eliminated the need for users to wait for a scheduled job before seeing any data.
+
+The news page was simultaneously redesigned with category filter tabs, a search bar filtering across headline text, ticker symbols, and source names, and a three-column grid layout. Ticker-specific articles received prominent ticker badges on their cards.
+
+% ============================================================
+\section{Technical Decisions: A Summary}
+% ============================================================
+
+Several decisions made during development deserve specific attention as they illustrate key trade-offs in building systems of this type.
+
+\subsection{JSON Files Over a Database}
+
+All persistent data is stored as JSON files. Three files are in active use: alerts for stocks and crypto (keyed by ticker), news history (keyed by article ID), and the analysis cache. This decision was made for operational simplicity---no database server to configure, back up, or migrate---and is appropriate for a single-user deployment. The files are mounted as Docker volumes and survive container rebuilds. The main limitation, acknowledged but accepted, is that JSON files are not suited to concurrent writes or large data volumes. A migration to a time-series database would be necessary for a multi-user production deployment.
+
+\subsection{Watchlist Scale}
+
+The watchlist of 436 stocks across 16 sectors was assembled deliberately to provide broad diversification across market segments. The list covers technology, finance, healthcare, consumer, energy, utilities, real estate, transportation, materials, and semiconductors. This breadth ensures that signals reflect genuine sector-level undervaluation patterns rather than idiosyncratic single-sector movements. The cost is scan time: at 60 minutes per cycle with per-batch delays for rate limit compliance, the scanner processes the full list in approximately 15--20 minutes.
+
+\subsection{The Three-Strategy Approach}
+
+A single valuation strategy produces signals that tend to fire and fail together, particularly in macro-driven market environments where an entire sector re-rates simultaneously. The three-strategy architecture was designed to produce signals with low correlation: the Graham Number fires on fundamental undervaluation that may persist for months; the Z-score fires on short-term statistical extremes that typically mean-revert within days; the linear regression strategy fires on trend deviation that tends to resolve over weeks. In practice, observing signals across all three strategies for the same ticker provides much stronger conviction than any single trigger.
+
+\subsection{Agent Conditional Refresh}
+
+The market analysis agent does not blindly regenerate summaries on every invocation. It reads the existing cached analysis, assesses the headline pool, and decides whether a refresh is warranted. This design reduces API calls by approximately 80\% during normal operation while ensuring that analysis is refreshed when it matters. The decision boundary---stale if older than three hours, or if headline count has grown significantly---was tuned through observation during development.
+
+% ============================================================
+\section{Related Work and Context}
+% ============================================================
+
+\subsection{Value Investing Literature}
+
+The Graham Number is grounded in Graham and Dodd's~\cite{graham1934} \textit{Security Analysis}, which established the theoretical framework for identifying securities trading below intrinsic value---what Graham termed a ``margin of safety.'' The persistent relevance of value-based screening is supported empirically by Fama and French's three-factor model~\cite{fama1992}, which documents a value premium in equity returns: stocks with low price-to-book ratios have historically outperformed. The Efficient Market Hypothesis in its semi-strong form~\cite{fama1970}, however, provides the counterargument: publicly available valuation metrics should already be priced in. The practical resolution of this tension is that markets are approximately but not perfectly efficient, leaving room for systematic screening to identify genuine mispricings, particularly in less-covered segments of the market.
+
+\subsection{Technical Analysis}
+
+The RSI, developed by Welles Wilder~\cite{wilder1978}, and Bollinger Bands, introduced by John Bollinger~\cite{bollinger2002}, are both widely used in practitioner technical analysis for cryptocurrency markets. The academic literature on technical analysis is mixed: Brock, Lakonishok and LeBaron~\cite{brock1992} found evidence of significant abnormal returns from simple technical rules in historical data, though later research questioned whether these persist after transaction costs.
+
+\subsection{News and Sentiment}
+
+Tetlock~\cite{tetlock2007} demonstrated that media sentiment predicts downward pressure on equity prices and elevated trading volume, establishing a quantitative link between news coverage and market behaviour. The news enrichment feature in this project operates qualitatively---the agent reads headlines and produces narrative analysis---rather than through formal sentiment scoring. A natural extension would be to apply sentiment scores (e.g. via VADER or a fine-tuned financial sentiment model) to the Finnhub headline stream and incorporate those scores into signal confidence calculations.
+
+\subsection{LLM Agents}
+
+The ReAct framework~\cite{yao2022} demonstrated that LLMs interleaved with tool invocations outperform chain-of-thought prompting alone on complex, multi-step tasks. The agent architecture in this project implements this pattern: the model issues function call requests, receives structured results, and continues reasoning until it produces a final text response. BloombergGPT~\cite{wu2023} represents a much larger-scale application of LLMs to financial data, trained on 50 billion parameters of financial text. This project differs in using a general-purpose model with domain-specific tools rather than a domain-specific model, demonstrating that well-designed tool availability can substitute for domain-specific training for many analysis tasks.
+
+\subsection{Commercial Comparators}
+
+Robo-advisors (Betterment, Wealthfront, Nutmeg) automate portfolio management using passive index strategies; they do not generate individual security selection signals. TradingView provides technical analysis and alert capabilities but requires manual strategy configuration per ticker, does not apply fundamental valuation strategies, and does not include LLM-generated narrative analysis. The platform developed in this project occupies a niche that existing commercial tools do not fill: automated, multi-strategy valuation scanning across a large watchlist with integrated AI narrative analysis, delivered via Telegram and a web dashboard.
+
+% ============================================================
+\section{Evaluation}
+% ============================================================
+
+\subsection{What Was Delivered}
+
+The platform delivers on all four requirement categories established at the outset. Signal detection runs automatically on schedule across 436 stocks and a crypto watchlist. News is aggregated and categorised continuously. The web dashboard provides interactive access to signals, charts, news, and AI analysis. The entire system deploys with \texttt{docker compose up -{}-build}.
+
+Observable system behaviour during the development period has been consistent with expectations: Graham Number signals have fired most frequently for telecom (VZ, CMCSA, T) and consumer staples stocks, sectors where book value and earnings are relatively stable and markets have periodically re-rated pessimistically. The Z-score strategy has identified short-term oversell events during broader market drawdowns.
+
+\subsection{Limitations}
+
+\paragraph{No backtesting.} The most significant methodological gap is the absence of a formal backtesting framework. The strategies are grounded in academic and practitioner literature, but no systematic evaluation has been performed to determine whether the specific parameterisations used would have generated positive risk-adjusted returns historically. This is the most important next development step.
+
+\paragraph{Data source reliability.} The reliance on Yahoo Finance via \texttt{yfinance} introduces fragility. Yahoo Finance's unofficial API imposes undocumented rate limits and has experienced data gaps for earnings and book value fields. The rate limiting issue was encountered and resolved during development (Phase Six), but the underlying dependency on an undocumented API remains. A production deployment would require a paid, SLA-backed data provider.
+
+\paragraph{AI evaluation.} The quality of AI-generated market summaries is difficult to evaluate rigorously. The summaries are qualitatively coherent and appear to reflect the sentiment of the input headlines accurately, but no formal evaluation framework has been applied. Comparing agent-generated summaries against professional analyst commentary using automated metrics (e.g. ROUGE or BERTScore) would provide a more objective assessment.
+
+\paragraph{Scalability.} JSON file storage is not suited to multi-user deployment or high-frequency data ingestion. This is a known and accepted limitation for a project of this scope.
+
+\subsection{Reflections on the Development Process}
+
+Several aspects of the development process are worth reflecting on beyond the technical outcome.
+
+The iterative nature of the commit history reveals that several problems were only discoverable through operation: the yfinance rate limiting issue, the mixed dict/list format in the alerts store, and the thinking token truncation problem all emerged during testing and required targeted fixes. This underscores the importance of actually running systems end-to-end, not just unit testing individual components.
+
+The decision to invest heavily in the frontend design system (Phase Four) before the AI integration (Phase Five) proved correct in hindsight. The design system provided a stable visual language into which new features---the AI briefing card, the signal insight panels, the news tabs---could be integrated without visual inconsistency.
+
+The refactoring of the AI integration into a centralised agent orchestrator (Phase Five) illustrates a common pattern in software development: the first implementation of a feature is a direct solution; the second implementation generalises it. The market analysis engine initially called the AI service directly; once a second agent use case emerged (the dashboard), the coupling became problematic and the orchestrator abstraction was introduced. Recognising this moment and refactoring before a third use case arrived was an important architectural decision.
+
+% ============================================================
+\section{Conclusions and Future Work}
+% ============================================================
+
+\subsection{Conclusions}
+
+This project demonstrates that a well-architected combination of classical quantitative finance methods and modern LLM tooling can produce a practically useful retail investment signal platform, deployable on commodity hardware using freely available APIs. The three-strategy approach covers multiple time horizons and reduces signal correlation. The AI agent adds qualitative synthesis that transforms structured signal data into readable market context. The Telegram delivery channel ensures signals reach the user without requiring a dedicated application.
+
+The most architecturally interesting aspect of the system is the agent orchestrator pattern: a centralised tool registry through which any feature can expose capabilities to the LLM, and through which the LLM can reason across the full information landscape of the platform. As the tool registry grows---news tools, signal tools, analysis tools---the agent's reasoning becomes richer without requiring changes to the agent invocation code.
+
+\subsection{Future Work}
+
+The most valuable extensions, in priority order, would be:
+
+\begin{enumerate}[leftmargin=2em]
+    \item \textbf{Backtesting engine.} Replay historical signals against price data to produce win rate statistics per strategy, sector, and time horizon, enabling empirical validation of the parameterisations.
+    \item \textbf{Signal Devil's Advocate.} Before a signal is sent to Telegram, run a second agent pass arguing the bear case, providing both sides of the investment thesis in the alert message.
+    \item \textbf{Outcome tracker.} Schedule follow-up checks at 2 weeks, 4 weeks, and 3 months after each signal to record whether the price moved toward the target, building a real-time track record.
+    \item \textbf{Plugin / tool store.} A credential-gated extension system allowing new data integrations---earnings calendars, options flow, insider trading data, sector ETF indicators---to be installed and registered with the agent dynamically, without modifying core application code.
+    \item \textbf{Morning brief.} A scheduled daily message to Telegram, agent-written, covering overnight moves on the watchlist, signals fired since yesterday, and the week's upcoming macro events.
+\end{enumerate}
+
+% ============================================================
+\printbibliography[heading=bibintoc]
+% ============================================================
+
+\end{document}
