@@ -44,8 +44,8 @@ class CryptoValuation:
     """
 
     def __init__(self):
-        """Initialize valuation calculator."""
-        logger.info("CryptoValuation initialized")
+        """Initialise valuation calculator."""
+        logger.info("CryptoValuation initialised")
 
     def method_1_historical_zscore(
         self,
@@ -63,7 +63,7 @@ class CryptoValuation:
         Args:
             symbol: Crypto symbol
             price_data: Historical price data
-            lookback_days: Days of history to analyze
+            lookback_days: Days of history to analyse
             threshold: Z-score threshold (e.g., -1.5 = 1.5 std devs below mean)
 
         Returns:

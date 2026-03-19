@@ -1,4 +1,287 @@
 {
-  "news": {},
-  "last_updated": "2026-02-11T01:19:18.701700"
+  "news": {
+    "7580432": {
+      "sent_at": "2026-03-03T13:02:26.084364",
+      "category": "crypto",
+      "headline": "Deloitte signs off on Anchorage reserve report for Tether\u2019s USAT stablecoin",
+      "url": "https://cointelegraph.com/news/deloitte-signs-off-reserves-tether-linked-usat-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7580433": {
+      "sent_at": "2026-03-03T13:02:26.764748",
+      "category": "crypto",
+      "headline": "Bybit claims new fraud system stopped $300M of risky withdrawals in Q4 2025",
+      "url": "https://cointelegraph.com/news/ai-driven-onchain-monitoring-300m-losses-bybit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7580423": {
+      "sent_at": "2026-03-03T13:02:27.743618",
+      "category": "stock",
+      "headline": "SpaceX\u2019s stock could trade like Tesla \u2018on steroids\u2019 after IPO, analyst says",
+      "url": "https://www.marketwatch.com/story/spacexs-stock-could-trade-like-tesla-on-steroids-after-ipo-analyst-says-6916bd55"
+    },
+    "7580429": {
+      "sent_at": "2026-03-03T13:02:28.442330",
+      "category": "crypto",
+      "headline": "Oil shock and inflation fears drag down bitcoin",
+      "url": "https://www.coindesk.com/daybook-us/2026/03/03/oil-shock-and-inflation-fears-drag-down-bitcoin"
+    },
+    "7580422": {
+      "sent_at": "2026-03-03T13:02:29.119106",
+      "category": "crypto",
+      "headline": "Japan PM Takaichi disavows \u2018Sanae Token\u2019 after memecoin hits $28M peak",
+      "url": "https://cointelegraph.com/news/sanae-token-27m-japan-pm-denies-links-fsa-probe?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7580410": {
+      "sent_at": "2026-03-03T13:02:32.806523",
+      "category": "stock",
+      "headline": "Target expects sales to rebound this year, as the retailer tries to rally investors around its new CEO",
+      "url": "https://www.marketwatch.com/story/target-expects-sales-to-rebound-this-year-as-the-retailer-tries-to-rally-investors-around-its-new-ceo-a7d434ef"
+    },
+    "7580407": {
+      "sent_at": "2026-03-03T13:02:33.502985",
+      "category": "crypto",
+      "headline": "Stablecoins weaken bank lending and monetary policy in Europe: ECB",
+      "url": "https://cointelegraph.com/news/stablecoin-deposits-monetary-policy-europe-ecb?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7580430": {
+      "sent_at": "2026-03-03T13:02:34.174147",
+      "category": "crypto",
+      "headline": "Dollar surge pressures crypto markets after escalation in Iran conflict",
+      "url": "https://www.coindesk.com/markets/2026/03/03/dollar-surge-pressures-crypto-and-gold-after-escalation-in-iran-conflict"
+    },
+    "7580431": {
+      "sent_at": "2026-03-03T13:02:34.873033",
+      "category": "crypto",
+      "headline": "\u2018Scam token\u2019 case against Uniswap dismissed by U.S. district judge in NYC",
+      "url": "https://www.coindesk.com/policy/2026/03/03/scam-token-case-against-uniswap-dismissed-with-prejudice-by-u-s-district-judge-in-nyc"
+    },
+    "7580399": {
+      "sent_at": "2026-03-03T13:02:35.574351",
+      "category": "crypto",
+      "headline": "Bitcoin price chart 'death cross' is back, reviving late-cycle fears",
+      "url": "https://cointelegraph.com/news/bitcoin-price-chart-death-cross-back-late-cycle-fears?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7580400": {
+      "sent_at": "2026-03-03T13:02:39.343332",
+      "category": "crypto",
+      "headline": "Kalshi, Polymarket face trading halt in Nevada after court ruling",
+      "url": "https://cointelegraph.com/news/prediction-markets-trading-block-nevada-court-ruling?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7580398": {
+      "sent_at": "2026-03-03T13:02:40.027356",
+      "category": "crypto",
+      "headline": "Japan prime minister Sanae Takaichi disavows Solana meme coin after it crashes by 75%",
+      "url": "https://www.coindesk.com/business/2026/03/03/japan-prime-minister-sanae-takaichi-disavows-solana-meme-coin-after-it-crashes-by-75"
+    },
+    "7580373": {
+      "sent_at": "2026-03-03T13:02:40.705906",
+      "category": "stock",
+      "headline": "JPMorgan\u2019s Jamie Dimon warns there\u2019s too much complacency in markets",
+      "url": "https://www.marketwatch.com/story/jpmorgans-jamie-dimon-warns-theres-too-much-complacency-in-markets-98739bad"
+    },
+    "7580436": {
+      "sent_at": "2026-03-03T13:19:26.208878",
+      "category": "stock",
+      "headline": "Forget the oil spike \u2014 the Iran conflict could unlock a generational Middle East peace dividend",
+      "url": "https://www.marketwatch.com/story/forget-the-oil-spike-the-iran-conflict-could-unlock-a-generational-middle-east-peace-dividend-16fe67e4"
+    },
+    "7580437": {
+      "sent_at": "2026-03-03T13:19:26.905206",
+      "category": "stock",
+      "headline": "Trump has less than 30 days to end the Iran conflict or he\u2019ll lose his inflation battle",
+      "url": "https://www.marketwatch.com/story/trump-has-less-than-30-days-to-end-the-iran-conflict-or-hell-lose-his-inflation-battle-7fed86f9"
+    },
+    "7580438": {
+      "sent_at": "2026-03-03T13:29:26.310205",
+      "category": "crypto",
+      "headline": "Aave Chan Initiative to exit Aave DAO after governance clash over funding",
+      "url": "https://cointelegraph.com/news/aave-aci-exit-dao-governance-vote?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7580439": {
+      "sent_at": "2026-03-03T13:34:26.159719",
+      "category": "stock",
+      "headline": "Why Best Buy\u2019s stock is soaring, even as sales and full-year outlook disappoint",
+      "url": "https://www.marketwatch.com/story/why-best-buys-stock-is-soaring-even-as-sales-and-full-year-outlook-disappoint-bb68b2e4"
+    },
+    "7580456": {
+      "sent_at": "2026-03-03T13:54:26.360996",
+      "category": "crypto",
+      "headline": "Strive strategist says AI deflation could push Bitcoin to $11M by 2036",
+      "url": "https://cointelegraph.com/news/strive-joe-burnett-ai-deflation-bitcoin-11m-2036-forecast?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7580457": {
+      "sent_at": "2026-03-03T13:54:27.033184",
+      "category": "crypto",
+      "headline": "Ether price again rejected at $2K: How low can ETH go in March?",
+      "url": "https://cointelegraph.com/news/ethereum-price-again-rejected-2k-how-low-can-eth-go-in-march?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7580454": {
+      "sent_at": "2026-03-03T13:54:27.710559",
+      "category": "crypto",
+      "headline": "Visa and Bridge plan stablecoin-linked card expansion to over 100 countries",
+      "url": "https://www.coindesk.com/business/2026/03/03/visa-and-bridge-plan-stablecoin-linked-card-expansion-to-over-100-countries"
+    },
+    "7580455": {
+      "sent_at": "2026-03-03T13:54:28.372274",
+      "category": "crypto",
+      "headline": "Bitcoin could slide further on liquidity squeeze, but long-term bull case intact: Sygnum CIO",
+      "url": "https://www.coindesk.com/markets/2026/03/02/bitcoin-could-slide-further-on-liquidity-squeeze-but-long-term-bull-case-intact-sygnum-cio"
+    },
+    "7580460": {
+      "sent_at": "2026-03-03T14:04:26.367214",
+      "category": "stock",
+      "headline": "We're buying more of this megacap AI stock as the market heads for a lower open",
+      "url": "https://www.cnbc.com/2026/03/03/were-buying-more-of-this-ai-stock-as-the-market-indicates-a-lower-open.html"
+    },
+    "7580465": {
+      "sent_at": "2026-03-03T14:19:26.210422",
+      "category": "stock",
+      "headline": "Jim Cramer's top 10 things to watch in the stock market Tuesday",
+      "url": "https://www.cnbc.com/2026/03/03/jim-cramers-top-10-things-to-watch-in-the-stock-market-tuesday.html"
+    },
+    "7580469": {
+      "sent_at": "2026-03-03T14:29:26.153423",
+      "category": "crypto",
+      "headline": "Visa and Stripe\u2019s Bridge plan stablecoin card expansion to over 100 countries",
+      "url": "https://cointelegraph.com/news/visa-stripe-bridge-stablecoin-card-rollout-test-onchain-settlement?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7580529": {
+      "sent_at": "2026-03-03T17:22:10.466477",
+      "category": "crypto",
+      "headline": "Mining companies move deeper into AI, HPC as MARA may sell Bitcoin",
+      "url": "https://cointelegraph.com/news/mining-companies-ai-hpc-mara-sell-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7580526": {
+      "sent_at": "2026-03-03T17:22:11.188324",
+      "category": "stock",
+      "headline": "Pinterest\u2019s stock is rising. Here\u2019s why investors are cheering a big boost to the buyback program.",
+      "url": "https://www.marketwatch.com/story/pinterests-stock-is-rising-heres-why-investors-are-cheering-a-big-boost-to-the-buyback-program-e46ab090"
+    },
+    "7580530": {
+      "sent_at": "2026-03-03T17:22:11.844721",
+      "category": "stock",
+      "headline": "We're exiting a financial already on its way out and adding again to our newest stock",
+      "url": "https://www.cnbc.com/2026/03/03/were-exiting-a-financial-already-on-its-way-out-and-adding-again-to-our-newest-stock.html"
+    },
+    "7580525": {
+      "sent_at": "2026-03-03T17:22:12.496765",
+      "category": "crypto",
+      "headline": "American Bitcoin boosts hashrate with 11,298 new mining machines",
+      "url": "https://cointelegraph.com/news/american-bitcoin-adds-3ehs-mining-capacity-expands-btc-treasury?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7580508": {
+      "sent_at": "2026-03-03T17:22:13.149760",
+      "category": "crypto",
+      "headline": "MEXC Completes Rollout of Six-Tool AI Trading Suite, Reaching Over 1.5 Million Users",
+      "url": "https://cryptocurrencynews.com/crypto/mexc-completes-rollout-of-six-tool-ai-trading-suite-reaching-over-1-5-million-users/"
+    },
+    "7580509": {
+      "sent_at": "2026-03-03T17:22:16.804129",
+      "category": "stock",
+      "headline": "Micron and other memory stocks see outsized losses. What\u2019s behind the big moves?",
+      "url": "https://www.marketwatch.com/story/micron-and-other-memory-stocks-see-outsized-losses-whats-behind-the-big-moves-c14882a0"
+    },
+    "7580521": {
+      "sent_at": "2026-03-03T17:22:17.500391",
+      "category": "crypto",
+      "headline": "Bitcoin attempting to make a stand as global stock markets melt down on Iran war",
+      "url": "https://www.coindesk.com/markets/2026/03/03/bitcoin-attempting-to-make-a-stand-as-global-stock-markets-melt-down-on-iran-war"
+    },
+    "7580507": {
+      "sent_at": "2026-03-03T17:22:18.224596",
+      "category": "stock",
+      "headline": "Investors are now learning a painful lesson: Buying a dip driven by geopolitics isn\u2019t a slam dunk.",
+      "url": "https://www.marketwatch.com/story/investors-are-now-learning-a-painful-lesson-buying-a-dip-driven-by-geopolitics-isnt-a-slam-dunk-219d6bbe"
+    },
+    "7580505": {
+      "sent_at": "2026-03-03T17:22:18.948916",
+      "category": "crypto",
+      "headline": "Bitcoin dives 3% on global asset rout as $5K gold 'smashed' on oil fears",
+      "url": "https://cointelegraph.com/news/bitcoin-dives-3-percent-asset-rout-5k-gold-smashed-oil-fears?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7580522": {
+      "sent_at": "2026-03-03T17:22:19.725282",
+      "category": "crypto",
+      "headline": "End of bitcoin 'HODL': public miners going all-in on AI, signaling more BTC selling",
+      "url": "https://www.coindesk.com/markets/2026/03/03/end-of-bitcoin-hodl-public-miners-going-all-in-on-ai-signaling-more-btc-selling"
+    },
+    "7580500": {
+      "sent_at": "2026-03-03T17:22:23.429161",
+      "category": "stock",
+      "headline": "These S&P 500 stocks are falling the hardest on Tuesday",
+      "url": "https://www.marketwatch.com/story/these-s-p-500-stocks-are-falling-the-hardest-on-tuesday-bedc2c07"
+    },
+    "7580523": {
+      "sent_at": "2026-03-03T17:22:24.165188",
+      "category": "crypto",
+      "headline": "CFTC chief Selig to clear path for U.S. perpetual futures in coming weeks",
+      "url": "https://www.coindesk.com/policy/2026/03/03/cftc-chief-selig-to-clear-path-for-u-s-perpetual-futures-in-coming-weeks"
+    },
+    "7580524": {
+      "sent_at": "2026-03-03T17:22:24.893645",
+      "category": "crypto",
+      "headline": "Here is why Harvard trimmed bitcoin and bought ether and why the move is bullish for crypto",
+      "url": "https://www.coindesk.com/business/2026/03/03/here-is-why-harvard-trimmed-bitcoin-and-bought-ether-and-why-the-move-is-bullish-for-crypto"
+    },
+    "7580489": {
+      "sent_at": "2026-03-03T17:22:25.561823",
+      "category": "stock",
+      "headline": "Palantir\u2019s stock could surge almost 40% as Iran conflict dispels a big concern, analyst says",
+      "url": "https://www.marketwatch.com/story/palantirs-stock-could-surge-almost-40-as-iran-conflict-dispels-a-big-concern-analyst-says-5ff1af36"
+    },
+    "7580472": {
+      "sent_at": "2026-03-03T17:22:26.246383",
+      "category": "stock",
+      "headline": "I made a big mistake with my Roth IRA. Here\u2019s how I fixed it.",
+      "url": "https://www.marketwatch.com/story/i-made-a-big-mistake-with-my-roth-ira-heres-how-i-fixed-it-f7213d47"
+    },
+    "7580494": {
+      "sent_at": "2026-03-03T17:22:30.100456",
+      "category": "crypto",
+      "headline": "CoinDesk 20 performance update: AAVE plunges 10%, leading index lower",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/03/03/coindesk-20-performance-update-aave-plunges-10-leading-index-lower"
+    },
+    "7580532": {
+      "sent_at": "2026-03-03T17:27:10.234533",
+      "category": "crypto",
+      "headline": "Why Bermuda is testing a fully onchain economy instead of crypto mandates",
+      "url": "https://cointelegraph.com/explained/why-bermuda-is-testing-a-fully-onchain-economy-instead-of-crypto-mandates?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7580539": {
+      "sent_at": "2026-03-03T17:51:45.844017",
+      "category": "stock",
+      "headline": "Energy investors go stock picking, benefiting Chevron over Exxon",
+      "url": "https://www.marketwatch.com/story/energy-investors-go-stock-picking-benefiting-chevron-over-exxon-bb36de39"
+    },
+    "7580545": {
+      "sent_at": "2026-03-03T17:51:46.548058",
+      "category": "crypto",
+      "headline": "AI agents will be primary users of blockchain, NEAR co-founder says",
+      "url": "https://www.coindesk.com/tech/2026/03/03/ai-agents-will-be-primary-users-of-blockchain-near-co-founder-says"
+    },
+    "7580546": {
+      "sent_at": "2026-03-03T17:51:47.210117",
+      "category": "crypto",
+      "headline": "Aave governance rift deepens as major governance group exits $26 billion DeFi protocol",
+      "url": "https://www.coindesk.com/web3/2026/03/03/aave-governance-rift-deepens-as-major-governance-group-exits-usd26-billion-defi-protocol"
+    },
+    "7580547": {
+      "sent_at": "2026-03-03T17:51:47.946716",
+      "category": "crypto",
+      "headline": "Eric Trump\u2019s American Bitcoin buys 11,298 ASIC miners, increasing mining capacity by 12%",
+      "url": "https://www.coindesk.com/business/2026/03/03/eric-trump-s-american-bitcoin-buys-11-298-asic-miners-increasing-capacity-by-12"
+    },
+    "7580548": {
+      "sent_at": "2026-03-03T17:51:48.610388",
+      "category": "crypto",
+      "headline": "Bank of Japan expands blockchain settlement sandbox and says CBDC efforts are ongoing",
+      "url": "https://www.coindesk.com/business/2026/03/03/bank-of-japan-expands-blockchain-settlement-sandbox-as-2026-cbdc-decision-nears"
+    },
+    "7580550": {
+      "sent_at": "2026-03-03T18:29:14.993519",
+      "category": "crypto",
+      "headline": "Mastercard adds SoFiUSD as settlement option for card issuers",
+      "url": "https://cointelegraph.com/news/sofi-and-mastercard-move-stablecoin-settlement-into-global-card-network?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    }
+  },
+  "last_updated": "2026-03-03T18:29:15.025618"
 }

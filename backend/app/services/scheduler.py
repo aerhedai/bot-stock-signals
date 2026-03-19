@@ -30,6 +30,12 @@ class ScanStats:
         self.news_total_runs: int = 0
         self.news_last_articles: int = 0
 
+        self.ticker_news_last_run: Optional[datetime] = None
+        self.ticker_news_total_runs: int = 0
+
+        self.analysis_last_run: Optional[datetime] = None
+        self.analysis_total_runs: int = 0
+
 
 class SchedulerService:
     """Manages scheduled scan jobs using APScheduler."""
@@ -44,11 +50,31 @@ class SchedulerService:
         try:
             from app.engines.stock_sniper.config import WATCHLIST
             from app.engines.stock_sniper.core import get_scanner
+            from app.services.alert_store import get_stock_alerts, save_stock_alerts
 
             scanner = get_scanner()
             signals = await asyncio.to_thread(
                 scanner.scan_multiple, WATCHLIST, False, False
             )
+
+            # Upsert each signal into the alerts store (overwrite per ticker)
+            existing = get_stock_alerts().get("alerts", {})
+            for sig in signals:
+                existing[sig.ticker] = {
+                    "timestamp": sig.timestamp.isoformat(),
+                    "method": sig.strategy_result.method_name,
+                    "time_horizon": sig.strategy_result.time_horizon.value,
+                    "score": sig.strategy_result.score,
+                    "price": sig.strategy_result.current_price,
+                    "target": sig.strategy_result.target_price,
+                    "reason": sig.strategy_result.reason,
+                    "ema_value": (
+                        sig.trigger_result.ema_value
+                        if sig.trigger_result else None
+                    ),
+                }
+            if signals:
+                save_stock_alerts(existing)
 
             self.stats.stock_last_run = datetime.now()
             self.stats.stock_total_runs += 1
@@ -63,11 +89,38 @@ class SchedulerService:
         try:
             from app.engines.crypto_sniper.config import CRYPTO_WATCHLIST
             from app.engines.crypto_sniper.core import CryptoMonitor
+            from app.services.alert_store import get_crypto_alerts, save_crypto_alerts
 
             monitor = CryptoMonitor()
             signals = await asyncio.to_thread(
                 monitor.scan_multiple, CRYPTO_WATCHLIST
             )
+
+            # Upsert each signal into the alerts store (overwrite per symbol)
+            existing = get_crypto_alerts().get("alerts", {})
+            for sig in signals:
+                existing[sig.symbol] = {
+                    "symbol": sig.symbol,
+                    "name": sig.name,
+                    "category": sig.category,
+                    "current_price": sig.current_price,
+                    "valuation_method": sig.valuation_method,
+                    "valuation_score": sig.valuation_score,
+                    "fair_value_estimate": sig.fair_value_estimate,
+                    "discount_percentage": sig.discount_percentage,
+                    "trigger_type": sig.trigger_type,
+                    "trigger_description": sig.trigger_description,
+                    "rsi": sig.rsi,
+                    "bollinger_position": sig.bollinger_position,
+                    "change_24h": sig.change_24h,
+                    "change_7d": sig.change_7d,
+                    "severity": sig.severity,
+                    "confidence": sig.confidence,
+                    "combined_score": sig.combined_score,
+                    "timestamp": sig.timestamp.isoformat(),
+                }
+            if signals:
+                save_crypto_alerts(existing)
 
             self.stats.crypto_last_run = datetime.now()
             self.stats.crypto_total_runs += 1
@@ -92,6 +145,45 @@ class SchedulerService:
             logger.info(f"News fetch complete: {stats.get('new', 0)} new articles")
         except Exception as e:
             logger.error(f"News fetch error: {e}", exc_info=True)
+
+    async def _run_ticker_news_fetch(self):
+        """Fetch and store company-specific news for recently active signal tickers."""
+        try:
+            from app.engines.news_monitor.monitor import NewsMonitor
+            from app.services.alert_store import get_recent_signal_tickers
+
+            tickers = get_recent_signal_tickers(days=30)
+            if not tickers:
+                logger.info("Ticker news fetch skipped: no recent signal tickers")
+                return
+
+            monitor = NewsMonitor()
+            stats = await asyncio.to_thread(monitor.fetch_ticker_news, tickers)
+
+            self.stats.ticker_news_last_run = datetime.now()
+            self.stats.ticker_news_total_runs += 1
+
+            logger.info(
+                "Ticker news fetch complete: %d tickers, %d new articles",
+                len(tickers), stats.get("new", 0),
+            )
+        except Exception as e:
+            logger.error(f"Ticker news fetch error: {e}", exc_info=True)
+
+    async def _run_market_analysis(self):
+        """Run AI market analysis using recent news headlines."""
+        try:
+            from app.engines.market_analysis.analyzer import MarketAnalyzer
+
+            analyzer = MarketAnalyzer()
+            await analyzer.run_all()
+
+            self.stats.analysis_last_run = datetime.now()
+            self.stats.analysis_total_runs += 1
+
+            logger.info("Market analysis complete")
+        except Exception as e:
+            logger.error(f"Market analysis error: {e}", exc_info=True)
 
     def start(self):
         """Start the scheduler with configured jobs."""
@@ -118,6 +210,20 @@ class SchedulerService:
             minutes=settings.news_scan_interval,
             id="news_fetch",
             name="News Monitor Fetch",
+        )
+        self.scheduler.add_job(
+            self._run_ticker_news_fetch,
+            "interval",
+            minutes=60,
+            id="ticker_news_fetch",
+            name="Ticker News Fetch",
+        )
+        self.scheduler.add_job(
+            self._run_market_analysis,
+            "interval",
+            minutes=settings.analysis_scan_interval,
+            id="market_analysis",
+            name="Market Analysis",
         )
 
         self.scheduler.start()

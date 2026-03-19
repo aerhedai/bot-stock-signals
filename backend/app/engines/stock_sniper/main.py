@@ -3,7 +3,7 @@ Stock Sniper Bot - Main Entry Point
 
 Orchestrates the complete scanning pipeline:
 1. Loads configuration and watchlist
-2. Initializes scanner and Telegram bot
+2. Initialises scanner and Telegram bot
 3. Runs scheduled scans every N minutes
 4. Sends alerts for valid signals
 
@@ -44,9 +44,9 @@ class SniperBot:
     """
 
     def __init__(self):
-        """Initialize the sniper bot."""
+        """Initialise the sniper bot."""
         logger.info("=" * 60)
-        logger.info("Initializing Stock Sniper Bot")
+        logger.info("Initialising Stock Sniper Bot")
         logger.info("=" * 60)
 
         # Load components

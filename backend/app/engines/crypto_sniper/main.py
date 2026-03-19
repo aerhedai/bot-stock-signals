@@ -3,7 +3,7 @@ Crypto Sniper Bot - Main Entry Point
 
 Orchestrates the complete crypto monitoring pipeline:
 1. Loads configuration and crypto watchlist
-2. Initializes monitor and Telegram bot
+2. Initialises monitor and Telegram bot
 3. Runs scheduled scans every N minutes
 4. Sends alerts for detected signals
 
@@ -43,9 +43,9 @@ class CryptoSniperBot:
     """
 
     def __init__(self):
-        """Initialize the crypto sniper bot."""
+        """Initialise the crypto sniper bot."""
         logger.info("=" * 60)
-        logger.info("Initializing Crypto Sniper Bot")
+        logger.info("Initialising Crypto Sniper Bot")
         logger.info("=" * 60)
 
         # Load components

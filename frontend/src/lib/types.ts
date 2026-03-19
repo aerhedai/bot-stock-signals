@@ -29,16 +29,19 @@ export interface ScanResultResponse {
 export interface StockSignal {
   ticker: string;
   method: string;
+  time_horizon: string;
   score: number;
   price: number;
   target: number | null;
+  reason: string;
+  ema_value: number | null;
   timestamp: string;
 }
 
 export interface StockAlertHistory {
   total_alerts: number;
   unique_tickers: number;
-  alerts: Record<string, StockSignal[]>;
+  alerts: Record<string, StockSignal>;
 }
 
 export interface WatchlistResponse {
@@ -53,8 +56,16 @@ export interface CryptoSignal {
   current_price: number;
   valuation_method: string;
   valuation_score: number;
+  fair_value_estimate: number | null;
+  discount_percentage: number | null;
   trigger_type: string;
+  trigger_description: string;
+  rsi: number | null;
+  bollinger_position: string | null;
+  change_24h: number | null;
+  change_7d: number | null;
   severity: string;
+  confidence: string;
   combined_score: number;
   timestamp: string;
 }
@@ -66,7 +77,7 @@ export interface CryptoWatchlistResponse {
 
 export interface CryptoAlertHistory {
   total_alerts: number;
-  alerts: Record<string, string>;
+  alerts: Record<string, CryptoSignal>;
 }
 
 export interface NewsArticle {
@@ -77,6 +88,7 @@ export interface NewsArticle {
   url: string;
   category: string;
   sent_at: string;
+  ticker?: string;
 }
 
 export interface NewsFeedResponse {
@@ -84,4 +96,90 @@ export interface NewsFeedResponse {
   stock_count: number;
   crypto_count: number;
   articles: NewsArticle[];
+}
+
+export interface TickerNewsFeedResponse {
+  ticker: string;
+  total: number;
+  articles: NewsArticle[];
+}
+
+export interface MarketAnalysisResponse {
+  category: string;
+  analysis: string;
+  headline_count: number;
+  generated_at: string;
+}
+
+export interface AnalysisTriggerResponse {
+  triggered: boolean;
+  message: string;
+}
+
+export interface StockChartPoint {
+  date: string;
+  price: number;
+  ema20: number | null;
+}
+
+export interface StockChartData {
+  ticker: string;
+  data: StockChartPoint[];
+  target_price: number | null;
+  signal_date: string | null;
+  signal_price: number | null;
+}
+
+export interface CryptoChartPoint {
+  date: string;
+  price: number;
+  bb_upper: number | null;
+  bb_mid: number | null;
+  bb_lower: number | null;
+  rsi: number | null;
+}
+
+export interface CryptoChartData {
+  symbol: string;
+  data: CryptoChartPoint[];
+  fair_value: number | null;
+  signal_date: string | null;
+  signal_price: number | null;
+}
+
+export interface DashboardStockSignal {
+  ticker: string;
+  method: string;
+  score: number;
+  price: number;
+  target: number | null;
+  timestamp: string;
+}
+
+export interface DashboardCryptoSignal {
+  symbol: string;
+  timestamp: string;
+}
+
+export interface DashboardNewsItem {
+  headline: string;
+  category: string;
+  sent_at: string;
+  url: string;
+}
+
+export interface DashboardResponse {
+  generated_at: string;
+  agent_reasoning: string;
+  stock_signals: DashboardStockSignal[];
+  crypto_signals: DashboardCryptoSignal[];
+  news: DashboardNewsItem[];
+  stock_analysis: MarketAnalysisResponse | null;
+  crypto_analysis: MarketAnalysisResponse | null;
+}
+
+export interface AiInsightResponse {
+  ticker: string;
+  insight: string;
+  generated_at: string;
 }

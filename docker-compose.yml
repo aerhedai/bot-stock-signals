@@ -9,6 +9,7 @@ services:
       - ./backend/app/engines/stock_sniper/data:/app/app/engines/stock_sniper/data
       - ./backend/app/engines/crypto_sniper/data:/app/app/engines/crypto_sniper/data
       - ./backend/app/engines/news_monitor/data:/app/app/engines/news_monitor/data
+      - ./stockai-489113-c747d6271068.json:/app/service-account.json:ro
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/v1/health')"]
       interval: 30s

@@ -106,7 +106,7 @@ Once a crypto passes valuation, the bot waits for one of these **entry triggers*
 
 ## How It Works (Example)
 
-Let's say SOL (Solana) is being analyzed:
+Let's say SOL (Solana) is being analysed:
 
 ```
 Step 1: VALUATION CHECK
@@ -263,7 +263,7 @@ Monitors 25+ cryptocurrencies across multiple categories:
 
 **Altcoins (8)**: SHIB, APT, ARB, OP, INJ, SUI, SEI, TIA
 
-Edit `crypto_sniper/config/crypto_list.py` to customize.
+Edit `crypto_sniper/config/crypto_list.py` to customise.
 
 ---
 
@@ -364,10 +364,10 @@ crypto_sniper/
 ```python
 from crypto_sniper import CryptoMonitor, CRYPTO_WATCHLIST
 
-# Initialize
+# Initialise
 monitor = CryptoMonitor()
 
-# Analyze single crypto
+# Analyse single crypto
 signal = monitor.analyze_crypto('BTC-USD')
 
 if signal:
@@ -471,4 +471,4 @@ python main.py --once
 python main.py
 ```
 
-**Expected behavior**: Bot will scan every 30 minutes. Most scans will find **0-2 signals** (this is normal - we're looking for rare value opportunities, not constant noise).
+**Expected behaviour**: Bot will scan every 30 minutes. Most scans will find **0-2 signals** (this is normal - we're looking for rare value opportunities, not constant noise).

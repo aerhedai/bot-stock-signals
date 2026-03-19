@@ -19,7 +19,7 @@ load_dotenv(BASE_DIR.parent.parent.parent.parent / '.env')
 # =============================================================================
 TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', '')
 TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID', '')
-TELEGRAM_THREAD_ID = os.getenv('TELEGRAM_THREAD_ID', None)  # Topic ID for crypto alerts
+TELEGRAM_THREAD_ID = os.getenv('CRYPTO_SNIPER_TOPIC_ID', None)  # Topic ID for crypto alerts
 
 # =============================================================================
 # MONITORING SETTINGS
@@ -63,6 +63,12 @@ BB_STD_DEV = int(os.getenv('BB_STD_DEV', 2))
 # Cooldown between alerts for same crypto (minutes)
 ALERT_COOLDOWN_MINUTES = int(os.getenv('ALERT_COOLDOWN_MINUTES', 60))
 ALERT_HISTORY_FILE = str(BASE_DIR / 'data' / 'alerts.json')
+
+# =============================================================================
+# SCANNING CONFIGURATION
+# =============================================================================
+
+REQUEST_DELAY_SECONDS = 0.5  # Delay between API requests to avoid rate limiting
 
 # =============================================================================
 # DATA SETTINGS

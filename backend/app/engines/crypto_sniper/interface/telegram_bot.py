@@ -23,7 +23,7 @@ class CryptoTelegramBot:
     """
 
     def __init__(self):
-        """Initialize the Telegram bot."""
+        """Initialise the Telegram bot."""
         self.bot_token = settings.TELEGRAM_BOT_TOKEN
         self.chat_id = settings.TELEGRAM_CHAT_ID
         self.thread_id = settings.TELEGRAM_THREAD_ID
@@ -32,7 +32,7 @@ class CryptoTelegramBot:
         self.alert_history: Dict[str, datetime] = {}
         self.load_alert_history()
 
-        logger.info("CryptoTelegramBot initialized")
+        logger.info("CryptoTelegramBot initialised")
 
     def load_alert_history(self):
         """Load alert history from file."""

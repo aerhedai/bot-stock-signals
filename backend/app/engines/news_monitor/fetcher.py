@@ -1,7 +1,7 @@
 """
 Finnhub News Fetcher
 
-Fetches financial news from Finnhub API and categorizes as stock or crypto news.
+Fetches financial news from Finnhub API and categorises as stock or crypto news.
 """
 
 import logging
@@ -45,14 +45,14 @@ class NewsArticle:
 
 class NewsFetcher:
     """
-    Fetches and categorizes financial news from Finnhub API.
+    Fetches and categorises financial news from Finnhub API.
 
     Finnhub provides real-time market news with excellent coverage
     of both stocks and cryptocurrency markets.
     """
 
     def __init__(self):
-        """Initialize Finnhub news fetcher."""
+        """Initialise Finnhub news fetcher."""
         self.api_key = config.FINNHUB_API_KEY
         self.base_url = "https://finnhub.io/api/v1"
 
@@ -61,7 +61,7 @@ class NewsFetcher:
 
     def _categorize_news(self, headline: str, summary: str, category_hint: str = "") -> str:
         """
-        Categorize news as 'stock', 'crypto', or 'general'.
+        Categorise news as 'stock', 'crypto', or 'general'.
 
         Args:
             headline: News headline
@@ -157,7 +157,7 @@ class NewsFetcher:
         """
         articles = self.fetch_general_news(category='crypto', limit=limit)
 
-        # Ensure all are categorized as crypto
+        # Ensure all are categorised as crypto
         for article in articles:
             if article.category != 'crypto':
                 article.category = 'crypto'
@@ -177,10 +177,10 @@ class NewsFetcher:
             List of NewsArticle objects
         """
         try:
-            # Get date range (last 7 days)
+            # Get date range (last 14 days)
             from datetime import date, timedelta
             to_date = date.today()
-            from_date = to_date - timedelta(days=7)
+            from_date = to_date - timedelta(days=14)
 
             url = f"{self.base_url}/company-news"
             params = {

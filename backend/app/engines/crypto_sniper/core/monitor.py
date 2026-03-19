@@ -8,6 +8,7 @@ Two-layer approach:
 """
 
 import logging
+import time
 import yfinance as yf
 from datetime import datetime, timedelta
 from typing import List, Optional, Dict, Any
@@ -69,12 +70,12 @@ class CryptoMonitor:
     """
 
     def __init__(self):
-        """Initialize the crypto monitor."""
+        """Initialise the crypto monitor."""
         self.indicators = TechnicalIndicators()
         self.valuation = CryptoValuation()
         self.btc_data_cache = None  # Cache BTC data for relative strength
         self.btc_cache_time = None
-        logger.info("CryptoMonitor initialized with two-layer approach")
+        logger.info("CryptoMonitor initialised with two-layer approach")
 
     def fetch_crypto_data(
         self,
@@ -273,7 +274,7 @@ class CryptoMonitor:
 
     def analyze_crypto(self, symbol: str) -> Optional[CryptoSignal]:
         """
-        Analyze a cryptocurrency using two-layer approach.
+        Analyse a cryptocurrency using two-layer approach.
 
         Layer 1: Check if undervalued
         Layer 2: Check for technical trigger
@@ -281,7 +282,7 @@ class CryptoMonitor:
         Only returns signal if BOTH layers confirm.
 
         Args:
-            symbol: Crypto symbol to analyze
+            symbol: Crypto symbol to analyse
 
         Returns:
             CryptoSignal if both layers confirm, None otherwise
@@ -389,10 +390,10 @@ class CryptoMonitor:
                 trigger_type=trigger['type'],
                 trigger_description=trigger['description'],
 
-                # Price changes
-                change_1h=changes.get('1d'),  # Using daily data now
-                change_24h=changes.get('7d'),
-                change_7d=changes.get('30d'),
+                # Price changes (daily data — 1d candle = closest approximation to 24 h)
+                change_1h=None,
+                change_24h=changes.get('1d'),
+                change_7d=changes.get('7d'),
 
                 # Technical indicators
                 rsi=rsi,
@@ -412,7 +413,7 @@ class CryptoMonitor:
             return signal
 
         except Exception as e:
-            logger.error(f"Error analyzing {symbol}: {e}", exc_info=True)
+            logger.error(f"Error analysing {symbol}: {e}", exc_info=True)
             return None
 
     def scan_multiple(self, symbols: List[str]) -> List[CryptoSignal]:
@@ -433,7 +434,10 @@ class CryptoMonitor:
 
         for i, symbol in enumerate(symbols, 1):
             try:
-                logger.debug(f"[{i}/{len(symbols)}] Analyzing {symbol}...")
+                if i > 1:
+                    time.sleep(settings.REQUEST_DELAY_SECONDS)
+
+                logger.debug(f"[{i}/{len(symbols)}] Analysing {symbol}...")
 
                 signal = self.analyze_crypto(symbol)
                 if signal:

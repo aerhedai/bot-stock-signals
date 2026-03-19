@@ -1,8 +1,8 @@
 """
 Stock Tickers Watchlist
 
-A diversified list of 455 unique stocks across multiple sectors for the Sniper Bot to scan.
-Organized by sector for better diversification and risk management.
+A diversified list of 436 unique stocks across multiple sectors for the Sniper Bot to scan.
+Organised by sector for better diversification and risk management.
 """
 
 # =============================================================================
@@ -267,7 +267,7 @@ TECHNOLOGY_2 = [
 # ADDITIONAL FINANCE (25 stocks)
 # =============================================================================
 FINANCE_2 = [
-    'BRK.B', # Berkshire Hathaway
+    'BRK-B', # Berkshire Hathaway
     'BLK',   # BlackRock Inc.
     'SCHW',  # Charles Schwab
     'AXP',   # American Express
@@ -325,7 +325,6 @@ HEALTHCARE_2 = [
     'PTCT',  # PTC Therapeutics
     'RARE',  # Ultragenyx Pharmaceutical
     'FOLD',  # Amicus Therapeutics
-    'AKRO',  # Akero Therapeutics
     'DNLI',  # Denali Therapeutics
 ]
 
@@ -543,7 +542,7 @@ SEMICONDUCTORS = [
 ]
 
 # =============================================================================
-# COMBINED WATCHLIST (455 unique stocks total)
+# COMBINED WATCHLIST (436 unique stocks total)
 # =============================================================================
 WATCHLIST = (
     TECHNOLOGY +
@@ -568,7 +567,7 @@ WATCHLIST = (
 WATCHLIST = list(dict.fromkeys(WATCHLIST))
 
 # Verify total count after deduplication
-assert len(WATCHLIST) == 437, f"Expected 437 unique tickers, got {len(WATCHLIST)}"
+assert len(WATCHLIST) == 436, f"Expected 436 unique tickers, got {len(WATCHLIST)}"
 
 # =============================================================================
 # SECTOR MAPPING (for reporting)
