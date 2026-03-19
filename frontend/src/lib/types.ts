@@ -88,12 +88,19 @@ export interface NewsArticle {
   url: string;
   category: string;
   sent_at: string;
+  ticker?: string;
 }
 
 export interface NewsFeedResponse {
   total: number;
   stock_count: number;
   crypto_count: number;
+  articles: NewsArticle[];
+}
+
+export interface TickerNewsFeedResponse {
+  ticker: string;
+  total: number;
   articles: NewsArticle[];
 }
 

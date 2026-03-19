@@ -9,6 +9,7 @@ import type {
   CryptoAlertHistory,
   CryptoWatchlistResponse,
   NewsFeedResponse,
+  TickerNewsFeedResponse,
   MarketAnalysisResponse,
   AnalysisTriggerResponse,
   StockChartData,
@@ -57,6 +58,8 @@ export const triggerCryptoScan = () =>
 // News
 export const getNewsFeed = () =>
   fetchApi<NewsFeedResponse>("/api/v1/news/feed");
+export const getTickerNews = (ticker: string) =>
+  fetchApi<TickerNewsFeedResponse>(`/api/v1/news/ticker/${encodeURIComponent(ticker)}`);
 export const triggerNewsFetch = () =>
   fetchApi<ScanResultResponse>("/api/v1/news/fetch", { method: "POST" });
 

@@ -119,6 +119,29 @@ class MarketAnalyzer:
     def _register_tools(self):
         get_orchestrator().register_tools([
             AgentTool(
+                name="get_ticker_headlines",
+                description=(
+                    "Fetch recent news headlines for a specific stock ticker symbol "
+                    "from the last 14 days. Use this to get company-specific context "
+                    "when analysing a signal or building a market view."
+                ),
+                parameters={
+                    "type": "object",
+                    "properties": {
+                        "ticker": {
+                            "type": "string",
+                            "description": "Stock ticker symbol, e.g. 'AAPL' or 'MOS'.",
+                        },
+                        "limit": {
+                            "type": "integer",
+                            "description": "Maximum number of headlines to return (default 10).",
+                        },
+                    },
+                    "required": ["ticker"],
+                },
+                handler=self._tool_get_ticker_headlines,
+            ),
+            AgentTool(
                 name="get_market_headlines",
                 description="Fetch recent news headlines for 'stock' or 'crypto' category.",
                 parameters={
@@ -168,6 +191,18 @@ class MarketAnalyzer:
     # ------------------------------------------------------------------
     # Tool handlers (synchronous — called by the agent loop)
     # ------------------------------------------------------------------
+
+    def _tool_get_ticker_headlines(self, ticker: str, limit: int = 10) -> dict:
+        from app.engines.news_monitor.config import config
+        from app.engines.news_monitor.history import NewsHistory
+
+        history = NewsHistory(str(config.NEWS_HISTORY_FILE))
+        articles = history.get_ticker_history(ticker.upper(), limit=limit)
+        return {
+            "ticker": ticker.upper(),
+            "article_count": len(articles),
+            "headlines": [a.get("headline", "") for a in articles],
+        }
 
     def _tool_get_headlines(self, category: str, max_age_hours: int = 24) -> dict:
         headlines = self._get_recent_headlines(category, max_age_hours=max_age_hours)

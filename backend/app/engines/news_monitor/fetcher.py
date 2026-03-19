@@ -177,10 +177,10 @@ class NewsFetcher:
             List of NewsArticle objects
         """
         try:
-            # Get date range (last 7 days)
+            # Get date range (last 14 days)
             from datetime import date, timedelta
             to_date = date.today()
-            from_date = to_date - timedelta(days=7)
+            from_date = to_date - timedelta(days=14)
 
             url = f"{self.base_url}/company-news"
             params = {

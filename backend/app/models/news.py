@@ -12,10 +12,17 @@ class NewsArticleResponse(BaseModel):
     url: str
     category: str
     sent_at: str
+    ticker: Optional[str] = None
 
 
 class NewsFeedResponse(BaseModel):
     total: int
     stock_count: int
     crypto_count: int
+    articles: list[NewsArticleResponse]
+
+
+class TickerNewsFeedResponse(BaseModel):
+    ticker: str
+    total: int
     articles: list[NewsArticleResponse]
