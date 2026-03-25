@@ -133,9 +133,10 @@ class DashboardOrchestrator:
 
     def _tool_crypto_signals(self) -> dict:
         data = alert_store.get_crypto_alerts()
+        raw = data.get("alerts", {})
         signals = [
-            {"symbol": symbol, "timestamp": ts}
-            for symbol, ts in data.items()
+            {"symbol": symbol, "timestamp": entry.get("timestamp", "")}
+            for symbol, entry in raw.items()
         ]
         signals.sort(key=lambda x: x["timestamp"], reverse=True)
         return {"total": len(signals), "recent": signals[:_MAX_SIGNALS]}
@@ -165,9 +166,10 @@ class DashboardOrchestrator:
 
     def _build_crypto_signals(self) -> list[DashboardCryptoSignal]:
         data = alert_store.get_crypto_alerts()
+        raw = data.get("alerts", {})
         signals = [
-            DashboardCryptoSignal(symbol=symbol, timestamp=ts)
-            for symbol, ts in data.items()
+            DashboardCryptoSignal(symbol=symbol, timestamp=entry.get("timestamp", ""))
+            for symbol, entry in raw.items()
         ]
         signals.sort(key=lambda x: x.timestamp, reverse=True)
         return signals[:_MAX_SIGNALS]

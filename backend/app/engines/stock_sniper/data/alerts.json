@@ -107,22 +107,16 @@
         "target": 34.7504997253418
       }
     ],
-    "MOS": [
-      {
-        "timestamp": "2026-01-19T13:23:29.664981",
-        "method": "Graham Number",
-        "score": 100,
-        "price": 26.35,
-        "target": 59.13630103413638
-      },
-      {
-        "timestamp": "2026-02-08T17:49:51.477243",
-        "method": "Graham Number",
-        "score": 100,
-        "price": 28.6,
-        "target": 59.13630103413638
-      }
-    ],
+    "MOS": {
+      "timestamp": "2026-03-19T12:45:07.356145",
+      "method": "Graham Number",
+      "time_horizon": "Long-Term Conviction Picks (3-12 months)",
+      "score": 100,
+      "price": 27.78,
+      "target": 38.1618985376776,
+      "reason": "Current $27.78 vs Graham $38.16 (BELOW threshold $30.53, +27.2% discount)",
+      "ema_value": 28.081714840292726
+    },
     "NVDA": [
       {
         "timestamp": "2026-01-21T17:16:12.962446",
@@ -212,7 +206,67 @@
         "price": 207.55,
         "target": 306.8856528904536
       }
-    ]
+    ],
+    "LYFT": {
+      "timestamp": "2026-03-19T12:37:18.705899",
+      "method": "Graham Number",
+      "time_horizon": "Long-Term Conviction Picks (3-12 months)",
+      "score": 100,
+      "price": 13.46,
+      "target": 35.372805232268476,
+      "reason": "Current $13.46 vs Graham $35.37 (BELOW threshold $28.30, +61.9% discount)",
+      "ema_value": 13.828948763758625
+    },
+    "EXAS": {
+      "timestamp": "2026-03-23T19:34:52.061871",
+      "method": "Linear Regression",
+      "time_horizon": "Swing Trade Candidates (1-4 weeks)",
+      "score": 75.8870756036257,
+      "price": 104.91000366210938,
+      "target": 117.30753787526777,
+      "reason": "Regression: UPTREND, -10.6% from trend (R\u00b2=0.74, UNDERVALUED)",
+      "ema_value": 103.50636332489425
+    },
+    "AA": {
+      "timestamp": "2026-03-20T11:40:31.086379",
+      "method": "Linear Regression",
+      "time_horizon": "Swing Trade Candidates (1-4 weeks)",
+      "score": 85.56484778326104,
+      "price": 58.650001525878906,
+      "target": 68.2099090246385,
+      "reason": "Regression: UPTREND, -14.0% from trend (R\u00b2=0.88, UNDERVALUED)",
+      "ema_value": 63.07409441393862
+    },
+    "FE": {
+      "timestamp": "2026-03-20T11:43:46.683790",
+      "method": "Z-Score",
+      "time_horizon": "Short-Term Momentum (1-5 days)",
+      "score": 70.3408129764313,
+      "price": 49.689998626708984,
+      "target": 50.7399995803833,
+      "reason": "Z-Score: -2.52 (OVERSOLD, threshold: -2.0, -2.1% from mean)",
+      "ema_value": 50.43464759208807
+    },
+    "ILMN": {
+      "timestamp": "2026-03-23T19:34:49.907150",
+      "method": "Linear Regression",
+      "time_horizon": "Swing Trade Candidates (1-4 weeks)",
+      "score": 69.01477287985287,
+      "price": 124.76499938964844,
+      "target": 140.05490838332403,
+      "reason": "Regression: UPTREND, -10.9% from trend (R\u00b2=0.36, UNDERVALUED)",
+      "ema_value": 124.1630070861818
+    },
+    "EXPD": {
+      "timestamp": "2026-03-23T19:37:36.246602",
+      "method": "Linear Regression",
+      "time_horizon": "Swing Trade Candidates (1-4 weeks)",
+      "score": 74.064001251662,
+      "price": 141.9600067138672,
+      "target": 161.09538400413877,
+      "reason": "Regression: UPTREND, -11.9% from trend (R\u00b2=0.52, UNDERVALUED)",
+      "ema_value": 146.04561329772952
+    }
   },
-  "last_updated": "2026-02-08T17:49:51.477553"
+  "last_updated": "2026-03-23T19:38:26.719794"
 }

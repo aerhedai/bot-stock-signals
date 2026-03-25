@@ -1,287 +1,3005 @@
 {
   "news": {
-    "7580432": {
-      "sent_at": "2026-03-03T13:02:26.084364",
-      "category": "crypto",
-      "headline": "Deloitte signs off on Anchorage reserve report for Tether\u2019s USAT stablecoin",
-      "url": "https://cointelegraph.com/news/deloitte-signs-off-reserves-tether-linked-usat-stablecoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    "7580433": {
-      "sent_at": "2026-03-03T13:02:26.764748",
-      "category": "crypto",
-      "headline": "Bybit claims new fraud system stopped $300M of risky withdrawals in Q4 2025",
-      "url": "https://cointelegraph.com/news/ai-driven-onchain-monitoring-300m-losses-bybit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    "7580423": {
-      "sent_at": "2026-03-03T13:02:27.743618",
+    "7659443": {
+      "sent_at": "2026-03-18T12:33:29.288799",
       "category": "stock",
-      "headline": "SpaceX\u2019s stock could trade like Tesla \u2018on steroids\u2019 after IPO, analyst says",
-      "url": "https://www.marketwatch.com/story/spacexs-stock-could-trade-like-tesla-on-steroids-after-ipo-analyst-says-6916bd55"
+      "headline": "Fed to still cut rates this year, even as high oil prices spark an uptick in inflation: CNBC Fed Survey",
+      "url": "https://www.cnbc.com/2026/03/18/cnbc-fed-survey-elevated-oil-but-a-rate-cut.html"
     },
-    "7580429": {
-      "sent_at": "2026-03-03T13:02:28.442330",
+    "7659339": {
+      "sent_at": "2026-03-18T12:33:30.021235",
       "category": "crypto",
-      "headline": "Oil shock and inflation fears drag down bitcoin",
-      "url": "https://www.coindesk.com/daybook-us/2026/03/03/oil-shock-and-inflation-fears-drag-down-bitcoin"
+      "headline": "RedotPay defends team reshuffle amid funding talks and IPO plans",
+      "url": "https://cointelegraph.com/news/redotpay-team-consolidation-turnover-claims-funding-ipo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
     },
-    "7580422": {
-      "sent_at": "2026-03-03T13:02:29.119106",
+    "7659230": {
+      "sent_at": "2026-03-18T12:33:30.699457",
       "category": "crypto",
-      "headline": "Japan PM Takaichi disavows \u2018Sanae Token\u2019 after memecoin hits $28M peak",
-      "url": "https://cointelegraph.com/news/sanae-token-27m-japan-pm-denies-links-fsa-probe?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+      "headline": "Connecticut suspends Bitcoin Depot as 2026 revenue outlook worsens",
+      "url": "https://cointelegraph.com/news/connecticut-bitcoin-depot-license-halt-stock-slide?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
     },
-    "7580410": {
-      "sent_at": "2026-03-03T13:02:32.806523",
+    "7659111": {
+      "sent_at": "2026-03-18T12:33:31.382156",
+      "category": "crypto",
+      "headline": "UK lawmakers seek moratorium on crypto donations to political parties",
+      "url": "https://cointelegraph.com/news/uk-committee-crypto-political-donations-moratorium?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7659118": {
+      "sent_at": "2026-03-18T12:33:32.070167",
+      "category": "crypto",
+      "headline": "Bitcoin\u2019s rally runs into 'sell the news' risk ahead of Fed decision",
+      "url": "https://www.coindesk.com/markets/2026/03/18/bitcoin-s-rally-runs-into-sell-the-news-risk-ahead-of-fed-decision"
+    },
+    "7659119": {
+      "sent_at": "2026-03-18T12:33:35.874615",
+      "category": "crypto",
+      "headline": "Bitcoin holds steady at $74,000 as traders turn cautious before Fed meeting",
+      "url": "https://www.coindesk.com/markets/2026/03/18/bitcoin-holds-steady-at-usd74-000-as-traders-turn-cautious-before-fed-meeting"
+    },
+    "7659009": {
+      "sent_at": "2026-03-18T12:33:36.540234",
+      "category": "crypto",
+      "headline": "Tally winds down, citing lack of viable market for DAO tooling",
+      "url": "https://cointelegraph.com/news/tally-winds-down-citing-lack-of-viable-market-for-dao-tooling?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7658903": {
+      "sent_at": "2026-03-18T12:33:37.193418",
+      "category": "crypto",
+      "headline": "Bitcoin stalls at $76K: Key BTC price levels to watch ahead of FOMC",
+      "url": "https://cointelegraph.com/news/bitcoin-stalls-76k-key-btc-price-levels-to-watch-ahead-fomc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7658904": {
+      "sent_at": "2026-03-18T12:33:37.870412",
+      "category": "crypto",
+      "headline": "Ethereum aims to cut bridge times by 98% to 13 seconds with new rule",
+      "url": "https://cointelegraph.com/news/ethereum-cuts-bridge-times-98-percent-13-seconds-fast-confirmation-rule?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7659008": {
+      "sent_at": "2026-03-18T12:33:38.600015",
+      "category": "crypto",
+      "headline": "Bitcoin is stuck below $75,000 even after landmark SEC, CFTC crypto rules",
+      "url": "https://www.coindesk.com/markets/2026/03/18/bitcoin-s-progress-above-usd75-000-elusive-after-sec-cftc-crypto-guidance"
+    },
+    "7658684": {
+      "sent_at": "2026-03-18T12:33:42.323303",
+      "category": "crypto",
+      "headline": "Bitcoin ETF inflow streak nears October run, but totals still lag",
+      "url": "https://cointelegraph.com/news/bitcoin-etf-streak-nears-october-run-but-inflows-lag-far-behind?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7658585": {
+      "sent_at": "2026-03-18T12:33:42.973976",
+      "category": "crypto",
+      "headline": "Gasoline price hike from Iran war could push consumers toward EVs, hybrids - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM0hwVy1MLU5LYkZlSVAwWG11RVdqMmJJWVJzSVgzdFluWTl3MWJ5VHZuNHRiYW91ZnRTTTBlNnVEMWdWVGxZVmY0em1mYXI0M3ZlV1Q3ajB3VDluTEdJRmEtUGFuekZNaXlLc2otd2FXcTdGdFpNTThHeWVjOGQ5UWd3QVRkNmRXQUY4d1lTTW9ZV2dpRWp2TUxnSGZ6TjdmdGEwbkFldVYyZ2p5T2FXazEzQlljSWVpNlFydA?oc=5"
+    },
+    "7659459": {
+      "sent_at": "2026-03-18T12:52:24.126239",
+      "category": "crypto",
+      "headline": "Crypto cards aren't the future, but onchain credit is",
+      "url": "https://cointelegraph.com/news/onchain-credit-is-the-future?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7659570": {
+      "sent_at": "2026-03-18T13:27:24.009184",
+      "category": "crypto",
+      "headline": "RedotPay executive turnover clouds crypto payments firm's $4 billion U.S. IPO ambition",
+      "url": "https://www.coindesk.com/business/2026/03/18/redotpay-executive-turnover-clouds-crypto-payments-firm-s-usd4-billion-u-s-ipo-ambition"
+    },
+    "7659571": {
+      "sent_at": "2026-03-18T13:27:24.688127",
+      "category": "crypto",
+      "headline": "Bitcoin quickly pulls back to $72,300 as Iran fears team up with poor U.S. inflation data",
+      "url": "https://www.coindesk.com/markets/2026/03/18/bitcoin-quickly-pulls-back-to-usd72-300-as-iran-fears-team-up-with-poor-u-s-inflation-data"
+    },
+    "7659572": {
+      "sent_at": "2026-03-18T13:27:25.346020",
+      "category": "crypto",
+      "headline": "UK lawmakers urge \u2018immediate moratorium\u2019 on crypto political donations",
+      "url": "https://www.coindesk.com/policy/2026/03/18/uk-lawmakers-urge-immediate-moratorium-on-crypto-political-donations"
+    },
+    "7659573": {
+      "sent_at": "2026-03-18T13:27:25.988877",
+      "category": "crypto",
+      "headline": "Powell's comments on oil, inflation are likely to guide bitcoin traders",
+      "url": "https://www.coindesk.com/daybook-us/2026/03/18/powell-s-comments-on-oil-inflation-are-likely-to-guide-bitcoin-traders"
+    },
+    "7659787": {
+      "sent_at": "2026-03-18T14:29:47.356736",
+      "category": "crypto",
+      "headline": "Bitcoin dips to $72K on hot US PPI inflation hours before Fed FOMC meeting",
+      "url": "https://cointelegraph.com/news/bitcoin-dips-near-72k-hot-us-ppi-inflation-hours-fed-rates?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7659789": {
+      "sent_at": "2026-03-18T14:29:47.997955",
+      "category": "crypto",
+      "headline": "Crypto firms\u2019 open letter urges top US colleges to teach DeFi",
+      "url": "https://cointelegraph.com/news/crypto-firms-urge-more-defi-classes-us-colleges?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7659788": {
+      "sent_at": "2026-03-18T14:29:48.659666",
+      "category": "crypto",
+      "headline": "74% of institutions expect crypto prices to rise in 12 months: Survey",
+      "url": "https://cointelegraph.com/news/institutional-investors-crypto-exposure-new-survey?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7659899": {
+      "sent_at": "2026-03-18T14:54:46.815797",
+      "category": "crypto",
+      "headline": "Japan\u2019s SBI VC Trade launches retail USDC lending as stablecoin use grows",
+      "url": "https://cointelegraph.com/news/japan-s-sbi-vc-trade-launches-retail-usdc-lending-as-stablecoin-use-grows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7659900": {
+      "sent_at": "2026-03-18T14:54:47.486617",
+      "category": "crypto",
+      "headline": "Crypto industry ties were a liability in Illinois primary",
+      "url": "https://cointelegraph.com/news/crypto-industry-ties-liability-illinois-primary?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7659901": {
+      "sent_at": "2026-03-18T14:54:48.160871",
+      "category": "crypto",
+      "headline": "Circle\u2019s policy chief tells UK to merge MiCA clarity with US stablecoin rules",
+      "url": "https://cointelegraph.com/news/circle-uk-mica-us-stablecoin-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7660008": {
+      "sent_at": "2026-03-18T15:14:44.957570",
+      "category": "crypto",
+      "headline": "Bank of Korea adds two banks to digital won trials as real-world testing begins",
+      "url": "https://www.coindesk.com/business/2026/03/18/bank-of-korea-adds-two-banks-to-digital-won-trials-as-real-world-testing-begins"
+    },
+    "7660009": {
+      "sent_at": "2026-03-18T15:14:45.642176",
+      "category": "crypto",
+      "headline": "Stripe-led payments blockchain Tempo goes live with protocol for AI agents",
+      "url": "https://www.coindesk.com/tech/2026/03/18/stripe-led-payments-blockchain-tempo-goes-live-with-protocol-for-ai-agents"
+    },
+    "7660010": {
+      "sent_at": "2026-03-18T15:14:46.336332",
+      "category": "crypto",
+      "headline": "CoinDesk 20 performance update: index falls 3.1% as all constituents trade lower",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/03/18/coindesk-20-performance-update-index-falls-3-1-as-all-constituents-trade-lower"
+    },
+    "7660011": {
+      "sent_at": "2026-03-18T15:14:47.038680",
+      "category": "crypto",
+      "headline": "Large investors are doubling down on crypto, but getting a lot pickier about risk",
+      "url": "https://www.coindesk.com/business/2026/03/18/large-investors-are-doubling-down-on-crypto-but-getting-a-lot-pickier-about-risk"
+    },
+    "7660229": {
+      "sent_at": "2026-03-18T16:26:35.599212",
+      "category": "crypto",
+      "headline": "Bitcoin tests fresh decoupling trade as tech correlation drops to 2018 lows",
+      "url": "https://cointelegraph.com/news/bitcoin-tests-fresh-decoupling-trade-tech-correlation-breaks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7660221": {
+      "sent_at": "2026-03-18T16:26:36.274745",
+      "category": "crypto",
+      "headline": "Binance Expands VIP Access to Recognize and Support High-Value Users Earlier",
+      "url": "https://cryptocurrencynews.com/crypto/binance-expands-vip-access-to-recognize-and-support-high-value-users-earlier/"
+    },
+    "7660222": {
+      "sent_at": "2026-03-18T16:26:36.936909",
+      "category": "crypto",
+      "headline": "The Protocol: Ethereum community debates foundation\u2019s new mandate document",
+      "url": "https://www.coindesk.com/tech/2026/03/18/the-protocol-ethereum-community-debates-foundation-s-new-mandate-document"
+    },
+    "7660223": {
+      "sent_at": "2026-03-18T16:26:37.597364",
+      "category": "crypto",
+      "headline": "Former Binance CEO CZ waves off accusations on Iran, terror ties",
+      "url": "https://www.coindesk.com/policy/2026/03/18/former-binance-ceo-cz-waves-off-accusations-on-iran-terror-ties"
+    },
+    "7660224": {
+      "sent_at": "2026-03-18T16:26:38.270488",
+      "category": "crypto",
+      "headline": "Trump-linked American Bitcoin's BTC holdings overtake Mike Novogratz\u2019s Galaxy Digital",
+      "url": "https://www.coindesk.com/business/2026/03/18/trump-linked-american-bitcoin-just-overtook-mike-novogratz-s-galaxy-digital-in-the-bitcoin-rankings"
+    },
+    "7660225": {
+      "sent_at": "2026-03-18T16:26:42.092675",
+      "category": "crypto",
+      "headline": "Crypto exchange Kraken freezes multibillion-dollar IPO plan due to difficult market conditions",
+      "url": "https://www.coindesk.com/business/2026/03/17/crypto-exchange-kraken-freezes-multibillion-dollar-ipo-plan-due-to-difficult-market-conditions"
+    },
+    "7660226": {
+      "sent_at": "2026-03-18T16:26:42.777397",
+      "category": "crypto",
+      "headline": "Traders can now bet on the S&P 500 around the clock without ever touching a traditional stock exchange",
+      "url": "https://www.coindesk.com/markets/2026/03/18/traders-can-now-bet-on-the-s-and-p-500-around-the-clock-without-ever-touching-a-traditional-stock-exchange"
+    },
+    "7660227": {
+      "sent_at": "2026-03-18T16:26:43.456440",
+      "category": "crypto",
+      "headline": "Key U.S. senator on crypto market structure bill negotiation: 'We think we've got it'",
+      "url": "https://www.coindesk.com/policy/2026/03/18/key-u-s-senator-on-crypto-market-structure-bill-negotiation-we-think-we-ve-got-it"
+    },
+    "7660228": {
+      "sent_at": "2026-03-18T16:26:44.132894",
+      "category": "crypto",
+      "headline": "Bitcoin hash rate is tumbling as Iran war lifts energy prices",
+      "url": "https://www.coindesk.com/markets/2026/03/18/bitcoin-hash-rate-is-tumbling-as-iran-war-lifts-energy-prices"
+    },
+    "7660333": {
+      "sent_at": "2026-03-18T16:51:35.580183",
+      "category": "crypto",
+      "headline": "Bhutan offloads an additional $72.3M Bitcoin amid market downturn",
+      "url": "https://cointelegraph.com/news/bhutan-offloads-72-3m-bitcoin-downturn?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7660434": {
+      "sent_at": "2026-03-18T17:05:00.931492",
+      "category": "crypto",
+      "headline": "\u2018We are so close this time\u2018 \u2014 Senator Lummis on market structure bill",
+      "url": "https://cointelegraph.com/news/senator-lummis-market-structure-bill-so-close?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7660435": {
+      "sent_at": "2026-03-18T17:29:01.120856",
+      "category": "crypto",
+      "headline": "Crypto Long & Short: When price stops working, yield starts mattering",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/03/18/crypto-long-and-short-when-price-stops-working-yield-starts-mattering"
+    },
+    "7660542": {
+      "sent_at": "2026-03-18T17:49:01.465237",
+      "category": "crypto",
+      "headline": "188-year-old NYC pharmacy has been 'packed like sardines'\u2014all because of $40 headbands and FX's 'Love Story'",
+      "url": "https://www.cnbc.com/2026/03/18/co-bigelow-nyc-pharmacy-packed-like-sardines-due-to-love-story.html"
+    },
+    "7660544": {
+      "sent_at": "2026-03-18T17:54:01.245090",
+      "category": "crypto",
+      "headline": "S&P Dow Jones licenses S&P 500 perpetual futures for Hyperliquid",
+      "url": "https://cointelegraph.com/news/s-p-dow-jones-licenses-first-s-p-500-perpetuals-for-onchain-trading-on-hyperliquid?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7660545": {
+      "sent_at": "2026-03-18T17:54:01.921099",
+      "category": "crypto",
+      "headline": "\u2018Rich Dad, Poor Dad\u2019 author says \u2018pin is near\u2019 on TradFi \u2018bubble burst:\u2019 Predicts $750K Bitcoin",
+      "url": "https://cointelegraph.com/news/rich-dad-poor-dad-author-says-pin-is-near-on-tradfi-bubble-burst-predicts-750k-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7660663": {
+      "sent_at": "2026-03-18T18:29:01.339817",
+      "category": "crypto",
+      "headline": "Fed holds rates amid higher inflation outlook: Bitcoin bounces to $72K",
+      "url": "https://cointelegraph.com/news/fed-holds-rates-amid-higher-inflation-outlook-bitcoin-bounces-to-dollar72k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7660661": {
+      "sent_at": "2026-03-18T18:29:02.028659",
+      "category": "crypto",
+      "headline": "Federal Reserve holds policy steady as Iran war adds to growth and inflation concerns",
+      "url": "https://www.coindesk.com/markets/2026/03/18/federal-reserve-holds-policy-steady-as-it-balances-growth-and-inflation-concerns"
+    },
+    "7660662": {
+      "sent_at": "2026-03-18T18:29:02.780998",
+      "category": "crypto",
+      "headline": "The era of cheap money is over as the Iran war creates a permanent 'inflation floor'",
+      "url": "https://www.coindesk.com/markets/2026/03/18/the-era-of-cheap-money-is-over-as-the-iran-war-creates-a-permanent-inflation-floor"
+    },
+    "7660871": {
+      "sent_at": "2026-03-18T19:20:11.223276",
       "category": "stock",
-      "headline": "Target expects sales to rebound this year, as the retailer tries to rally investors around its new CEO",
-      "url": "https://www.marketwatch.com/story/target-expects-sales-to-rebound-this-year-as-the-retailer-tries-to-rally-investors-around-its-new-ceo-a7d434ef"
+      "headline": "Here's our advice on Nvidia, the frustrating stock that looks cheaper by the day",
+      "url": "https://www.cnbc.com/2026/03/18/heres-our-advice-on-nvidia-the-frustrating-stock-that-looks-cheaper-by-the-day.html"
     },
-    "7580407": {
-      "sent_at": "2026-03-03T13:02:33.502985",
-      "category": "crypto",
-      "headline": "Stablecoins weaken bank lending and monetary policy in Europe: ECB",
-      "url": "https://cointelegraph.com/news/stablecoin-deposits-monetary-policy-europe-ecb?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    "7580430": {
-      "sent_at": "2026-03-03T13:02:34.174147",
-      "category": "crypto",
-      "headline": "Dollar surge pressures crypto markets after escalation in Iran conflict",
-      "url": "https://www.coindesk.com/markets/2026/03/03/dollar-surge-pressures-crypto-and-gold-after-escalation-in-iran-conflict"
-    },
-    "7580431": {
-      "sent_at": "2026-03-03T13:02:34.873033",
-      "category": "crypto",
-      "headline": "\u2018Scam token\u2019 case against Uniswap dismissed by U.S. district judge in NYC",
-      "url": "https://www.coindesk.com/policy/2026/03/03/scam-token-case-against-uniswap-dismissed-with-prejudice-by-u-s-district-judge-in-nyc"
-    },
-    "7580399": {
-      "sent_at": "2026-03-03T13:02:35.574351",
-      "category": "crypto",
-      "headline": "Bitcoin price chart 'death cross' is back, reviving late-cycle fears",
-      "url": "https://cointelegraph.com/news/bitcoin-price-chart-death-cross-back-late-cycle-fears?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    "7580400": {
-      "sent_at": "2026-03-03T13:02:39.343332",
-      "category": "crypto",
-      "headline": "Kalshi, Polymarket face trading halt in Nevada after court ruling",
-      "url": "https://cointelegraph.com/news/prediction-markets-trading-block-nevada-court-ruling?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    "7580398": {
-      "sent_at": "2026-03-03T13:02:40.027356",
-      "category": "crypto",
-      "headline": "Japan prime minister Sanae Takaichi disavows Solana meme coin after it crashes by 75%",
-      "url": "https://www.coindesk.com/business/2026/03/03/japan-prime-minister-sanae-takaichi-disavows-solana-meme-coin-after-it-crashes-by-75"
-    },
-    "7580373": {
-      "sent_at": "2026-03-03T13:02:40.705906",
+    "7660977": {
+      "sent_at": "2026-03-18T19:50:35.846284",
       "category": "stock",
-      "headline": "JPMorgan\u2019s Jamie Dimon warns there\u2019s too much complacency in markets",
-      "url": "https://www.marketwatch.com/story/jpmorgans-jamie-dimon-warns-theres-too-much-complacency-in-markets-98739bad"
+      "headline": "Inflation dominates Powell's remarks, pressures stocks. Plus, big earnings tonight",
+      "url": "https://www.cnbc.com/2026/03/18/inflation-dominates-powells-remarks-pressures-stocks-plus-big-earnings-tonight.html"
     },
-    "7580436": {
-      "sent_at": "2026-03-03T13:19:26.208878",
+    "7660978": {
+      "sent_at": "2026-03-18T19:55:36.457993",
+      "category": "crypto",
+      "headline": "Crypto Fear and Greed rebounds off extreme lows as traders re-enter",
+      "url": "https://cointelegraph.com/news/crypto-fear-and-greed-rebounds-off-extreme-lows-as-traders-re-enter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7661082": {
+      "sent_at": "2026-03-18T20:05:35.785861",
+      "category": "crypto",
+      "headline": "FTX Recovery Trust to distribute $2.2B to creditors in March",
+      "url": "https://cointelegraph.com/news/ftx-recovery-trust-to-distribute-2-2b-to-creditors-in-march?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7661092": {
+      "sent_at": "2026-03-18T20:30:39.384464",
+      "category": "crypto",
+      "headline": "SEC Chair explains why NFTs fall outside of securities laws",
+      "url": "https://cointelegraph.com/news/sec-chair-nfts-not-securities-explained?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7661089": {
+      "sent_at": "2026-03-18T20:30:40.127034",
+      "category": "crypto",
+      "headline": "Polymarket acquires Brahma to scale blockchain trading infrastructure",
+      "url": "https://www.coindesk.com/business/2026/03/18/polymarket-acquires-defi-brahma-to-build-reliable-financial-blockchain-infrastructure"
+    },
+    "7661090": {
+      "sent_at": "2026-03-18T20:30:40.887473",
+      "category": "crypto",
+      "headline": "Sam Bankman-Fried's bankrupt exchange FTX set to repay creditors $2.2 billion this month",
+      "url": "https://www.coindesk.com/business/2026/03/18/sam-bankman-fried-s-bankrupt-exchange-ftx-set-to-repay-creditors-usd2-2-billion-this-month"
+    },
+    "7661091": {
+      "sent_at": "2026-03-18T20:30:41.629949",
+      "category": "crypto",
+      "headline": "Kalshi co-founder fights back against Arizona\u2019s \u2018overstep\u2019 in what a lawyer calls a federal-state turf war",
+      "url": "https://www.coindesk.com/policy/2026/03/18/kalshi-co-founder-fights-back-against-arizona-s-overstep-in-what-a-lawyer-calls-a-federal-state-turf-war"
+    },
+    "7661302": {
+      "sent_at": "2026-03-18T21:30:53.842396",
+      "category": "crypto",
+      "headline": "Kalshi CEO fires back against Arizona criminal charges as \u2018total overstep\u2018",
+      "url": "https://cointelegraph.com/news/kalshi-ceo-arizona-criminal-charges-total-overstep?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7661299": {
+      "sent_at": "2026-03-18T21:30:54.522183",
+      "category": "crypto",
+      "headline": "SEC approves Nasdaq's move to support tokenized securities trading",
+      "url": "https://www.coindesk.com/policy/2026/03/18/sec-approves-nasdaq-s-move-to-allow-tokenized-securities-trading"
+    },
+    "7661300": {
+      "sent_at": "2026-03-18T21:30:55.357380",
+      "category": "crypto",
+      "headline": "Fairshake's $10 million Illinois misfire marks first big hitch in crypto political surge",
+      "url": "https://www.coindesk.com/news-analysis/2026/03/18/fairshake-s-usd10-million-illinois-misfire-marks-first-big-hitch-in-crypto-political-surge"
+    },
+    "7661301": {
+      "sent_at": "2026-03-18T21:30:56.053333",
+      "category": "crypto",
+      "headline": "Bitcoin sinks below $71,000, stocks close at session lows, as 2026 Fed rate cut hopes fade further",
+      "url": "https://www.coindesk.com/markets/2026/03/18/bitcoin-sinks-below-usd71-000-stocks-close-at-session-lows-as-2026-rate-cut-hopes-fade-further"
+    },
+    "7656430": {
+      "sent_at": "2026-03-18T21:50:37.714423",
+      "category": "crypto",
+      "headline": "SEC will consider most crypto assets not securities under federal law",
+      "url": "https://cointelegraph.com/news/sec-interpretation-crypto-assets-not-securities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7656429": {
+      "sent_at": "2026-03-18T21:50:38.391102",
+      "category": "crypto",
+      "headline": "Senator Tim Scott says market structure negotiations are advancing",
+      "url": "https://www.coindesk.com/policy/2026/03/17/senator-tim-scott-says-market-structure-negotiations-are-advancing"
+    },
+    "7656223": {
+      "sent_at": "2026-03-18T21:50:39.036928",
+      "category": "crypto",
+      "headline": "US lawmakers introduce bill to crack down on prediction markets war bets",
+      "url": "https://cointelegraph.com/news/us-lawmakers-prediction-market-bets-war-bill?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7656115": {
+      "sent_at": "2026-03-18T21:50:39.683338",
+      "category": "crypto",
+      "headline": "Moody\u2019s brings credit ratings onchain with Canton Network integration",
+      "url": "https://cointelegraph.com/news/moody-s-brings-credit-ratings-onchain-with-canton-network-integration?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7656218": {
+      "sent_at": "2026-03-18T21:50:40.344356",
+      "category": "crypto",
+      "headline": "Bitcoin's rally faces key hurdle with Wednesday's Fed meeting",
+      "url": "https://www.coindesk.com/markets/2026/03/17/bitcoin-s-rally-faces-key-hurdle-with-wednesday-s-fed-meeting"
+    },
+    "7656219": {
+      "sent_at": "2026-03-18T21:50:44.069834",
+      "category": "crypto",
+      "headline": "U.S. SEC issues first-ever definitions for what crypto assets are securities",
+      "url": "https://www.coindesk.com/policy/2026/03/17/u-s-sec-issues-first-ever-definitions-for-what-crypto-assets-are-securities"
+    },
+    "7656116": {
+      "sent_at": "2026-03-18T21:50:44.773180",
+      "category": "crypto",
+      "headline": "Bitcoin holds $70K, bringing spot ETF buyers close to breakeven: Is the bull market back?",
+      "url": "https://cointelegraph.com/news/bitcoin-holds-dollar70k-bringing-spot-etf-buyers-close-breakeven-is-bull-market-back?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7655796": {
+      "sent_at": "2026-03-18T21:50:45.424368",
+      "category": "crypto",
+      "headline": "Tether launches AI training framework for smartphones and consumer GPUs",
+      "url": "https://cointelegraph.com/news/tether-launches-ai-training-framework-for-smartphones-and-consumer-gpus?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7656220": {
+      "sent_at": "2026-03-18T21:50:46.089715",
+      "category": "crypto",
+      "headline": "Mastercard's $1.8 billion deal 'a clear answer' to a massive shift in the global payment war",
+      "url": "https://www.coindesk.com/business/2026/03/17/mastercard-s-usd1-8-billion-deal-a-clear-answer-to-a-massive-shift-in-the-global-payment-war"
+    },
+    "7655794": {
+      "sent_at": "2026-03-18T21:50:46.741469",
+      "category": "crypto",
+      "headline": "Arizona AG files charges against Kalshi over \u2018illegal gambling\u2018",
+      "url": "https://cointelegraph.com/news/arizona-criminal-charges-kalshi-gambling?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7661411": {
+      "sent_at": "2026-03-18T21:55:38.346958",
+      "category": "crypto",
+      "headline": "Fed leaves rates unchanged, says geopolitical uncertainty clouds outlook",
+      "url": "https://cointelegraph.com/news/fed-leaves-rates-unchanged-geopolitical-uncertainty?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7661816": {
+      "sent_at": "2026-03-18T23:35:24.331468",
       "category": "stock",
-      "headline": "Forget the oil spike \u2014 the Iran conflict could unlock a generational Middle East peace dividend",
-      "url": "https://www.marketwatch.com/story/forget-the-oil-spike-the-iran-conflict-could-unlock-a-generational-middle-east-peace-dividend-16fe67e4"
+      "headline": "Jim Cramer says you can still find stocks to buy on tough days in the market",
+      "url": "https://www.cnbc.com/2026/03/18/jim-cramer-you-can-still-find-stocks-to-buy-on-tough-days-in-the-market.html"
     },
-    "7580437": {
-      "sent_at": "2026-03-03T13:19:26.905206",
+    "139454808": {
+      "sent_at": "2026-03-18T23:45:38.327788",
       "category": "stock",
-      "headline": "Trump has less than 30 days to end the Iran conflict or he\u2019ll lose his inflation battle",
-      "url": "https://www.marketwatch.com/story/trump-has-less-than-30-days-to-end-the-iran-conflict-or-hell-lose-his-inflation-battle-7fed86f9"
+      "headline": "Comcast (CMCSA) Expands AI Ambitions with Edge Computing Initiative across U.S. Network",
+      "url": "https://finnhub.io/api/news?id=99440142563196de5aaf67553ed9808322753d27f344177442eb3c97726d39bf",
+      "ticker": "CMCSA"
     },
-    "7580438": {
-      "sent_at": "2026-03-03T13:29:26.310205",
-      "category": "crypto",
-      "headline": "Aave Chan Initiative to exit Aave DAO after governance clash over funding",
-      "url": "https://cointelegraph.com/news/aave-aci-exit-dao-governance-vote?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    "7580439": {
-      "sent_at": "2026-03-03T13:34:26.159719",
+    "139454929": {
+      "sent_at": "2026-03-18T23:45:38.334084",
       "category": "stock",
-      "headline": "Why Best Buy\u2019s stock is soaring, even as sales and full-year outlook disappoint",
-      "url": "https://www.marketwatch.com/story/why-best-buys-stock-is-soaring-even-as-sales-and-full-year-outlook-disappoint-bb68b2e4"
+      "headline": "The 'biggest decision' Disney's new CEO D'Amaro has to make",
+      "url": "https://finnhub.io/api/news?id=4aae13b54275d45cb5dc9de4ae3c0d6de06d0a5cf0945ebcd7e8751aecb6795a",
+      "ticker": "CMCSA"
     },
-    "7580456": {
-      "sent_at": "2026-03-03T13:54:26.360996",
-      "category": "crypto",
-      "headline": "Strive strategist says AI deflation could push Bitcoin to $11M by 2036",
-      "url": "https://cointelegraph.com/news/strive-joe-burnett-ai-deflation-bitcoin-11m-2036-forecast?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    "7580457": {
-      "sent_at": "2026-03-03T13:54:27.033184",
-      "category": "crypto",
-      "headline": "Ether price again rejected at $2K: How low can ETH go in March?",
-      "url": "https://cointelegraph.com/news/ethereum-price-again-rejected-2k-how-low-can-eth-go-in-march?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    "7580454": {
-      "sent_at": "2026-03-03T13:54:27.710559",
-      "category": "crypto",
-      "headline": "Visa and Bridge plan stablecoin-linked card expansion to over 100 countries",
-      "url": "https://www.coindesk.com/business/2026/03/03/visa-and-bridge-plan-stablecoin-linked-card-expansion-to-over-100-countries"
-    },
-    "7580455": {
-      "sent_at": "2026-03-03T13:54:28.372274",
-      "category": "crypto",
-      "headline": "Bitcoin could slide further on liquidity squeeze, but long-term bull case intact: Sygnum CIO",
-      "url": "https://www.coindesk.com/markets/2026/03/02/bitcoin-could-slide-further-on-liquidity-squeeze-but-long-term-bull-case-intact-sygnum-cio"
-    },
-    "7580460": {
-      "sent_at": "2026-03-03T14:04:26.367214",
+    "139454948": {
+      "sent_at": "2026-03-18T23:45:38.337257",
       "category": "stock",
-      "headline": "We're buying more of this megacap AI stock as the market heads for a lower open",
-      "url": "https://www.cnbc.com/2026/03/03/were-buying-more-of-this-ai-stock-as-the-market-indicates-a-lower-open.html"
+      "headline": "Comcast Faces Soft Q1, Better Trend Later in the Year, UBS Says",
+      "url": "https://finnhub.io/api/news?id=902a4ca2b7bc035d08516432f24c9557e4d2fc4b079a61a10858c354778e2ee3",
+      "ticker": "CMCSA"
     },
-    "7580465": {
-      "sent_at": "2026-03-03T14:19:26.210422",
+    "139454497": {
+      "sent_at": "2026-03-18T23:45:38.339193",
+      "category": "stock",
+      "headline": "Top S&P500 movers in Wednesday's session",
+      "url": "https://finnhub.io/api/news?id=b53642e0b3bb239db0ce2d7b63105421d8d7d7d6898276aaa6570965b12020e5",
+      "ticker": "CMCSA"
+    },
+    "139453366": {
+      "sent_at": "2026-03-18T23:45:38.341302",
+      "category": "stock",
+      "headline": "Wednesday's session: top gainers and losers in the S&P500 index",
+      "url": "https://finnhub.io/api/news?id=041a5986573cab47b771e9896fb78dce3c06e1fd141c2566a25d6c45d60ba415",
+      "ticker": "CMCSA"
+    },
+    "139452185": {
+      "sent_at": "2026-03-18T23:45:38.344898",
+      "category": "stock",
+      "headline": "Wednesday's session: gap up and gap down stock in the S&P500 index",
+      "url": "https://finnhub.io/api/news?id=19e435b468426590733ac348332cab4479c0799254cda73f031ed3d992067826",
+      "ticker": "CMCSA"
+    },
+    "139454949": {
+      "sent_at": "2026-03-18T23:45:38.347432",
+      "category": "stock",
+      "headline": "Decart Demonstrates How the AI Grid Powers Real-Time World Models in Collaboration with Comcast and NVIDIA",
+      "url": "https://finnhub.io/api/news?id=152bd625ecaccae51ad7f603d38a7b31339b20ff917a18c260421522de7ac5ab",
+      "ticker": "CMCSA"
+    },
+    "139450248": {
+      "sent_at": "2026-03-18T23:45:38.349453",
+      "category": "stock",
+      "headline": "FreeWheel Integrates Tunnl Audiences to Accelerate Political and Public Affairs Targeting Across CTV for 2026 Campaigns",
+      "url": "https://finnhub.io/api/news?id=f7eeccb31034b5c1b7ccfcf7fb40d9b938d1f31abd683db74c585ca397291fef",
+      "ticker": "CMCSA"
+    },
+    "139453004": {
+      "sent_at": "2026-03-18T23:45:38.351563",
+      "category": "stock",
+      "headline": "188-year-old NYC pharmacy has been 'packed like sardines'\u2014all because of $40 headbands and FX's 'Love Story'",
+      "url": "https://finnhub.io/api/news?id=f7b0f9ea471dd58e11c10364c957693f7a5fb407d3e85d07cc1606185f95feea",
+      "ticker": "CMCSA"
+    },
+    "139452765": {
+      "sent_at": "2026-03-18T23:45:38.354277",
+      "category": "stock",
+      "headline": "Fed Day, Macy's earnings, Micron's memory boost and more in Morning Squawk",
+      "url": "https://finnhub.io/api/news?id=ca3ec842e20a3feef8dc2bde59966941bf62f7fa6760ced866c5f6e7ed35b7fc",
+      "ticker": "CMCSA"
+    },
+    "139452931": {
+      "sent_at": "2026-03-18T23:45:38.357116",
+      "category": "stock",
+      "headline": "Disney embarks on new chapter as Josh D'Amaro takes over as CEO ",
+      "url": "https://finnhub.io/api/news?id=d2728c6271ab8facca743e450eac4da4d9937fd8a03c68cc711e1d1d937b60ab",
+      "ticker": "CMCSA"
+    },
+    "139435794": {
+      "sent_at": "2026-03-18T23:45:38.363841",
+      "category": "stock",
+      "headline": "3 Cash-Producing Stocks with Warning Signs",
+      "url": "https://finnhub.io/api/news?id=e0f60edc6fddb314b692688982c04e0efbd5a57571a122125c47f77e488f901e",
+      "ticker": "CMCSA"
+    },
+    "139435796": {
+      "sent_at": "2026-03-18T23:45:38.368075",
+      "category": "stock",
+      "headline": "Personal AI\u2019s Memory-Based Small Language Models Deliver Hyper-Personalized Experiences on Comcast\u2019s AI Grid, Powered by NVIDIA",
+      "url": "https://finnhub.io/api/news?id=6323f211f2f1c8b0abd8fcf027124b0f9f86fee8d31f91309b26142558a7e443",
+      "ticker": "CMCSA"
+    },
+    "139435795": {
+      "sent_at": "2026-03-18T23:45:38.370597",
+      "category": "stock",
+      "headline": "Comcast to Accelerate Next-Generation AI Applications Using NVIDIA Infrastructure at the Network Edge",
+      "url": "https://finnhub.io/api/news?id=979c8d61e5d85364b422bfcab31cbc202c185a479d758872a4f7912d8ef00092",
+      "ticker": "CMCSA"
+    },
+    "139433904": {
+      "sent_at": "2026-03-18T23:45:38.372982",
+      "category": "stock",
+      "headline": "Assessing Comcast (CMCSA) Valuation After Strong 2025 Free Cash Flow And Network Expansion",
+      "url": "https://finnhub.io/api/news?id=bff29170ef2fc5b0d941e78572767f676f6dea7b34bde9c9a6f4383dfe6acf03",
+      "ticker": "CMCSA"
+    },
+    "139449903": {
+      "sent_at": "2026-03-18T23:46:36.326197",
+      "category": "stock",
+      "headline": "Shares of oil and gas companies are trading higher as Middle East developments indicate continued difficulties for energy transport through the Strait of Hormuz.",
+      "url": "https://finnhub.io/api/news?id=c25e65b7f3eba15a71943984858d6ce89dfc82ffb7b919c7aa0f0f0bc1805db7",
+      "ticker": "APA"
+    },
+    "139450367": {
+      "sent_at": "2026-03-18T23:46:36.330508",
+      "category": "stock",
+      "headline": "Mizuho Maintains Underperform on APA, Raises Price Target to $29",
+      "url": "https://finnhub.io/api/news?id=11bc192ea5c74270cc218df8a0ed9cf918e9a43921c0c5ab8d585f43666313d9",
+      "ticker": "APA"
+    },
+    "139436157": {
+      "sent_at": "2026-03-18T23:46:36.334694",
+      "category": "stock",
+      "headline": "Barclays Maintains Underweight on APA, Raises Price Target to $28",
+      "url": "https://finnhub.io/api/news?id=456719b851ce74675ee80defe70cf8d3427e365dfdbfcc843a2d60fb73d172af",
+      "ticker": "APA"
+    },
+    "139414735": {
+      "sent_at": "2026-03-18T23:46:36.337998",
+      "category": "stock",
+      "headline": "QVAL: Value ETF Lagging Its Peers",
+      "url": "https://finnhub.io/api/news?id=f235b24d6adc5523f7395b17abff8b9a8bfe691d73eed71706be60f6c4a26813",
+      "ticker": "APA"
+    },
+    "139406938": {
+      "sent_at": "2026-03-18T23:46:36.343564",
+      "category": "stock",
+      "headline": "The New Magic Formula For Investing",
+      "url": "https://finnhub.io/api/news?id=c0852ec4846e5d8d0f97d908515c740379c0515f0365babf01bc93c36c64d565",
+      "ticker": "APA"
+    },
+    "139403563": {
+      "sent_at": "2026-03-18T23:46:36.348425",
+      "category": "stock",
+      "headline": "APA (APA) Rises As Market Takes a Dip: Key Facts",
+      "url": "https://finnhub.io/api/news?id=f09c741919955d44c2288ea575835d3247373e450fec23f62a02613fbfdc0d26",
+      "ticker": "APA"
+    },
+    "139402996": {
+      "sent_at": "2026-03-18T23:46:36.352622",
+      "category": "stock",
+      "headline": "S&P 500 Posts Third Consecutive Weekly Drop as Crude Climbs",
+      "url": "https://finnhub.io/api/news?id=9031355df33876b50bdd9182181539ee067394b4a13db3d0c46507e28c44344e",
+      "ticker": "APA"
+    },
+    "139400867": {
+      "sent_at": "2026-03-18T23:46:36.358722",
+      "category": "stock",
+      "headline": "Dividend stocks are catching up to tech stocks on a key earnings metric at a critical time for the market",
+      "url": "https://finnhub.io/api/news?id=ffcc1e847e0b7eaaea8a095b88cf255bfd69928f645f94429d0735d59be84b41",
+      "ticker": "APA"
+    },
+    "139399381": {
+      "sent_at": "2026-03-18T23:46:36.363505",
+      "category": "stock",
+      "headline": "APA shares are trading higher after Piper Sandler maintained its Neutral rating on the stock and raised its price target from $30 to $37.",
+      "url": "https://finnhub.io/api/news?id=183eba6694841c43bfb1ed167ecfb130a4acfbc539badc2ec526d97efa599594",
+      "ticker": "APA"
+    },
+    "139399382": {
+      "sent_at": "2026-03-18T23:46:36.369169",
+      "category": "stock",
+      "headline": "Piper Sandler Maintains Neutral on APA, Raises Price Target to $37",
+      "url": "https://finnhub.io/api/news?id=504f42d4f4d350aec7ee863de8eeb0b7f5abcbef770179c73dcc3c51e5d79c50",
+      "ticker": "APA"
+    },
+    "139384999": {
+      "sent_at": "2026-03-18T23:46:36.376872",
+      "category": "stock",
+      "headline": "RBC Capital Raises APA Target as Oil Strength and Earnings Momentum Support Shares",
+      "url": "https://finnhub.io/api/news?id=46c92f902f66e9f9a8b1476d9e1f05f9a8d49111d4f0cd180bddd3e3ce7f68bb",
+      "ticker": "APA"
+    },
+    "139388198": {
+      "sent_at": "2026-03-18T23:46:36.381340",
+      "category": "stock",
+      "headline": "Shares of oil-related companies are trading higher as crude prices recover some of yesterday's losses on concerns that the Middle East conflict will continue to affect marine energy transport to global markets",
+      "url": "https://finnhub.io/api/news?id=fbb3374952e6c30bbe81419c0a9c0f810bce18f6dc1326f2614335dbfa6ae6bc",
+      "ticker": "APA"
+    },
+    "139388558": {
+      "sent_at": "2026-03-18T23:46:36.384920",
+      "category": "stock",
+      "headline": "Goldman Sachs Maintains Sell on APA, Raises Price Target to $29",
+      "url": "https://finnhub.io/api/news?id=872b544b658eb83afdf1802f32a74017c70178dd7949db5a0c7e354258c004c0",
+      "ticker": "APA"
+    },
+    "139372319": {
+      "sent_at": "2026-03-18T23:46:36.390100",
+      "category": "stock",
+      "headline": "APA Corp.: Deeply Undervalued While Advancing On All Fronts",
+      "url": "https://finnhub.io/api/news?id=45e785535dc8fb014022d9fef8585e695d7dbaea0679f993568f6b304b2f7e98",
+      "ticker": "APA"
+    },
+    "139373026": {
+      "sent_at": "2026-03-18T23:46:36.394973",
+      "category": "stock",
+      "headline": "Shares of oil-related companies are trading lower as oil prices retreat to under $90 per barrel after President Trump's comments about the conflict with Iran ending soon. Also, G7 governments will meet on Tuesday to discuss using strategic oil reserves.",
+      "url": "https://finnhub.io/api/news?id=5fd81b38ac3374799203d9b11aa820505449f8e89eb3cb8359d61861d943dc02",
+      "ticker": "APA"
+    },
+    "7661818": {
+      "sent_at": "2026-03-18T23:57:02.400095",
+      "category": "crypto",
+      "headline": "Bitcoin falls under $71K but data shows BTC\u2019s bullish momentum holding",
+      "url": "https://cointelegraph.com/news/bitcoin-falls-under-71k-but-data-shows-btc-s-bullish-momentum-holding?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "139450471": {
+      "sent_at": "2026-03-19T00:02:44.476987",
+      "category": "stock",
+      "headline": "Mosaic\u2019s Rare Earths Bet Could Revalue the Stock: What That Means for Investors",
+      "url": "https://finnhub.io/api/news?id=4c9023ddc0b07e7c96fd66088c41e0193c2f17abcf1fc4911d78667d21dab4eb",
+      "ticker": "MOS"
+    },
+    "139452896": {
+      "sent_at": "2026-03-19T00:02:44.482694",
+      "category": "stock",
+      "headline": "Trump waives U.S. shipping law for 60 days to steady oil market",
+      "url": "https://finnhub.io/api/news?id=023de570a0606c1fea3557e2d4304a950d446ad63e772ca4dd16dc335509ba7d",
+      "ticker": "MOS"
+    },
+    "139450396": {
+      "sent_at": "2026-03-19T00:02:44.487583",
+      "category": "stock",
+      "headline": "CF Industries' Stock Sees Momentum Score Spike As Middle East Fertilizer Exports Stagnate",
+      "url": "https://finnhub.io/api/news?id=66b390af0fbd0137972869e98b8a79099cafc77e0d8958973383529cffacb7fc",
+      "ticker": "MOS"
+    },
+    "139439042": {
+      "sent_at": "2026-03-19T00:02:44.492274",
+      "category": "stock",
+      "headline": "Tuesday's session: top gainers and losers in the S&P500 index",
+      "url": "https://finnhub.io/api/news?id=92936dab0b7636b4a870a602beac690884697a94e7d80a4651d81b7e3258c811",
+      "ticker": "MOS"
+    },
+    "139449869": {
+      "sent_at": "2026-03-19T00:02:44.496654",
+      "category": "stock",
+      "headline": "Markets Fear Prolonged Iran War \u2013 These 2 'Hormuz Stock Baskets' Show Why",
+      "url": "https://finnhub.io/api/news?id=54079a54f23ab51379b7c166a37c96a756cc56e1204d653922b92e2ea9b9a116",
+      "ticker": "MOS"
+    },
+    "139450398": {
+      "sent_at": "2026-03-19T00:02:44.499810",
+      "category": "stock",
+      "headline": "CIBC Maintains Neutral on Mosaic, Raises Price Target to $32",
+      "url": "https://finnhub.io/api/news?id=c965d0d31809dea56c561e88e6f447d8f20f4eb2402c48af5451093670828123",
+      "ticker": "MOS"
+    },
+    "139438887": {
+      "sent_at": "2026-03-19T00:02:44.504059",
+      "category": "stock",
+      "headline": "PGIM Jennison Natural Resources Fund Q4 2025 Portfolio Performance",
+      "url": "https://finnhub.io/api/news?id=87ff61dfc5edebd35915cc9479cff18cd270e018affb6b8ea42560fe3b755a4a",
+      "ticker": "MOS"
+    },
+    "139438377": {
+      "sent_at": "2026-03-19T00:02:44.507285",
+      "category": "stock",
+      "headline": "Stocks making the biggest moves midday: Mosaic, Tencent Music, Delta Air Lines, Uber, Eli Lilly & more",
+      "url": "https://finnhub.io/api/news?id=bdec1cd7bf42bf2a98d5d0f6f857e52e5a79e891e71589decc67c670999f91c2",
+      "ticker": "MOS"
+    },
+    "139430278": {
+      "sent_at": "2026-03-19T00:02:44.510163",
+      "category": "stock",
+      "headline": "Is Mosaic (MOS) Quietly Recasting Its Fertilizer Identity With Brazil Rare Earths And Steady Payouts?",
+      "url": "https://finnhub.io/api/news?id=8daa4671850d97c86cf0695d6c9dc6901b05a104a11c4248b1a05477041d87aa",
+      "ticker": "MOS"
+    },
+    "139430279": {
+      "sent_at": "2026-03-19T00:02:44.513035",
+      "category": "stock",
+      "headline": "Assessing Mosaic (MOS) Valuation After Rare Earths Partnership And Uberaba Project Progress",
+      "url": "https://finnhub.io/api/news?id=e2512a47949a713160afe2c4777d4f288f797bc8dc2d2fa3c6782c001a0332e4",
+      "ticker": "MOS"
+    },
+    "139425918": {
+      "sent_at": "2026-03-19T00:02:44.516663",
+      "category": "stock",
+      "headline": "Exploring the top movers within the S&P500 index during today's session.",
+      "url": "https://finnhub.io/api/news?id=a430431c91ce94dc5e5e3254e0314d6986e2ae1f9608447a7f965019b2537400",
+      "ticker": "MOS"
+    },
+    "139424864": {
+      "sent_at": "2026-03-19T00:02:44.520869",
+      "category": "stock",
+      "headline": "Stay informed with the top movers within the S&P500 index on Monday.",
+      "url": "https://finnhub.io/api/news?id=f9155b31aba7bc284aa50bb30319a6d9662f7f32215138cab84a75aa99d9b890",
+      "ticker": "MOS"
+    },
+    "139423725": {
+      "sent_at": "2026-03-19T00:02:44.523671",
+      "category": "stock",
+      "headline": "What's going on in today's session: S&P500 gap up and gap down stocks",
+      "url": "https://finnhub.io/api/news?id=7cb159bd24f947cc199a5b9f05e4d04f08f18457ac6f09bcee5c9588cd1c6c91",
+      "ticker": "MOS"
+    },
+    "139435178": {
+      "sent_at": "2026-03-19T00:02:44.526696",
+      "category": "stock",
+      "headline": "Wall Street Rally Cools As Trump Urges Other Nations To Join War: What's Moving Markets Monday?",
+      "url": "https://finnhub.io/api/news?id=e4f060310fdb303627bec93a728314a2ecf0882fc0c481524fb18d4ff30f57b4",
+      "ticker": "MOS"
+    },
+    "139422077": {
+      "sent_at": "2026-03-19T00:02:44.530402",
+      "category": "stock",
+      "headline": "Monday's pre-market session: top gainers and losers in the S&P500 index",
+      "url": "https://finnhub.io/api/news?id=0492015cae15dc237fb5a1d7187191ada1ef04b0d21e884725d47e276598362c",
+      "ticker": "MOS"
+    },
+    "139451924": {
+      "sent_at": "2026-03-19T00:37:02.505179",
+      "category": "stock",
+      "headline": "Why Are Lyft Shares Rising Today?",
+      "url": "https://finnhub.io/api/news?id=cf0b3b03671c4388afa664521c44dbe86be8095daecd3148d04b45b973c98e0c",
+      "ticker": "LYFT"
+    },
+    "139435526": {
+      "sent_at": "2026-03-19T00:37:02.531490",
+      "category": "stock",
+      "headline": "Nvidia, T-Mobile Power Next Wave Of Smart Cities With Edge AI",
+      "url": "https://finnhub.io/api/news?id=d99c741cd5d7957f8d2a02a36c4a9c4133132f2cc525be757aabf18ffd00be2f",
+      "ticker": "LYFT"
+    },
+    "139435876": {
+      "sent_at": "2026-03-19T00:37:02.539071",
+      "category": "stock",
+      "headline": "Nvidia Announces New Chip For Space-Based AI Compute In Boost For Orbital Datacenters",
+      "url": "https://finnhub.io/api/news?id=f9722ac028a0841dd53ef7dfa7ff7149c36a534e33d87b4c0f79d11229e934d6",
+      "ticker": "LYFT"
+    },
+    "139435877": {
+      "sent_at": "2026-03-19T00:37:02.546959",
+      "category": "stock",
+      "headline": "Tesla Rivals BYD, Geely To Adopt Nvidia's Self-Driving Tech\u2014Jensen Huang Says 'Everything That Moves' Will Be Autonomous",
+      "url": "https://finnhub.io/api/news?id=685935af933a60d71e7377074a972e43b6e45e6a2950b46277ce8f08d26274f8",
+      "ticker": "LYFT"
+    },
+    "139435553": {
+      "sent_at": "2026-03-19T00:37:02.555488",
+      "category": "stock",
+      "headline": "Nvidia Highlights $1 Trillion Opportunity: Jensen Huang Puts 13-Digit Figure In Reach",
+      "url": "https://finnhub.io/api/news?id=142fa4fcd8cdaeec36a6673b64b1dc98872b4d4ce43a6a0650456d07e115e4ca",
+      "ticker": "LYFT"
+    },
+    "7662332": {
+      "sent_at": "2026-03-19T02:32:02.441760",
+      "category": "crypto",
+      "headline": "Fold Q4 revenue up, CEO sees Bitcoin rewards overtaking air miles",
+      "url": "https://cointelegraph.com/news/fold-revenue-rises-adds-customers-bitcoin-rewards?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7662437": {
+      "sent_at": "2026-03-19T02:57:02.663951",
+      "category": "crypto",
+      "headline": "SEC gives go-ahead to Nasdaq for tokenized trading trial",
+      "url": "https://cointelegraph.com/news/sec-approves-nasdaq-tokenized-trading-pilot?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7662438": {
+      "sent_at": "2026-03-19T02:57:03.343236",
+      "category": "crypto",
+      "headline": "Algorand Foundation cuts 25% of staff, citing macro uncertainty",
+      "url": "https://cointelegraph.com/news/algorand-foundation-staff-layoffs-crypto-market-uncertainty-macro?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7662548": {
+      "sent_at": "2026-03-19T03:37:02.312774",
+      "category": "crypto",
+      "headline": "UK charges two men with national security offences linked to Iran - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbXJhSlF4LXpLcmZqcE51ZFNUVlV0Y250TkhpTThZdWJrcFVfbTJ2WmxMMjE5dnB1TDRjN19lWWtWdXVBZ0NaRHo0b2FsSG50bDdlQkhob1hrS0VtaGY2UmFNTWljaXVtSEJlT25SNV9wSzlEUTJ2R3RrYW12TEF3X1Jlc1k0UFFMVVVPTUtsV1Z6TUpYVUVGaGgxSjh4UkRLVnRTeGxhdw?oc=5"
+    },
+    "7662648": {
+      "sent_at": "2026-03-19T03:57:02.263768",
+      "category": "crypto",
+      "headline": "Polymarket buys DeFi startup Brahma in latest acquisition wave",
+      "url": "https://cointelegraph.com/news/polymarket-buys-defi-startup-brahma-latest-acquisition-spree?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7662649": {
+      "sent_at": "2026-03-19T03:57:02.934214",
+      "category": "crypto",
+      "headline": "California court dismisses Coinbase user\u2019s challenge to IRS summons",
+      "url": "https://cointelegraph.com/news/coinbase-user-irs-challenge-dismissed-california?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7662958": {
+      "sent_at": "2026-03-19T05:07:02.414222",
+      "category": "crypto",
+      "headline": "XRP treasury Evernorth files with SEC to list shares on Nasdaq",
+      "url": "https://cointelegraph.com/news/xrp-treasury-evernorth-files-with-sec-list-shares-nasdaq?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7663062": {
+      "sent_at": "2026-03-19T05:57:02.365151",
+      "category": "crypto",
+      "headline": "Crypto traders eye \u2018bullish relief rally\u2019 after Fed holds rates steady",
+      "url": "https://cointelegraph.com/news/crypto-relief-rally-us-federal-reserve-rates?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7663178": {
+      "sent_at": "2026-03-19T06:32:02.392955",
+      "category": "crypto",
+      "headline": "Retail tripled gold buying in last 6 months as Wall Street sells",
+      "url": "https://cointelegraph.com/news/institutions-quietly-selling-gold-but-retail-is-buying-triple-pace-data-shows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7663179": {
+      "sent_at": "2026-03-19T06:32:03.108353",
+      "category": "crypto",
+      "headline": "Block, Inc. laid off 4K employees last month, some are already back",
+      "url": "https://cointelegraph.com/news/block-rehires-some-staff-initially-fired?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7663181": {
+      "sent_at": "2026-03-19T06:37:02.329825",
+      "category": "stock",
+      "headline": "Investors face cloudier Fed rate view as Iran war grips markets - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOaU0xMU8zZlBtcHM3UGhON2p2T09JR2syckhGN0U5bDlxWlFvNDltdmVmWXVHR2JPenE5OFM5QTMtS2pncGxWSkV4a2tnQS1zbjBFcnNMWHRyZUVTcjZST2llbnpDbGhoZDZDdGczVEpkWkpSNU8ySmRueW1TZWJSazNuc2lwN09CaUlmdjY3RnBfLTl2bkRtLWQ3dHJnMFV6aDVlM2Q3VUo?oc=5"
+    },
+    "7663281": {
+      "sent_at": "2026-03-19T06:57:02.354627",
+      "category": "crypto",
+      "headline": "Canada vows continued crypto crackdown after taking down 47 firms in 2026",
+      "url": "https://cointelegraph.com/news/canada-crypto-msb-crackdown-50-registrations-revoked?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7663282": {
+      "sent_at": "2026-03-19T06:57:03.057712",
+      "category": "crypto",
+      "headline": "Visa and Stripe-backed Tempo launch tools for AI agents on same day",
+      "url": "https://cointelegraph.com/news/visa-tempo-both-launch-tools-ai-agents?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7663383": {
+      "sent_at": "2026-03-19T07:07:02.331644",
+      "category": "crypto",
+      "headline": "Forget market hours: Leading ETP firm just opened 24/7 liquidity for tokenized stocks, gold and money market funds",
+      "url": "https://www.coindesk.com/markets/2026/03/19/forget-market-hours-leading-etp-firm-just-opened-24-7-liquidity-for-tokenized-stocks-gold-and-money-market-funds"
+    },
+    "7663491": {
+      "sent_at": "2026-03-19T07:52:02.428793",
+      "category": "crypto",
+      "headline": "Bitcoin OGs dump over $100 million in BTC after hawkish Fed dents rate cut hopes",
+      "url": "https://www.coindesk.com/markets/2026/03/19/bitcoin-ogs-dump-over-usd100-million-in-btc-after-hawkish-fed-dents-rate-cut-hopes"
+    },
+    "7663593": {
+      "sent_at": "2026-03-19T08:27:02.320251",
+      "category": "crypto",
+      "headline": "The abundance that AI may promise is not free",
+      "url": "https://cointelegraph.com/news/abundance-ai-promise-is-not-free?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7663902": {
+      "sent_at": "2026-03-19T09:52:02.372695",
+      "category": "crypto",
+      "headline": "OpenClaw devs targeted by phishing scam promising free \u2018CLAW\u2019 tokens",
+      "url": "https://cointelegraph.com/news/openclaw-phishing-scam-free-claw-tokens?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7664005": {
+      "sent_at": "2026-03-19T10:02:02.342829",
+      "category": "crypto",
+      "headline": "ECB opens digital euro work on ATMs and payment terminals",
+      "url": "https://cointelegraph.com/news/ecb-digital-euro-atm-payments-workstreams?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7664008": {
+      "sent_at": "2026-03-19T10:27:02.265377",
+      "category": "crypto",
+      "headline": "Why Ethereum developers want \u2018one-click staking\u2019 for institutions",
+      "url": "https://cointelegraph.com/news/ethereum-one-click-staking-institutions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7664010": {
+      "sent_at": "2026-03-19T10:37:02.796102",
+      "category": "stock",
+      "headline": "Pakistan's delivery riders race for Eid, but Iran war squeezes earnings - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNU29oYUV2UlJ0Q1gzVHBqLUFxb0hDMW0xOWF2WUFiRXhJWWl3bm1vcmlucWtRdEhvTHFTaGZ4c1E3VE1lUDZoa1ZFMFJGSjM0eWhiQllpb1htUWZoX2ZKY1FZUHY5TFhGYnZvd1NzVWNKaFhwcmtkMS16R3NDR3B2NF96Yk5rTEtRek5ORW1GbXBPRVhQNXk3WERFQWR6a1VEVmtPdUdvY2xQZTFBTWlTRUtCdkdQbXc?oc=5"
+    },
+    "7664114": {
+      "sent_at": "2026-03-19T10:52:02.281642",
+      "category": "crypto",
+      "headline": "Bitcoin\u2019s quantum threat is real, but far from an existential crisis, Galaxy says",
+      "url": "https://www.coindesk.com/tech/2026/03/19/bitcoin-s-quantum-threat-is-real-but-far-from-an-existential-crisis-galaxy-says"
+    },
+    "7664115": {
+      "sent_at": "2026-03-19T10:52:02.956175",
+      "category": "crypto",
+      "headline": "Bitcoin, unusually, outperforms gold as hawkish Fed, oil price fuel risk-off sentiment",
+      "url": "https://www.coindesk.com/markets/2026/03/19/bitcoin-unusually-outperforms-gold-as-hawkish-fed-oil-price-fuel-risk-off-sentiment"
+    },
+    "7664222": {
+      "sent_at": "2026-03-19T11:17:02.408946",
+      "category": "stock",
+      "headline": "Micron falls more than 5% despite blockbuster earnings. Here's what market watchers are saying",
+      "url": "https://www.cnbc.com/2026/03/19/micron-falls-blockbuster-earnings-chips-ai.html"
+    },
+    "7664431": {
+      "sent_at": "2026-03-19T12:02:02.320585",
+      "category": "crypto",
+      "headline": "Crypto.com cuts 12% of staff as it integrates AI across the business for efficiency",
+      "url": "https://www.coindesk.com/business/2026/03/19/crypto-com-cuts-12-of-staff-as-it-integrates-ai-into-internal-processes"
+    },
+    "7664432": {
+      "sent_at": "2026-03-19T12:02:02.966511",
+      "category": "crypto",
+      "headline": "Capital is shifting into digital dollars as bitcoin wilts",
+      "url": "https://www.coindesk.com/daybook-us/2026/03/19/capital-is-shifting-into-digital-dollars-as-bitcoin-wilts"
+    },
+    "7664433": {
+      "sent_at": "2026-03-19T12:02:03.685586",
+      "category": "crypto",
+      "headline": "Venus\u2019 XVS token plunges 9% as exploit leaves protocol with bad debt",
+      "url": "https://www.coindesk.com/markets/2026/03/19/venus-xvs-token-plunges-9-as-exploit-leaves-protocol-with-bad-debt"
+    },
+    "7664434": {
+      "sent_at": "2026-03-19T12:02:04.390395",
+      "category": "crypto",
+      "headline": "Bitcoin slips to $70,000 as oil surge, Fed pause weigh on risk assets",
+      "url": "https://www.coindesk.com/markets/2026/03/19/bitcoin-slips-to-usd70-000-as-oil-surge-fed-pause-weigh-on-risk-assets"
+    },
+    "7664442": {
+      "sent_at": "2026-03-19T12:27:02.306990",
+      "category": "crypto",
+      "headline": "Bitcoin ETF inflow streak snaps with $164M outflows amid BTC dip",
+      "url": "https://cointelegraph.com/news/spot-bitcoin-etf-end-inflow-streak-164-million-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7664443": {
+      "sent_at": "2026-03-19T12:27:03.075910",
+      "category": "crypto",
+      "headline": "Ethereum long squeeze risk rises as ETH price dips to $2,100",
+      "url": "https://cointelegraph.com/news/ethereum-long-squeeze-risk-rises-eth-price-dips-2-100?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7664444": {
+      "sent_at": "2026-03-19T12:27:03.751818",
+      "category": "crypto",
+      "headline": "Bitcoin whales move millions as Iran war sends oil surging",
+      "url": "https://cointelegraph.com/news/bitcoin-whales-sell-iran-war-oil-spike?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7664445": {
+      "sent_at": "2026-03-19T12:27:04.423285",
+      "category": "crypto",
+      "headline": "South Korea opposition party pushes to scrap planned 22% crypto tax",
+      "url": "https://cointelegraph.com/news/south-korea-opposition-proposes-scrapping-crypto-tax-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7664562": {
+      "sent_at": "2026-03-19T12:52:02.607466",
+      "category": "crypto",
+      "headline": "Crypto.com cuts 12% of staff as it accelerates AI push",
+      "url": "https://cointelegraph.com/news/crypto-com-cuts-staff-ai-pivot?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7664563": {
+      "sent_at": "2026-03-19T12:52:03.411461",
+      "category": "crypto",
+      "headline": "Bitcoin tests old 2021 top as gold falls to six-week lows under $4.7K",
+      "url": "https://cointelegraph.com/news/bitcoin-tests-old-2021-top-gold-falls-six-week-lows-under-4-7k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7664564": {
+      "sent_at": "2026-03-19T12:52:04.102336",
+      "category": "crypto",
+      "headline": "The era of listings and on-ramps is ending, as intent protocols make access native",
+      "url": "https://cointelegraph.com/news/intent-protocols-make-access-native?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7664670": {
+      "sent_at": "2026-03-19T13:22:02.290304",
+      "category": "stock",
+      "headline": "Jim Cramer's top 10 things to watch in the stock market Thursday",
+      "url": "https://www.cnbc.com/2026/03/19/jim-cramers-top-10-things-to-watch-in-the-stock-market-thursday.html"
+    },
+    "7664673": {
+      "sent_at": "2026-03-19T13:27:02.331188",
+      "category": "crypto",
+      "headline": "OP_NET launches Bitcoin DeFi push without bridges or wrapped BTC",
+      "url": "https://cointelegraph.com/news/opnet-brings-native-defi-to-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7664675": {
+      "sent_at": "2026-03-19T13:27:03.040397",
+      "category": "crypto",
+      "headline": "Apex and Polygon launch compliance chain for tokenized RWAs",
+      "url": "https://cointelegraph.com/news/apex-polygon-launch-compliance-chain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7664674": {
+      "sent_at": "2026-03-19T13:27:03.732074",
+      "category": "crypto",
+      "headline": "Hacked crypto tokens drop 61% on average and rarely recover, Immune report says",
+      "url": "https://cointelegraph.com/news/hacked-crypto-tokens-drop-61-on-average-and-rarely-recover-security-report-says-embargo-thursday?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7664793": {
+      "sent_at": "2026-03-19T13:52:02.367645",
+      "category": "crypto",
+      "headline": "CoinDesk 20 performance update: NEAR Protocol (NEAR) drops 3.3%, leading index lower",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/03/19/coindesk-20-performance-update-near-protocol-near-drops-3-3-leading-index-lower"
+    },
+    "7664794": {
+      "sent_at": "2026-03-19T13:52:03.091013",
+      "category": "crypto",
+      "headline": "Browser maker Opera seeks 160 million CELO stake  to become key network stakeholder",
+      "url": "https://www.coindesk.com/business/2026/03/19/browser-maker-opera-seeks-160-million-celo-stake-to-become-key-network-stakeholder"
+    },
+    "7664795": {
+      "sent_at": "2026-03-19T13:52:03.798969",
+      "category": "crypto",
+      "headline": "XRP treasury firm Evernorth discloses $233.7 million impairment on holdings in SPAC filing",
+      "url": "https://www.coindesk.com/business/2026/03/19/xrp-treasury-firm-evernorth-discloses-usd233-7-million-impairment-on-holdings-in-spac-filing"
+    },
+    "7664898": {
+      "sent_at": "2026-03-19T14:22:02.454010",
+      "category": "crypto",
+      "headline": "Crypto.com lays off 12% of workforce in latest company to cite AI in job cuts",
+      "url": "https://www.cnbc.com/2026/03/19/crypto-com-layoffs-12percent-ai-job-loss.html"
+    },
+    "7664899": {
+      "sent_at": "2026-03-19T14:27:02.320115",
+      "category": "crypto",
+      "headline": "Coinbase Commerce page requests seed phrases, raising security concerns",
+      "url": "https://cointelegraph.com/news/coinbase-subdomain-seed-phrase-security-concern?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7665003": {
+      "sent_at": "2026-03-19T14:37:02.449357",
+      "category": "stock",
+      "headline": "Major League Baseball names Polymarket exclusive prediction market partner",
+      "url": "https://www.cnbc.com/2026/03/19/mlb-polymarket-prediction-markets.html"
+    },
+    "7665015": {
+      "sent_at": "2026-03-19T14:52:02.319890",
+      "category": "crypto",
+      "headline": "Major League Baseball signs prediction markets pacts with CFTC, Polymarket",
+      "url": "https://www.coindesk.com/policy/2026/03/19/major-league-baseball-signs-prediction-markets-pacts-with-cftc-polymarket"
+    },
+    "7665120": {
+      "sent_at": "2026-03-19T15:27:02.416554",
+      "category": "crypto",
+      "headline": "XRP signals 20% price rally amid record Korean exchange withdrawals",
+      "url": "https://cointelegraph.com/news/xrp-signals-20-percent-rally-record-korean-exchange-withdrawals?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7665121": {
+      "sent_at": "2026-03-19T15:27:03.138887",
+      "category": "crypto",
+      "headline": "Bitcoin prediction markets see 70% chance BTC price crashes to $55K in 2026",
+      "url": "https://cointelegraph.com/news/bitcoin-prediction-markets-see-70-chance-btc-price-crashes-to-55k-in-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7665123": {
+      "sent_at": "2026-03-19T15:37:02.457648",
+      "category": "crypto",
+      "headline": "US objectives in Iran have not changed, Hegseth says - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbVVYbEc1UTNiRGc0eWdBaEs3Xy1jaUZtUlBNY1BqUlVKVzYxeTd4TV8yRE8zYk9URWJKU1JYRkQ5YWFtMVdtQU95UWZLWFJrNEYtOTZoMWI1TFFRQ1pWY3VaS1BDUUk1Qm0wYm1ISUpqQVNURThzTnMtbERSUkRJLVVUZ241RDhmWU1YdXlxclQ5c0l6amtCcUl6NzFfaVl3UkhVdg?oc=5"
+    },
+    "7665226": {
+      "sent_at": "2026-03-19T15:52:02.610984",
+      "category": "crypto",
+      "headline": "Crypto for Advisors: Bitcoin\u2019s price discovery",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/03/18/crypto-for-advisors-bitcoin-s-price-discovery"
+    },
+    "7665227": {
+      "sent_at": "2026-03-19T15:52:03.315036",
+      "category": "crypto",
+      "headline": "ECB seeks experts to help integrate digital euro into ATMs, card payment terminals",
+      "url": "https://www.coindesk.com/policy/2026/03/19/ecb-seeks-experts-to-help-integrate-digital-euro-into-atms-card-payment-terminals"
+    },
+    "7665228": {
+      "sent_at": "2026-03-19T15:52:04.034896",
+      "category": "crypto",
+      "headline": "Bitcoin $20,000 put option is third most popular strike ahead of quarterly expiry",
+      "url": "https://www.coindesk.com/markets/2026/03/19/bitcoin-usd20-000-put-option-is-third-most-popular-strike-ahead-of-quarterly-expiry"
+    },
+    "7665336": {
+      "sent_at": "2026-03-19T16:27:02.441923",
+      "category": "crypto",
+      "headline": "The Sandbox opens pre-registration for The Sandbox NEXT mobile playtest built on Unreal Engine",
+      "url": "https://cryptocurrencynews.com/crypto/the-sandbox-opens-pre-registration-for-the-sandbox-next-mobile-playtest-built-on-unreal-engine/"
+    },
+    "7665337": {
+      "sent_at": "2026-03-19T16:27:03.173386",
+      "category": "crypto",
+      "headline": "Nasdaq-listed Opera proposes 160M CELO deal to replace cash payments",
+      "url": "https://cointelegraph.com/news/opera-celo-token-deal-160m-cele-payments-mini-pay?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7665441": {
+      "sent_at": "2026-03-19T16:37:02.846697",
+      "category": "stock",
+      "headline": "The market remains heavily oversold, so we're snapping up more of 2 stocks",
+      "url": "https://www.cnbc.com/2026/03/19/the-market-remains-heavily-oversold-so-were-snapping-up-2-stocks.html"
+    },
+    "7665554": {
+      "sent_at": "2026-03-19T17:47:09.345367",
+      "category": "crypto",
+      "headline": "Bitcoin drops 10% to threaten new retest of 'unreliable' BTC price support",
+      "url": "https://cointelegraph.com/news/bitcoin-drops-10-threaten-retest-unreliable-btc-price-support?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7665555": {
+      "sent_at": "2026-03-19T17:47:12.890090",
+      "category": "crypto",
+      "headline": "Bitcoin finance protocol Hashi launches on Sui with BitGo, FalconX backing",
+      "url": "https://cointelegraph.com/news/sui-backed-bitcoin-finance-protocol-hashi-secures-commitments-from-bitgo-bullish-and-falconx-embargo-thurs-9-am-et?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7665551": {
+      "sent_at": "2026-03-19T17:47:17.968342",
+      "category": "stock",
+      "headline": "FDA approves higher dose version of weight loss drug Wegovy as Novo Nordisk tries to win back market share",
+      "url": "https://www.cnbc.com/2026/03/19/fda-approves-high-dose-version-of-novo-nordisks-obesity-drug-wegovy.html"
+    },
+    "7665448": {
+      "sent_at": "2026-03-19T17:47:22.482366",
+      "category": "crypto",
+      "headline": "Major League Baseball inks deals with US regulator, Polymarket",
+      "url": "https://cointelegraph.com/news/major-league-baseball-cftc-polymarket-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7665445": {
+      "sent_at": "2026-03-19T17:47:25.046782",
+      "category": "crypto",
+      "headline": "Quadruple witching arrives tomorrow as markets brace for potential bitcoin volatility",
+      "url": "https://www.coindesk.com/markets/2026/03/10/quadruple-witching-arrives-tomorrow-as-markets-brace-for-potential-bitcoin-volatility"
+    },
+    "7665446": {
+      "sent_at": "2026-03-19T17:47:28.540017",
+      "category": "crypto",
+      "headline": "As crypto trading platforms race to deploy AI agents, here's what a Nasdaq executive is seeing",
+      "url": "https://www.coindesk.com/business/2026/03/19/crypto-trading-platforms-race-to-deploy-ai-agents-job-losses-to-artificial-intelligence-will-continue-to-mount"
+    },
+    "7665447": {
+      "sent_at": "2026-03-19T17:47:31.189585",
+      "category": "crypto",
+      "headline": "OpenClaw developers targeted in GitHub phishing scam offering fake token airdrops",
+      "url": "https://www.coindesk.com/tech/2026/03/19/openclaw-developers-targeted-in-github-phishing-scam-offering-fake-token-airdrops"
+    },
+    "7666411": {
+      "sent_at": "2026-03-19T21:07:02.544782",
+      "category": "crypto",
+      "headline": "EtherFi turns to real-world assets for yield with $25M Plume allocation",
+      "url": "https://cointelegraph.com/news/etherfi-turns-to-real-world-assets-for-yield-with-25m-plume-allocation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7666305": {
+      "sent_at": "2026-03-19T21:07:03.202074",
+      "category": "crypto",
+      "headline": "DeFi risk management giant Gauntlet sees $380 million exit as OKX crypto campaign ends",
+      "url": "https://www.coindesk.com/tech/2026/03/19/defi-risk-management-giant-gauntlet-sees-usd380-million-exit-as-okx-crypto-campaign-ends"
+    },
+    "7666306": {
+      "sent_at": "2026-03-19T21:07:03.872181",
+      "category": "crypto",
+      "headline": "Crypto markets \u2013 and the American people \u2013 deserve clarity",
+      "url": "https://www.coindesk.com/opinion/2026/03/19/crypto-markets-and-the-american-people-deserve-clarity"
+    },
+    "7666307": {
+      "sent_at": "2026-03-19T21:07:04.548704",
+      "category": "crypto",
+      "headline": "Appeals court clears way for Nevada to temporarily ban prediction market Kalshi",
+      "url": "https://www.coindesk.com/policy/2026/03/19/appeals-court-clears-way-for-nevada-to-temporarily-ban-prediction-market-kalshi"
+    },
+    "7666308": {
+      "sent_at": "2026-03-19T21:07:05.250653",
+      "category": "crypto",
+      "headline": "Coinbase's bitcoin yield fund goes onchain with Apex's tokenization push",
+      "url": "https://www.coindesk.com/business/2026/03/19/coinbase-s-bitcoin-yield-fund-goes-onchain-with-apex-s-tokenization-push"
+    },
+    "7666189": {
+      "sent_at": "2026-03-19T21:07:08.931952",
+      "category": "crypto",
+      "headline": "Bybit launches yield-bearing tokenized gold, expanding RWA yield market",
+      "url": "https://cointelegraph.com/news/bybit-yield-tokenized-gold-xaut-rwa-trend?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7666088": {
+      "sent_at": "2026-03-19T21:07:09.626543",
+      "category": "crypto",
+      "headline": "Animoca invests in Ava Labs to boost Avalanche adoption in Asia, Middle East",
+      "url": "https://cointelegraph.com/news/animoca-brands-invests-in-avax-partners-with-ava-labs-to-expand-avalanche-in-asia-and-middle-east?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7666309": {
+      "sent_at": "2026-03-19T21:07:10.278008",
+      "category": "crypto",
+      "headline": "Wall Street heavyweight Cantor among investment banks pitching FalconX for its potential IPO",
+      "url": "https://www.coindesk.com/business/2026/03/18/wall-street-heavyweight-cantor-among-investment-banks-pitching-falconx-for-its-potential-ipo"
+    },
+    "7665985": {
+      "sent_at": "2026-03-19T21:07:10.935841",
+      "category": "crypto",
+      "headline": "Market maker IMC Trading hires Alex Casimo as chief commercial officer for its crypto business",
+      "url": "https://www.coindesk.com/business/2026/03/19/market-maker-imc-trading-hires-alex-casimo-as-chief-commercial-officer-for-its-crypto-business"
+    },
+    "7665867": {
+      "sent_at": "2026-03-19T21:07:11.593228",
+      "category": "crypto",
+      "headline": "Bitcoin bull market vibes emerge, but confirmation is missing: Glassnode",
+      "url": "https://cointelegraph.com/news/bitcoin-bull-market-vibes-emerge-but-confirmation-is-missing-glassnode?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7665762": {
+      "sent_at": "2026-03-19T21:07:15.326216",
+      "category": "stock",
+      "headline": "Why DuPont is proposing a reverse stock split \u2014 plus, another Nvidia team up",
+      "url": "https://www.cnbc.com/2026/03/19/why-dupont-is-proposing-a-reverse-stock-split-another-nvidia-team-up.html"
+    },
+    "139481490": {
+      "sent_at": "2026-03-19T21:37:01.980113",
+      "category": "stock",
+      "headline": "Discover which S&P500 stocks are making waves on Thursday.",
+      "url": "https://finnhub.io/api/news?id=4e357ee2b19460c65fc4c343eed35d3ce69207f836549c48666685e8e24dac9b",
+      "ticker": "MOS"
+    },
+    "139480284": {
+      "sent_at": "2026-03-19T21:37:01.990850",
+      "category": "stock",
+      "headline": "These S&P500 stocks are moving in today's session",
+      "url": "https://finnhub.io/api/news?id=85e79ee3435f565cbe64d5ea7ad759c4125b33cd182f6c82e801ffc49b4782df",
+      "ticker": "MOS"
+    },
+    "139479061": {
+      "sent_at": "2026-03-19T21:37:01.999927",
+      "category": "stock",
+      "headline": "These S&P500 stocks are gapping in today's session",
+      "url": "https://finnhub.io/api/news?id=e8b22b5448a0ee3f7877d78d2e9f1a166253dd27841133e7f7d2987dac09a776",
+      "ticker": "MOS"
+    },
+    "139479815": {
+      "sent_at": "2026-03-19T21:37:02.010818",
+      "category": "stock",
+      "headline": "Stocks making the biggest moves midday: NextDecade, Cheniere, Micron, Rivian, APA & more",
+      "url": "https://finnhub.io/api/news?id=17fc975af0ccd6792f884b46e07f753b595578f21eb8bebb6da575ba3c095871",
+      "ticker": "MOS"
+    },
+    "139479866": {
+      "sent_at": "2026-03-19T21:37:02.022802",
+      "category": "stock",
+      "headline": "Stocks making the biggest moves premarket: Micron, Alibaba, Five Below, Newmont and more ",
+      "url": "https://finnhub.io/api/news?id=425cd7bc0e6407a3767ae504e5959cc66c587741c3e9c19535ea7134c7d65da1",
+      "ticker": "MOS"
+    },
+    "7666514": {
+      "sent_at": "2026-03-19T21:57:02.369050",
+      "category": "crypto",
+      "headline": "SOL treasury Forward industries buys back shares using crypto-backed debt",
+      "url": "https://cointelegraph.com/news/forward-industries-solana-loan-share-buyback-galaxy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7666617": {
+      "sent_at": "2026-03-19T22:07:02.435536",
+      "category": "crypto",
+      "headline": "SEC interpretation on crypto laws \u2018a beginning, not an end,\u2018 says Atkins",
+      "url": "https://cointelegraph.com/news/sec-interpretation-crypto-laws-paul-atkins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7666618": {
+      "sent_at": "2026-03-19T22:07:03.100530",
+      "category": "crypto",
+      "headline": "BPI sounds alarm on 'backdoor' for hardware wallets in Kentucky crypto bill",
+      "url": "https://cointelegraph.com/news/bpi-backdoor-hardware-wallets-kentucky-crypto-bill?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "139482004": {
+      "sent_at": "2026-03-19T22:37:03.630847",
+      "category": "stock",
+      "headline": "1 Top Stock to Buy Amid the Strait of Hormuz Closure",
+      "url": "https://finnhub.io/api/news?id=bfc63ae316f94ad14185a5b7e3d46c23c570e5fcdf99bcf7c7e6400a2fca633c",
+      "ticker": "AA"
+    },
+    "139480833": {
+      "sent_at": "2026-03-19T22:37:03.637086",
+      "category": "stock",
+      "headline": "Wall Street Lunch: Rate Cut Hopes Crumble",
+      "url": "https://finnhub.io/api/news?id=f53a386a0fa24820e6e50327223c7e153574f9e2fc177dffb1d6fc886e38d449",
+      "ticker": "AA"
+    },
+    "139471019": {
+      "sent_at": "2026-03-19T22:37:03.641874",
+      "category": "stock",
+      "headline": "Major Industrial Users Confirm Advantages of PyroGenesis\u2019 Plasma Torches",
+      "url": "https://finnhub.io/api/news?id=e767c756e6e82993d28b528b5e22912e763a6fa98f66297ae1730bfcccd5a3bf",
+      "ticker": "AA"
+    },
+    "139455184": {
+      "sent_at": "2026-03-19T22:37:03.648285",
+      "category": "stock",
+      "headline": "Alcoa Corporation (AA) Presents at JPMorgan Industrials Conference 2026 - Slideshow",
+      "url": "https://finnhub.io/api/news?id=26b6d0aeb1ca61faa06475d6ff1b49b2cc23dccd560607915c859a87a843daef",
+      "ticker": "AA"
+    },
+    "139450899": {
+      "sent_at": "2026-03-19T22:37:03.653841",
+      "category": "stock",
+      "headline": "'Alcoa Draws New Aluminum Orders as Gulf States Curb Production' - Bloomberg",
+      "url": "https://finnhub.io/api/news?id=083672e0911cc6f066ec4d3d8a7877e975ac9673c1316ee116569c206c8c9082",
+      "ticker": "AA"
+    },
+    "139480632": {
+      "sent_at": "2026-03-19T22:37:04.169196",
+      "category": "stock",
+      "headline": "Why Is FirstEnergy (FE) Up 3.5% Since Last Earnings Report?",
+      "url": "https://finnhub.io/api/news?id=6bd2562d01b717c8602ec67840689dc328ba5d33f72f1318dd19850d5899a137",
+      "ticker": "FE"
+    },
+    "139471854": {
+      "sent_at": "2026-03-19T22:37:04.178329",
+      "category": "stock",
+      "headline": "FirstEnergy Corp. stock outperforms competitors despite losses on the day",
+      "url": "https://finnhub.io/api/news?id=47c39fbecae1fd63d98449578077d7b5e1f9fe852f68c2604bdee3c4d61717d6",
+      "ticker": "FE"
+    },
+    "139446640": {
+      "sent_at": "2026-03-19T22:37:04.207256",
+      "category": "stock",
+      "headline": "How FirstEnergy\u2019s $36 Billion Grid Upgrade Plan And Storm Response At FirstEnergy (FE) Has Changed Its Investment Story",
+      "url": "https://finnhub.io/api/news?id=eea73b8947d00c0d7a4c21d699fbec0c4cbf8d35468f34861062d239c4a6ce3c",
+      "ticker": "FE"
+    },
+    "139444188": {
+      "sent_at": "2026-03-19T22:37:04.215557",
+      "category": "stock",
+      "headline": "FirstEnergy Power Restoration Update",
+      "url": "https://finnhub.io/api/news?id=7910710e21cee142b8d89b7d8cada3f92b14278df13881957ccee51f65c120cc",
+      "ticker": "FE"
+    },
+    "139471855": {
+      "sent_at": "2026-03-19T22:37:04.226072",
+      "category": "stock",
+      "headline": "FirstEnergy Corp. stock underperforms Tuesday when compared to competitors",
+      "url": "https://finnhub.io/api/news?id=9b1a2c1f71be2e441a0364d3da8660ecdd968d04ac4a2f73d5b07c1a13490349",
+      "ticker": "FE"
+    },
+    "7666726": {
+      "sent_at": "2026-03-19T22:57:02.557015",
+      "category": "crypto",
+      "headline": "Bitcoin price tussle at $70K may hint that market bottom is not in",
+      "url": "https://cointelegraph.com/news/bitcoin-price-tussle-at-dollar70k-may-hint-that-market-bottom-is-not-in?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7666827": {
+      "sent_at": "2026-03-19T23:07:02.347846",
+      "category": "crypto",
+      "headline": "Crypto Clarity Act inches toward Senate hearing as lawmakers weigh legislative trades",
+      "url": "https://www.coindesk.com/policy/2026/03/19/crypto-clarity-act-inches-toward-senate-hearing-as-lawmakers-weigh-legislative-trades"
+    },
+    "7667136": {
+      "sent_at": "2026-03-20T00:37:02.469347",
+      "category": "crypto",
+      "headline": "Jim Cramer says 'sometimes you have to hold your nose' and buy stocks",
+      "url": "https://www.cnbc.com/2026/03/19/jim-cramer-sometimes-you-have-to-hold-your-nose-and-buy-stocks.html"
+    },
+    "7667140": {
+      "sent_at": "2026-03-20T00:57:02.627358",
+      "category": "crypto",
+      "headline": "Execution quality is the missing metric in Bitcoin and Ethereum markets",
+      "url": "https://cointelegraph.com/news/execution-quality-missing-metric?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7667142": {
+      "sent_at": "2026-03-20T01:07:02.317877",
+      "category": "stock",
+      "headline": "Cheniere, Venture Global shares surge amid Iran attacks on Qatar LNG infrastructure - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNVRMbHVXUnFrSE45MHN2d2NQdEJqdW13dC1STmtiNHdTZWxOdlNwTmVtQXNzbVM0UUhSZjlWU3kxQVZkemx0aGpsZTlrel9iZmVfdlVUYXdkOEpDNjRzeXBkUFlOcGtlTFdtSnhBc01RX1ZwMnNydl9kcVo5RWhYYVIxdHBuQTk2cFp2RXltaWNHRTlxbDhRY1ZPdVl4RnVhc1ZnSXd6M3V0cFZyS2JXQW91bFl4Q240Q25QRWZ4ZTJ2THU1aWNnY29Odw?oc=5"
+    },
+    "7667451": {
+      "sent_at": "2026-03-20T02:32:02.373812",
+      "category": "crypto",
+      "headline": "Coinbase, Apex Group tokenize Bitcoin Yield Fund on Base",
+      "url": "https://cointelegraph.com/news/coinbase-apex-tokenized-bitcoin-yield-fund-base?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7667552": {
+      "sent_at": "2026-03-20T02:57:02.357515",
+      "category": "crypto",
+      "headline": "Solana DApps revenue falls to 18-month low as SOL price risks $80 retest",
+      "url": "https://cointelegraph.com/news/solana-dapps-revenue-falls-to-18-month-low-as-sol-price-risks-80-retest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7667654": {
+      "sent_at": "2026-03-20T03:32:06.104062",
+      "category": "crypto",
+      "headline": "FBI warns fake FBI token on Tron is trying to scam users",
+      "url": "https://cointelegraph.com/news/fbi-warns-phishing-scam-tron-blockchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7667857": {
+      "sent_at": "2026-03-20T04:32:02.309540",
+      "category": "crypto",
+      "headline": "Gemini shares surge 6% after hours on Q4 earnings",
+      "url": "https://cointelegraph.com/news/gemini-shares-up-after-hours-on-q4-earnings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7668059": {
+      "sent_at": "2026-03-20T05:07:02.336932",
+      "category": "crypto",
+      "headline": "Major gold trade group releases framework for tokenized gold",
+      "url": "https://cointelegraph.com/news/world-gold-council-framework-tokenized-gold?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7668060": {
+      "sent_at": "2026-03-20T05:32:02.364135",
+      "category": "crypto",
+      "headline": "Appeals court denies Kalshi\u2019s bid to stave off ban in Nevada",
+      "url": "https://cointelegraph.com/news/appeals-court-denies-kalshi-s-bid-to-stave-off-ban-in-nevada?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7668162": {
+      "sent_at": "2026-03-20T05:57:02.261454",
+      "category": "crypto",
+      "headline": "Bitcoin jumps to $70,800 as oil retreats; ether and XRP lag",
+      "url": "https://www.coindesk.com/markets/2026/03/20/bitcoin-jumps-to-usd70-800-as-oil-retreats-ether-and-xrp-lag"
+    },
+    "7668163": {
+      "sent_at": "2026-03-20T05:57:02.969583",
+      "category": "crypto",
+      "headline": "Morgan Stanley sets MSBT ticker and $1 million seed capital for bitcoin ETF",
+      "url": "https://www.coindesk.com/markets/2026/03/20/morgan-stanley-sets-msbt-ticker-and-usd1-million-seed-capital-for-bitcoin-etf"
+    },
+    "7668264": {
+      "sent_at": "2026-03-20T06:32:02.714059",
+      "category": "crypto",
+      "headline": "Super Micro co-founder arrested over alleged $2.5B AI chip smuggling scheme",
+      "url": "https://cointelegraph.com/news/super-micro-co-founder-arrested-in-2-5b-ai-chip-smuggling-scheme-to-china?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7668265": {
+      "sent_at": "2026-03-20T06:32:03.395069",
+      "category": "crypto",
+      "headline": "Gemini sued over post-IPO strategy shift, declining stock price",
+      "url": "https://cointelegraph.com/news/gemini-sued-over-post-ipo-strategy-shift-declining-stock-price?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7668371": {
+      "sent_at": "2026-03-20T06:57:02.285414",
+      "category": "crypto",
+      "headline": "Quantum risk real to some but not all crypto wallets \u2018equally vulnerable\u2019: Galaxy",
+      "url": "https://cointelegraph.com/news/quantum-risk-bitcoin-wallets-not-all-vulnerable?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7667756": {
+      "sent_at": "2026-03-20T07:02:02.447781",
+      "category": "crypto",
+      "headline": "Dollar slips, bonds struggle as Iran war spurs hawkish rate rethink - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQaGwtQzBNN2x4bU5Ta2RuNnFJVjFkMW1HMndZT0VCN0gwLWtQRjdmMjVpcFJHZEhQb0c3dmxRTWxpTFRqNzI4Y25PbFRYcVZfUjFtcHBZaW1fUm0tZEZxWXNOMnFteHZmMFlBY0hyTHRHVzZ4RWpwMF9jSXlaQnRxMlJGaw?oc=5"
+    },
+    "7668582": {
+      "sent_at": "2026-03-20T07:52:02.383625",
+      "category": "crypto",
+      "headline": "Bitcoin\u2019s price action looks dangerously similar to the pattern that sent it crashing to $60,000",
+      "url": "https://www.coindesk.com/markets/2026/03/20/bitcoin-s-price-action-looks-dangerously-similar-to-the-pattern-that-sent-it-crashing-to-usd60-000"
+    },
+    "7668885": {
+      "sent_at": "2026-03-20T09:02:02.341772",
+      "category": "crypto",
+      "headline": "Ripple data reveals stablecoins are becoming the go-to tool for corporate treasury",
+      "url": "https://www.coindesk.com/markets/2026/03/20/ripple-s-survey-shows-banks-fintechs-and-corporates-are-all-in-on-digital-assets-prioritizing-stablecoins-and-custody"
+    },
+    "7668888": {
+      "sent_at": "2026-03-20T09:37:02.361855",
+      "category": "crypto",
+      "headline": "Vietnam accelerates shift to ethanol fuel as Iran war drives up energy prices - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPajJPUXpKci0yUU5iNmRvN1RXN3Q5T1ZrOTUwS1ZXaDFkeEJLRzBOanV5T1FycTN3RmRQYjhXVU4yUHNPTHIxRzlRc29CQkJ4STRieTVVNFVud2czY1VGWnZaOHh5VjRjcGRCSFRZbG1GZVZtZ1RGaU5HZ1JXSVpmNzV5NGtjRVBNZTZCVVJtUkphRFBWTWxKaHNyMXZYYjNua3lxTVJVUU92aXZvejBzZld2S1JTR1V5Q2h3cTBLTG50VVY5dGRNbXpMVE5ZTmktNzlzZG9wQXo1eG45NGlTaQ?oc=5"
+    },
+    "139485774": {
+      "sent_at": "2026-03-20T10:37:02.032248",
+      "category": "stock",
+      "headline": "CF Industries Is Up 59% Year to Date and a DOJ Probe Just Complicated the Story",
+      "url": "https://finnhub.io/api/news?id=83a816d6d0afdd749e12edce65ccb1e45c16334de0fbec29fcec5b5a19e6318a",
+      "ticker": "MOS"
+    },
+    "7669207": {
+      "sent_at": "2026-03-20T10:52:02.372600",
+      "category": "crypto",
+      "headline": "Bitcoin vs. gold flashes multiple bottom signals as BTC bulls defend $70K",
+      "url": "https://cointelegraph.com/news/bitcoin-vs-gold-flashes-multiple-bottom-signals-btc-bulls-defend-70k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7669308": {
+      "sent_at": "2026-03-20T11:02:02.426331",
+      "category": "crypto",
+      "headline": "South Korea tax agency seeks private crypto custodian after security lapses",
+      "url": "https://cointelegraph.com/news/south-korea-tax-agency-private-crypto-custody-seed-phrase-leak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7669208": {
+      "sent_at": "2026-03-20T11:07:02.395938",
+      "category": "stock",
+      "headline": "Iran war, HDFC Bank offset value buying as Indian shares log weekly losses - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZ25CY0hZMHQ0ak1sMk1SUjBoWEhhUHIyVWRIZnFXdFVxVFJlUVVUSUNNVUZ6MHRMOGlsbnpTLUUtUHBFMm5rT0htT21ueVlpSndDN0FUVkMtLUVPZ3ZyVG54V0RsbWRZS1RzTzNZaTM1MS1vVl95MEtLVmtCOU9oZzFVa01ucktvNnEzN0NSUW02c1JaRkhGRzlKdVlkUQ?oc=5"
+    },
+    "7669415": {
+      "sent_at": "2026-03-20T11:52:02.339282",
+      "category": "crypto",
+      "headline": "Bitcoin holds steady, with one analyst seeing the upside emerging",
+      "url": "https://www.coindesk.com/daybook-us/2026/03/20/bitcoin-holds-steady-with-one-analyst-seeing-the-upside-emerging"
+    },
+    "7669417": {
+      "sent_at": "2026-03-20T11:52:03.115310",
+      "category": "crypto",
+      "headline": "Ripple survey finds 72% of finance leaders see digital assets as essential",
+      "url": "https://cointelegraph.com/news/ripple-survey-72-finance-leaders-digital-assets-key?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7669416": {
+      "sent_at": "2026-03-20T11:52:03.811110",
+      "category": "crypto",
+      "headline": "Crypto market steadies as derivatives signal caution, macro pressure builds",
+      "url": "https://www.coindesk.com/markets/2026/03/20/crypto-market-steadies-as-derivatives-signal-caution-macro-pressure-builds"
+    },
+    "7675999": {
+      "sent_at": "2026-03-21T22:14:37.377868",
+      "category": "stock",
+      "headline": "3 themes that gripped Wall Street as stocks dropped for a 4th straight week",
+      "url": "https://www.cnbc.com/2026/03/21/3-themes-that-gripped-wall-street-as-stocks-drop-for-a-4th-straight-week.html"
+    },
+    "7675897": {
+      "sent_at": "2026-03-21T22:14:38.097870",
+      "category": "crypto",
+      "headline": "Bitcoin options signal extreme fear as downside protection premium hits new all-time high, says VanEck",
+      "url": "https://www.coindesk.com/markets/2026/03/21/bitcoin-options-signal-extreme-fear-as-downside-protection-premium-hits-new-all-time-high-says-vaneck"
+    },
+    "7675898": {
+      "sent_at": "2026-03-21T22:14:38.756875",
+      "category": "crypto",
+      "headline": "Crypto firms cut hundreds of jobs in weeks, blaming weak markets, strong AI",
+      "url": "https://www.coindesk.com/business/2026/03/21/crypto-firms-cut-hundreds-of-jobs-in-weeks-blaming-markets-and-ai-in-equal-measure"
+    },
+    "7675593": {
+      "sent_at": "2026-03-21T22:14:39.546218",
+      "category": "crypto",
+      "headline": "SEC crypto guidance puts the 'final nail' in the Gensler era: Analyst",
+      "url": "https://cointelegraph.com/news/sec-crypto-guidance-final-nail-gensler-era?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7675694": {
+      "sent_at": "2026-03-21T22:14:40.260582",
+      "category": "crypto",
+      "headline": "How DeFi is quietly rebuilding the fixed-income stack for institutional capital",
+      "url": "https://www.coindesk.com/opinion/2026/03/21/how-defi-is-quietly-rebuilding-the-fixed-income-stack-for-institutional-capital"
+    },
+    "7675695": {
+      "sent_at": "2026-03-21T22:14:44.050687",
+      "category": "crypto",
+      "headline": "Grayscale wants to bring the world's hottest crypto trading frenzy to your brokerage account",
+      "url": "https://www.coindesk.com/business/2026/03/21/grayscale-wants-to-bring-the-world-s-hottest-crypto-trading-frenzy-to-your-brokerage-account"
+    },
+    "7675491": {
+      "sent_at": "2026-03-21T22:14:44.759816",
+      "category": "crypto",
+      "headline": "Bitcoin options signal fear even as BTC ETF outflows remain relatively low",
+      "url": "https://cointelegraph.com/news/bitcoin-options-signal-fear-even-as-btc-etf-outflows-remain-relatively-low?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7675390": {
+      "sent_at": "2026-03-21T22:14:45.537597",
+      "category": "crypto",
+      "headline": "Ethereum eyes 25% rally as richest ETH whales return to 'profitable state'",
+      "url": "https://cointelegraph.com/news/ethereum-25-rally-richest-eth-whale-return-profitable?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7675288": {
+      "sent_at": "2026-03-21T22:14:46.224936",
+      "category": "crypto",
+      "headline": "Bybit Enhances AI Trading Skills Hub with Copy Trading, Advanced Bots, and Institutional-Grade Security Upgrades",
+      "url": "https://cryptocurrencynews.com/crypto/bybit-enhances-ai-trading-skills-hub-with-copy-trading-advanced-bots-and-institutional-grade-security-upgrades/"
+    },
+    "7675389": {
+      "sent_at": "2026-03-21T22:14:46.910816",
+      "category": "crypto",
+      "headline": "The 5-cent contract that debunked a wartime death conspiracy",
+      "url": "https://www.coindesk.com/business/2026/03/21/the-5-cent-contract-that-debunked-a-wartime-death-conspiracy"
+    },
+    "7674885": {
+      "sent_at": "2026-03-21T22:14:50.593506",
+      "category": "crypto",
+      "headline": "It could cost you up to $6 million to grab lunch with Donald Trump",
+      "url": "https://www.coindesk.com/business/2026/03/21/it-could-cost-you-up-to-usd6-million-to-grab-lunch-with-donald-trump"
+    },
+    "7676501": {
+      "sent_at": "2026-03-21T22:29:34.989460",
+      "category": "crypto",
+      "headline": "Brazil's finance minister shelves crypto tax policy due to election: Report",
+      "url": "https://cointelegraph.com/news/brazil-finance-minister-shelves-crypto-tax?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "139498022": {
+      "sent_at": "2026-03-22T00:09:34.637867",
+      "category": "stock",
+      "headline": "Is Mosaic (MOS) Still A Bargain After Its Recent 20% Share Price Jump?",
+      "url": "https://finnhub.io/api/news?id=51243d9467d446b1318c90eba14caa6842278c5a0a86c5bad9c40c4d2f3d35c1",
+      "ticker": "MOS"
+    },
+    "139495468": {
+      "sent_at": "2026-03-22T00:09:34.649206",
+      "category": "stock",
+      "headline": "Mosaic (MOS) Drops 9.96% as BofA Turns \u2018Neutral\u2019",
+      "url": "https://finnhub.io/api/news?id=20707930f101f5e8fb6899be46ceb589f93c906a02bb7e5ea5effddbd386ca69",
+      "ticker": "MOS"
+    },
+    "139496833": {
+      "sent_at": "2026-03-22T00:09:34.655940",
+      "category": "stock",
+      "headline": "Super Micro Computer, Micron Technology And More: 5 Stocks Investors Couldn't Stop Buzzing About This Week",
+      "url": "https://finnhub.io/api/news?id=c7a67f31349f03baf8ddaaf1879baf6133816a47896b36bea0500f93229ab65b",
+      "ticker": "MOS"
+    },
+    "139498546": {
+      "sent_at": "2026-03-22T00:09:34.661675",
+      "category": "stock",
+      "headline": "Analysis: Trump's unshackled presidency puts him at the center of the economy",
+      "url": "https://finnhub.io/api/news?id=c7a96f3b802c48d0628ed7bb48bf019eac4489028d2486f4e4d91ff036cacba8",
+      "ticker": "MOS"
+    },
+    "139495783": {
+      "sent_at": "2026-03-22T00:09:34.666907",
+      "category": "stock",
+      "headline": "What Moved Markets This Week",
+      "url": "https://finnhub.io/api/news?id=cca3b2497140089d3de14cd888eebf8fa4238d4c1277bba5ca7319fb655525e2",
+      "ticker": "MOS"
+    },
+    "139487338": {
+      "sent_at": "2026-03-22T00:09:35.676032",
+      "category": "stock",
+      "headline": "Abbott Announces Acquisition Of Exact Sciences To Close March 23rd; Exact Sciences Stockholders To Receive $105/Share",
+      "url": "https://finnhub.io/api/news?id=acdda0cbebed19ff783afb2907a859e9c2e9ec552b46dfbb27601d671b344b83",
+      "ticker": "EXAS"
+    },
+    "139487609": {
+      "sent_at": "2026-03-22T00:09:36.214714",
+      "category": "stock",
+      "headline": "How To Find The Stock Market Dividend Stars At Investors.com",
+      "url": "https://finnhub.io/api/news?id=3cd0645658d52d9fd9d9e9a6fad4a5af4f33ef3e68750a9d219b9318739af0ec",
+      "ticker": "AA"
+    },
+    "139487127": {
+      "sent_at": "2026-03-22T00:09:36.231862",
+      "category": "stock",
+      "headline": "S&P 500 Slides, Gold Crashes As $100 Oil Stokes Stagflation Fears: What's Moving Markets Thursday?",
+      "url": "https://finnhub.io/api/news?id=7853afd3d54bb08cc9c949cfd12c1848741c659d23038d2ad4f06a88eaa91de4",
+      "ticker": "AA"
+    },
+    "139489471": {
+      "sent_at": "2026-03-22T00:09:36.763926",
+      "category": "stock",
+      "headline": "JCP&L Encourages Customers to Explore Energy Bill Assistance Options",
+      "url": "https://finnhub.io/api/news?id=bfd5d306b8a460f6d94d5e115df706fe1a156584a0cccecbf12cf34d3e72c543",
+      "ticker": "FE"
+    },
+    "7677103": {
+      "sent_at": "2026-03-22T01:29:35.084709",
+      "category": "crypto",
+      "headline": "CFTC staff clarify expectations on using crypto as collateral",
+      "url": "https://cointelegraph.com/news/cftc-staff-clarify-expectations-crypto-collateral?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7677604": {
+      "sent_at": "2026-03-22T03:54:35.075251",
+      "category": "crypto",
+      "headline": "Nevada judge temporarily blocks Kalshi from operating in the state",
+      "url": "https://cointelegraph.com/news/nevada-judge-temporarily-blocks-kalshi-from-operating-in-the-state?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7677905": {
+      "sent_at": "2026-03-22T05:34:35.133241",
+      "category": "crypto",
+      "headline": "UK nuclear-powered submarine positioned in Arabian Sea amid regional tensions, Daily Mail reports - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPb0l2OTZzQlpXRG9xOHNvcEFLSXRFVU5mMURmMkcyb0FYRTJvdzVoUUd3SHdBakEwRlFwc3dCVlZkbjVsaXdvTHRLaUk0VmE3QU9kdkZ1Z0N0dXQ4N3BVaXRZRVFHRFowZEIwRmR0ck5aLVZXMndpaE5BakRNclc1eF81dDVIdDFZTDM2RElhbjM2ZC1idFNMNVlOZW1URDJVZUlVaDBYaXBVNkFHOE5BcTV5ZEJmeHpfT3NtaHQyNW1OOHc?oc=5"
+    },
+    "7678105": {
+      "sent_at": "2026-03-22T06:04:35.084818",
+      "category": "crypto",
+      "headline": "Resolv Labs\u2019 stablecoin depegs as attacker mints millions of tokens",
+      "url": "https://cointelegraph.com/news/resolv-labs-stablecoin-depegs-attacker-mints-millions-of-tokens?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7678106": {
+      "sent_at": "2026-03-22T06:29:35.020085",
+      "category": "crypto",
+      "headline": "Bitcoin drops below $69,200 as Trump gives 48-hour ultimatum on Iran power plants",
+      "url": "https://www.coindesk.com/markets/2026/03/22/bitcoin-drops-below-usd69-200-as-trump-gives-48-hour-ultimatum-on-iran-power-plants"
+    },
+    "7678408": {
+      "sent_at": "2026-03-22T07:54:35.111098",
+      "category": "crypto",
+      "headline": "XRP falls 3% as breakdown below $1.44 and bitcoin weakness caps recovery",
+      "url": "https://www.coindesk.com/markets/2026/03/22/xrp-falls-3-as-breakdown-below-usd1-44-and-bitcoin-weakness-caps-recovery"
+    },
+    "7678409": {
+      "sent_at": "2026-03-22T07:54:35.812731",
+      "category": "crypto",
+      "headline": "Bitcoin miners are losing $19,000 on every BTC produced as difficulty drops 7.8%",
+      "url": "https://www.coindesk.com/markets/2026/03/22/bitcoin-miners-are-losing-usd19-000-on-every-btc-produced-as-difficulty-drops-7-8"
+    },
+    "7678410": {
+      "sent_at": "2026-03-22T08:04:35.067600",
+      "category": "crypto",
+      "headline": "Iran says Hormuz open to all but \u2018enemy-linked\u2019 ships amid US threat - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWDVFUmlkOTcxUnBFQWNBZEloZjl4OFJUYVpaU0VCT2dBWFJaZ2dISTczd1ItSXRoMTRlSzRfLUl0UDlMYXFkV2MyT0g5WXVrNHcxZ2w3VXlCQkk5YllvSS1lVFM3RS1nVmNud2w3RVRjdGd3V3Jjcl82MUNLRk80bFJqVTBlaTA5UlN1ZHVJMlBlOE1tVkRkYzA2WUc2Tm1aQy1yaEJFQVJ1b2J5R3ZaZmh3aw?oc=5"
+    },
+    "7678613": {
+      "sent_at": "2026-03-22T08:54:35.102976",
+      "category": "crypto",
+      "headline": "'Hawk Tuah' girl Hailey Welsh says memecoin implosion 'traumatized' her",
+      "url": "https://cointelegraph.com/news/hawk-tuah-hailey-welsh-memecoin-traumatized?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7678714": {
+      "sent_at": "2026-03-22T09:29:35.037565",
+      "category": "crypto",
+      "headline": "Coinbase-backed CoinDCX founders questioned in fraud case: Report",
+      "url": "https://cointelegraph.com/news/coinbase-backed-coindcx-founders-questioned-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7679326": {
+      "sent_at": "2026-03-22T12:29:34.962754",
+      "category": "crypto",
+      "headline": "Bitcoin risks 50% drop as BTC's positive correlation with US stocks grows",
+      "url": "https://cointelegraph.com/news/bitcoin-risks-50percent-drop-btc-positive-correlation-us-stocks-grows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7679527": {
+      "sent_at": "2026-03-22T13:19:34.990520",
+      "category": "stock",
+      "headline": "I\u2019m a psychologist who studies couples: People in emotionally secure relationships do 5 things every day\u2014that most neglect",
+      "url": "https://www.cnbc.com/2026/03/22/psychologist-who-studies-couples-people-in-emotionally-secure-relationships-do-5-things-every-day.html"
+    },
+    "7679732": {
+      "sent_at": "2026-03-22T14:29:35.341681",
+      "category": "crypto",
+      "headline": "Resolv says no assets lost as DeFi protocols respond to USR exploit",
+      "url": "https://cointelegraph.com/news/resolv-says-no-assets-lost-as-defi-partners-respond-to-usr-depeg?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7680136": {
+      "sent_at": "2026-03-22T16:29:35.160090",
+      "category": "crypto",
+      "headline": "Eightco (NASDAQ: ORBS) Invests Additional $40 Million into OpenAI, Bringing Total OpenAI Investment to $90 Million",
+      "url": "https://cryptocurrencynews.com/crypto/eightco-nasdaq-orbs-invests-additional-40-million-into-openai-bringing-total-openai-investment-to-90-million/"
+    },
+    "7680138": {
+      "sent_at": "2026-03-22T16:29:36.020215",
+      "category": "crypto",
+      "headline": "Gold falters as macro pressures build, bitcoin holds liquidity trend",
+      "url": "https://www.coindesk.com/markets/2026/03/20/gold-falters-as-macro-pressures-build-bitcoin-holds-liquidity-trend"
+    },
+    "7680137": {
+      "sent_at": "2026-03-22T16:34:35.038922",
+      "category": "crypto",
+      "headline": "The genius and the danger of STRC: How Strategy\u2019s new funding model bends so it doesn't break",
+      "url": "https://www.coindesk.com/business/2026/03/22/the-genius-and-the-danger-of-strc-how-strategy-s-new-funding-model-bends-so-it-doesn-t-break"
+    },
+    "7680340": {
+      "sent_at": "2026-03-22T17:29:35.065365",
+      "category": "crypto",
+      "headline": "Fidelity urges SEC to move further on crypto activity by broker-dealers",
+      "url": "https://cointelegraph.com/news/fidelity-letter-sec-alternative-trading-systems?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7680339": {
+      "sent_at": "2026-03-22T17:29:35.757756",
+      "category": "crypto",
+      "headline": "Ethereum faces make-or-break moment in high-stakes balancing act as scaling, quantum and AI pressures mount",
+      "url": "https://www.coindesk.com/tech/2026/03/22/ethereum-faces-make-or-break-moment-in-high-stakes-balancing-act-as-scaling-quantum-and-ai-pressures-mount"
+    },
+    "7680642": {
+      "sent_at": "2026-03-22T18:54:35.044261",
+      "category": "crypto",
+      "headline": "Crypto liquidations near $400M after $68K Bitcoin price dip",
+      "url": "https://cointelegraph.com/news/crypto-liquidations-near-400m-after-68k-bitcoin-price-dip?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7680641": {
+      "sent_at": "2026-03-22T18:54:35.748452",
+      "category": "crypto",
+      "headline": "The SEC explains how it's viewing a crypto security: State of Crypto",
+      "url": "https://www.coindesk.com/policy/2026/03/22/the-sec-explains-how-it-s-viewing-a-crypto-security-state-of-crypto"
+    },
+    "7680743": {
+      "sent_at": "2026-03-22T19:04:35.027115",
+      "category": "crypto",
+      "headline": "Scaramucci says BTC's 4-year cycle still in play, forecasts rise in Q4",
+      "url": "https://cointelegraph.com/news/scaramucci-btc-4-year-cycle-play-rise-q4?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7680944": {
+      "sent_at": "2026-03-22T20:04:35.161990",
+      "category": "crypto",
+      "headline": "If one trader can force the outcome of a prediction market, it shouldn\u2019t be tradable",
+      "url": "https://www.coindesk.com/opinion/2026/03/22/if-one-trader-can-force-the-outcome-of-a-prediction-market-it-shouldn-t-be-tradable"
+    },
+    "7681247": {
+      "sent_at": "2026-03-22T21:54:35.075098",
+      "category": "crypto",
+      "headline": "BTC and gold divergence reflects split between retail and central banks: Analyst",
+      "url": "https://cointelegraph.com/news/divergence-between-btc-gold-retail-central-bank?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7681651": {
+      "sent_at": "2026-03-22T23:35:00.281326",
+      "category": "stock",
+      "headline": "Here are 4 big things we're watching in the stock market this week",
+      "url": "https://www.cnbc.com/2026/03/22/here-are-4-big-things-were-watching-in-the-stock-market-this-week.html"
+    },
+    "7681756": {
+      "sent_at": "2026-03-23T00:30:00.350840",
+      "category": "crypto",
+      "headline": "Banks push tokenized deposits as onchain cash race intensifies: Report",
+      "url": "https://cointelegraph.com/news/tokenized-deposits-europe-banks-stablecoins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7681858": {
+      "sent_at": "2026-03-23T00:55:00.331973",
+      "category": "crypto",
+      "headline": "NYSE exchanges scrap crypto options cap on 11 Bitcoin, Ether ETFs",
+      "url": "https://cointelegraph.com/news/nyse-exchanges-scrap-crypto-options-cap?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7682361": {
+      "sent_at": "2026-03-23T03:30:00.136445",
+      "category": "crypto",
+      "headline": "Michael Saylor signals BTC buy as Strategy's stack slips 10% into the red",
+      "url": "https://cointelegraph.com/news/saylor-hints-strategy-bitcoin-buy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7682464": {
+      "sent_at": "2026-03-23T04:05:00.268949",
+      "category": "stock",
+      "headline": "Asia shares skid, yields rise as Gulf war escalates - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5aNk9icE5ZbUdtSjNmSUFJN0FVbzM2TTFydVo5TmM0R244YUE4LVcweThWRFBhZFBmbzRmekUtMjEtNUg2NFpsZDkyZVNmLTR3c2t1T1JNbVJPQUVQcnlDZUxsUWJiS3hXa1BGWVU3TUlIR0Ji?oc=5"
+    },
+    "7682669": {
+      "sent_at": "2026-03-23T04:55:00.215016",
+      "category": "crypto",
+      "headline": "Agentic AI commerce may spell the end of internet ads: a16z Crypto",
+      "url": "https://cointelegraph.com/news/agentic-ai-commerce-end-of-web-advertising-a16z?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7682771": {
+      "sent_at": "2026-03-23T05:05:00.155161",
+      "category": "crypto",
+      "headline": "Crypto, stocks fall as oil chops after Iran vows response to Trump threat",
+      "url": "https://cointelegraph.com/news/crypto-stocks-slip-oil-chops-iran-vows-retaliation-trump-threat?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7682772": {
+      "sent_at": "2026-03-23T05:30:00.093998",
+      "category": "crypto",
+      "headline": "Mark Zuckerberg is conjuring a CEO AI agent to help him run Meta",
+      "url": "https://cointelegraph.com/news/meta-s-zuckerberg-building-ai-agent-run-the-company?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7682873": {
+      "sent_at": "2026-03-23T05:55:00.174178",
+      "category": "crypto",
+      "headline": "Stocks start catching up with bitcoin\u2019s earlier price crash to $60,000 as bond yields rise",
+      "url": "https://www.coindesk.com/markets/2026/03/23/stocks-start-catching-up-with-bitcoin-s-earlier-price-crash-to-usd60-000-as-bond-yields-rise"
+    },
+    "7682878": {
+      "sent_at": "2026-03-23T05:55:00.904832",
+      "category": "crypto",
+      "headline": "Hong Kong\u2019s Boyaa Interactive eyes $70M crypto treasury expansion",
+      "url": "https://cointelegraph.com/news/hong-kong-web3-gaming-company-70-million-crypto-buys?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7682874": {
+      "sent_at": "2026-03-23T05:55:01.613152",
+      "category": "crypto",
+      "headline": "XRP drops 3.7% as break below $1.40 signals renewed downside risk",
+      "url": "https://www.coindesk.com/markets/2026/03/23/xrp-drops-3-7-as-break-below-usd1-40-signals-renewed-downside-risk"
+    },
+    "7682875": {
+      "sent_at": "2026-03-23T05:55:02.297711",
+      "category": "crypto",
+      "headline": "Bitcoin holds $68,300 as gold crashes for a ninth day and Asian stocks drop",
+      "url": "https://www.coindesk.com/markets/2026/03/23/bitcoin-holds-usd68-300-as-gold-crashes-for-a-ninth-day-and-asian-stocks-drop"
+    },
+    "7682876": {
+      "sent_at": "2026-03-23T05:55:02.971078",
+      "category": "crypto",
+      "headline": "Sam Bankman-Fried\u2019s parents tell CNN no customer money was lost. FTX creditors see it differently.",
+      "url": "https://www.coindesk.com/markets/2026/03/23/sbf-s-parents-tell-cnn-no-customer-money-was-lost-ftx-creditors-see-it-differently"
+    },
+    "7682877": {
+      "sent_at": "2026-03-23T05:55:06.788244",
+      "category": "crypto",
+      "headline": "South Korea crypto liquidity tumbles as stablecoin balances plunge 55% and stock buying rises",
+      "url": "https://www.coindesk.com/markets/2026/03/23/south-korea-crypto-liquidity-drops-as-stablecoin-balances-plunge-55-and-stock-buying-rises"
+    },
+    "139507958": {
+      "sent_at": "2026-03-23T06:30:01.327752",
+      "category": "stock",
+      "headline": "Alcoa Highlights Strong Early 2026 Start, Tariff Moves and $1B Asset Monetization Plan at JPMorgan Conf.",
+      "url": "https://finnhub.io/api/news?id=ec2a90b3c52fe6deae0114c677445205b6998bd9c0360841ef0245930f0365c1",
+      "ticker": "AA"
+    },
+    "7682982": {
+      "sent_at": "2026-03-23T06:35:00.196221",
+      "category": "crypto",
+      "headline": "Global turmoil pushes uptake of decentralized messengers, social media",
+      "url": "https://cointelegraph.com/news/decentralized-messaging-adoption-global-unrest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7683088": {
+      "sent_at": "2026-03-23T06:55:00.248959",
+      "category": "crypto",
+      "headline": "Resolv stablecoin drops 70% after $80 million exploit after attacker mints USR",
+      "url": "https://www.coindesk.com/markets/2026/03/23/resolv-stablecoin-drops-70-after-usd80-million-exploit-after-attacker-mints-usr"
+    },
+    "7683089": {
+      "sent_at": "2026-03-23T06:55:00.968677",
+      "category": "crypto",
+      "headline": "Oil, silver trading is way more popular than XRP, solana on Hyperliquid",
+      "url": "https://www.coindesk.com/markets/2026/03/23/oil-silver-trading-is-way-more-popular-than-xrp-sol-on-hyperliquid"
+    },
+    "7683090": {
+      "sent_at": "2026-03-23T07:05:00.225038",
+      "category": "stock",
+      "headline": "IEA discussing further oil stock releases, chief Birol says - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQX1RsTFhjXzJhUnRYYm5LSXlGUlVMNVQ3d3hUWnVIUWFDeF9fbGE5QTd5UVo3ZUlZNEtHRDF5T0Y2aDRpVXQ2NGQ3SGRtcGFFY0lYR1FualBRM2xJNlItanRBMTJPVmY3X2cxbzBSQ0FmOTlWVkRRdzV5NHdLdzVXMTJCTmI5VzN4R1ZZNWtKdkQyVjJiSUVJTm1TRVNjajhjemhIaWpBNjlhZTVhWjJucFB5UDhzTzZhYnR3NUJqZmoxZlNFQlE?oc=5"
+    },
+    "7683190": {
+      "sent_at": "2026-03-23T07:30:00.144371",
+      "category": "crypto",
+      "headline": "Bithumb seeks to reappoint CEO despite recent controversies: Report",
+      "url": "https://cointelegraph.com/news/bithumb-seeks-ceo-lee-jae-won-reappointment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7683299": {
+      "sent_at": "2026-03-23T08:05:00.179842",
+      "category": "crypto",
+      "headline": "European gasoline heads to Asia as Iran war sparks supply fears - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRzZNVWp4NDhQQ29LTjdhZEx1YVdVRUJxbTQ4Nk5yVzN0ZHdPelg0Qzh4eU1TLWpKUHQxT1paaDFMZ2FFTmhkNnVUel93Wm5NSFV6N1ZiclE2SExNdExBczN2MlFIb0NPVHZXNEhndU8xdS1MNGNzbzdIbkZBVG81dkVoWFRZbV82eG16QlhFZno1QU5fV3dqc0llX0hwaDJ0SHBPOWQtS3dZTUxNN3c?oc=5"
+    },
+    "7683300": {
+      "sent_at": "2026-03-23T08:05:00.864539",
+      "category": "crypto",
+      "headline": "Iron ore miners could face billions more in fuel costs due to Iran war, Fortescue says - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNMWxDQlVMajFOazUtQ21LSmNqdWRMNjQ2eHF2eTVCRmZYUC1vMnlvejc2NGMxeVJmdHRPbWZGbkdPRnRqT1JWWkJqaHFPb2xhQ2QtcUtIay03QVdBMjByMUtXWTJyVkVMMDB0NkpvNWYzMU5yQTRMdGI4c043ZFMzazdmMXYxLWRWX1VSTi1mU1BhU250b29JVnRqQnpVdEtZX180OENBOEhKRFQ0N2dZUVdCZUhlYzFLMVc4NFlJcUNfV2JFQW1MbEt1RQ?oc=5"
+    },
+    "7683600": {
+      "sent_at": "2026-03-23T09:05:00.184030",
+      "category": "crypto",
+      "headline": "Prosecutors flag mail discrepancies in Sam Bankman-Fried\u2019s retrial motion letter from prison",
+      "url": "https://www.coindesk.com/policy/2026/03/23/prosecutors-flag-sam-bankman-fried-letter-sent-from-the-bay-area-not-prison"
+    },
+    "7683810": {
+      "sent_at": "2026-03-23T10:05:00.233392",
+      "category": "crypto",
+      "headline": "Sweden\u2019s H100 targets Norwegian firms in all-stock Bitcoin deal",
+      "url": "https://cointelegraph.com/news/h100-acquire-bitcoin-treasury-surpass-3-500-btc?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7683815": {
+      "sent_at": "2026-03-23T10:30:00.081174",
+      "category": "crypto",
+      "headline": "Gold bear market and sub-$50K BTC: Five things to know in Bitcoin this week",
+      "url": "https://cointelegraph.com/news/gold-bear-market-sub-50k-btc-five-things-bitcoin-this-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7683813": {
+      "sent_at": "2026-03-23T10:30:00.749919",
+      "category": "crypto",
+      "headline": "Bitcoin's momentum indicator is flashing a signal that should worry bulls",
+      "url": "https://www.coindesk.com/markets/2026/03/23/bitcoin-s-momentum-indicator-is-flashing-a-signal-that-should-worry-bulls"
+    },
+    "7683816": {
+      "sent_at": "2026-03-23T10:30:01.448130",
+      "category": "crypto",
+      "headline": "ZachXBT says fake X accounts used viral war content to drive crypto scams",
+      "url": "https://cointelegraph.com/news/zachxbt-fake-war-posts-x-crypto-scam-network?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7683814": {
+      "sent_at": "2026-03-23T10:30:02.140970",
+      "category": "crypto",
+      "headline": "Fed's Miran speaks, Bitgo earnings, Casper hard fork: Crypto Week Ahead",
+      "url": "https://www.coindesk.com/markets/2026/03/23/fed-s-miran-speaks-bitgo-earnings-casper-hard-fork-crypto-week-ahead"
+    },
+    "7683818": {
+      "sent_at": "2026-03-23T10:35:00.186991",
+      "category": "stock",
+      "headline": "US stock futures fall as escalating Iran conflict dims rate-cut hopes - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdmQ5dTl1Ni1MNnlQODduaV9wU0pNdzJ0LW9VT0U5akt5eWRkZWN4TXkzVlFjUVIyeVV3UjZuVHRmT2ZRTGZPTWgzXzRhbzcwNVp1Vi1MV0NpZ25jLUdyc1d4TGJIWFRiczdJVEotOTNKSmJyQXItMzRKOGVWMUFtU2t6RXZQQ0RMMl9Rb1NQbnRPSnJfV3d3a2RKSnRpSC1JVFp1cHZvNlc2aXVFMGlnbw?oc=5"
+    },
+    "7683817": {
+      "sent_at": "2026-03-23T10:35:00.928365",
+      "category": "stock",
+      "headline": "Every missile fired over Iran is burning through US tungsten stocks - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPS24tMkdIMkRtMTBxSE1FSHZreGZmVndSZDl0NnMtd3NST3VXSU5Yb3hnOXZsOHZNbnFhYTd5Rm9DMW5qRmtTcTB2dXgydVV6QjJaaTJWUHRZOGgwaDRHRXF6dHlNY2QyZGQ2SWhNRUN0QzllRnl0LU1BNllSX0tsaUx0TUVpblpIV2JSMWd0VWV1Z0VKdERXeUE4ajdkLTVZaWhHQUUxMHZGSmU1WHVJQzFNdnAtNlQ0bEh3ZnUyUDk?oc=5"
+    },
+    "7684148": {
+      "sent_at": "2026-03-23T11:55:00.506086",
+      "category": "crypto",
+      "headline": "Bitcoin surges above $71,000 as Trump postpones Iran strikes for 5 days",
+      "url": "https://www.coindesk.com/markets/2026/03/23/bitcoin-surges-above-usd71-000-as-trump-postpones-iran-strikes-for-five-days"
+    },
+    "7684149": {
+      "sent_at": "2026-03-23T11:55:01.241125",
+      "category": "crypto",
+      "headline": "Polymarket traders bet on Iran ceasefire even as oil shock concerns persist",
+      "url": "https://www.coindesk.com/daybook-us/2026/03/23/polymarket-traders-bet-on-iran-ceasefire-even-oil-shock-concerns-persist"
+    },
+    "7684150": {
+      "sent_at": "2026-03-23T11:55:01.952611",
+      "category": "crypto",
+      "headline": "Bitcoin retreats to $68,000, leaving CME gap as traders eye $70,000 rebound",
+      "url": "https://www.coindesk.com/markets/2026/03/23/bitcoin-retreats-to-usd68-000-leaving-cme-gap-as-traders-eye-usd70-000-rebound"
+    },
+    "7684151": {
+      "sent_at": "2026-03-23T11:55:02.693328",
+      "category": "crypto",
+      "headline": "Bitcoin clings to monthly gains, historic losing streak still in play",
+      "url": "https://www.coindesk.com/markets/2026/03/23/bitcoin-clings-to-monthly-gains-historic-losing-streak-still-in-play"
+    },
+    "139509918": {
+      "sent_at": "2026-03-23T12:29:59.741499",
+      "category": "stock",
+      "headline": "The Mosaic Company (MOS) Traded Down Due to Softer Fertilizer Demand",
+      "url": "https://finnhub.io/api/news?id=ae12bb60d3d2a50f0317c1c099376374029e94ff11aecc15409ebc2d02ba8d2b",
+      "ticker": "MOS"
+    },
+    "7684380": {
+      "sent_at": "2026-03-23T12:55:00.571693",
+      "category": "crypto",
+      "headline": "H100 eyes Europe\u2019s largest bitcoin treasury with 3,500 BTC in proposed acquistions",
+      "url": "https://www.coindesk.com/markets/2026/03/23/h100-eyes-europe-s-largest-bitcoin-treasury-with-3-500-btc-in-proposed-acquistions"
+    },
+    "7684381": {
+      "sent_at": "2026-03-23T12:55:01.270104",
+      "category": "crypto",
+      "headline": "Strategy returns to 'small' bitcoin purchases, adding $76.6 million in BTC last week",
+      "url": "https://www.coindesk.com/markets/2026/03/23/strategy-returns-to-small-bitcoin-purchases-adding-usd76-6-million-in-btc-last-week"
+    },
+    "7684382": {
+      "sent_at": "2026-03-23T12:55:02.004946",
+      "category": "crypto",
+      "headline": "Brazil\u2019s finance minister delays divisive crypto tax plan",
+      "url": "https://www.coindesk.com/policy/2026/03/23/brazil-s-finance-minister-delays-divisive-crypto-tax-plan"
+    },
+    "7684383": {
+      "sent_at": "2026-03-23T12:55:02.723414",
+      "category": "crypto",
+      "headline": "Stablecoins seen gaining from AI payments despite slow uptake: Bernstein",
+      "url": "https://cointelegraph.com/news/bernstein-agentic-ai-payments-stablecoin-demand?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7684385": {
+      "sent_at": "2026-03-23T13:05:00.232664",
+      "category": "stock",
+      "headline": "Dollar slides, stocks jump as Trump signals pause on Iran strikes - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQQzFTdmdXU0tTajdwaENVS3ZCeDFQc3NRc0h2OS1lTWhiVWZJZW1BbHJaSjJDRTQ1b0R0RThEVS1BekQ2YWpzakdwZXZyUzFDU1dJY09sTVdiS3dIWkgxTWtrM0N5M29RTTdYenpRS2w0Nkg0Z3lBLU5uVDluN2lTcEkzem44c1ZLWEE4MjBVUW1IYUtNY0ZORkVZdXRHaTRHR2JJUE8xcXpoSW5uMEJFRWFKRXc?oc=5"
+    },
+    "7684605": {
+      "sent_at": "2026-03-23T13:55:00.425183",
+      "category": "crypto",
+      "headline": "Crypto ETF inflows slow to $230M as Fed caution dents momentum: CoinShares",
+      "url": "https://cointelegraph.com/news/crypto-fund-inflows-slow-230-million-fed-hits-sentiment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7684602": {
+      "sent_at": "2026-03-23T13:55:01.175120",
+      "category": "crypto",
+      "headline": "CoinDesk 20 performance update: Bitcoin Cash (BCH) gains 2.3%, leading index higher",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/03/23/coindesk-20-performance-update-bitcoin-cash-bch-gains-2-3-leading-index-higher"
+    },
+    "7684606": {
+      "sent_at": "2026-03-23T13:55:01.936386",
+      "category": "crypto",
+      "headline": "Bitcoin 'TACO pumps' to $71K, oil crashes, as Trump pauses Iran strikes",
+      "url": "https://cointelegraph.com/news/bitcoin-taco-pumps-71k-oil-crashes-trump-pauses-iran-strikes?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7684603": {
+      "sent_at": "2026-03-23T13:55:02.621621",
+      "category": "crypto",
+      "headline": "Tom Lee's Bitmine extends buying streak with $138 million ETH purchase, betting on crypto slump ending",
+      "url": "https://www.coindesk.com/business/2026/03/23/tom-lee-s-bitmine-extends-buying-streak-with-usd138-million-eth-purchase-betting-on-crypto-slump-ending"
+    },
+    "7684607": {
+      "sent_at": "2026-03-23T13:55:03.348020",
+      "category": "crypto",
+      "headline": "How a \u2018Wrong Number\u2019 message turned into a $3.4M crypto scam",
+      "url": "https://cointelegraph.com/news/wrong-number-text-crypto-scam?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7684608": {
+      "sent_at": "2026-03-23T13:55:07.192071",
+      "category": "crypto",
+      "headline": "Siren token surges 340% in 7 days, draws scrutiny over concentrated supply",
+      "url": "https://cointelegraph.com/news/siren-token-340-percent-surge-wallet-concentration-claims?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7684604": {
+      "sent_at": "2026-03-23T13:55:07.948624",
+      "category": "crypto",
+      "headline": "Bitcoin's wild roller coaster ride leaves leveraged traders with $415 million in liquidations",
+      "url": "https://www.coindesk.com/markets/2026/03/23/bitcoin-s-wild-roller-coaster-ride-leaves-leveraged-traders-with-usd415-million-in-losses"
+    },
+    "7684609": {
+      "sent_at": "2026-03-23T13:55:08.713703",
+      "category": "crypto",
+      "headline": "Strategy adds 1,031 Bitcoin for $77M as holdings top 762,000 BTC",
+      "url": "https://cointelegraph.com/news/strategy-buys-1031-bitcoin-buy-77-million-mstr-sales?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7684610": {
+      "sent_at": "2026-03-23T13:55:09.427917",
+      "category": "crypto",
+      "headline": "Airdrops rewarded extraction and ended real communities",
+      "url": "https://cointelegraph.com/news/tokens-are-back-airdrops-lost-credibility?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7684612": {
+      "sent_at": "2026-03-23T14:05:00.195008",
+      "category": "stock",
+      "headline": "Instant view: World markets rally as Trump postpones military strikes on Iranian power plants - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQX291SG9VaHJHSUZVdnhSNDZadTFBOHZqQXdQVkNKTDVYdlRmM1o5UFlvTEhPM3VkMXRuOHRTdEZXM3lSZ2ZsTmpGUUphV2daZzZtTW9Dc2V2b3k1Y3poOGdjZDZqNDdHdDVhT2tZWDBNeGdRUVY2Q2VGT0w3MmdYMkp4bURXbzgyQTZoWkhCQmExRHRMeE1EbWZDYUVTVG5HbmFpMENRR3BYd3UxbEFYaTRod1ZIZHRrWDA4WjQwMnQydmRRRVE?oc=5"
+    },
+    "7684613": {
+      "sent_at": "2026-03-23T14:05:00.889318",
+      "category": "stock",
+      "headline": "Sterling drops along with bonds as Iran war shakes UK markets - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNUE3UU1ydTJnSjFnN2FJX0pVakdkRU43ZFMtRGRPaW1hSHBlVUY0SElQd2JtUUt4eU1vdC12dXhXeU04Y1loWkxwaFBXRTIwWTNfeE8tTDRiOW9WaGxwSUFGWGtUQ2hnNGV0SmZXVHAxUXg4UmJuUTBOcG84emZyQURqaVdEWkQ5SE9YeFZuNWxLS0dGc080cHJyUWEtdVhJenhYOUVn?oc=5"
+    },
+    "139510561": {
+      "sent_at": "2026-03-23T14:30:01.727429",
+      "category": "stock",
+      "headline": "These Stocks Are Today\u2019s Movers: Freeport-McMoRan, Super Micro, DraftKings, Tesla, Synopsys, EchoStar, and More",
+      "url": "https://finnhub.io/api/news?id=64e7bb7c1a0dda486e887383e6be24f957f5e3390c7399b9f2a16ff864701051",
+      "ticker": "AA"
+    },
+    "7684829": {
+      "sent_at": "2026-03-23T14:55:00.157942",
+      "category": "crypto",
+      "headline": "Senate bill to target sports betting ban on prediction markets: WSJ",
+      "url": "https://cointelegraph.com/news/senators-bill-sports-betting-ban-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7684830": {
+      "sent_at": "2026-03-23T14:55:00.834263",
+      "category": "crypto",
+      "headline": "Spain arrests suspect in 2025 kidnapping of Ledger co-founder",
+      "url": "https://cointelegraph.com/news/spain-arrests-suspect-ledger-cofounder-kidnapping?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "139486048": {
+      "sent_at": "2026-03-23T15:30:03.249770",
+      "category": "stock",
+      "headline": "Liquid Biopsy Products Market Report 2026-2031 Featuring Analysis of Roche, Illumina, Qiagen, MDxHealth, Novogen, BGI, Myriad Genetics and More",
+      "url": "https://finnhub.io/api/news?id=99ac3dd0b222947e661d7be43f064c2fe29a5b34f29c55af491458f0f219d40b",
+      "ticker": "ILMN"
+    },
+    "139481296": {
+      "sent_at": "2026-03-23T15:30:03.260111",
+      "category": "stock",
+      "headline": "ILMN Stock Gains Following Expanded Collaboration With Labcorp",
+      "url": "https://finnhub.io/api/news?id=de55fcc50d24f2eea6cf3b8c1dcd2f986fdb68aa31b0c3020f434cd48799f098",
+      "ticker": "ILMN"
+    },
+    "139457407": {
+      "sent_at": "2026-03-23T15:30:03.269601",
+      "category": "stock",
+      "headline": "How The Illumina (ILMN) Story Is Shifting With 2026 Expectations And Mixed Street Views",
+      "url": "https://finnhub.io/api/news?id=96c2d3884ed85d871ff19a4b12aa7949034c569ef6594e7f2e96f124bda7aded",
+      "ticker": "ILMN"
+    },
+    "139450512": {
+      "sent_at": "2026-03-23T15:30:03.278653",
+      "category": "stock",
+      "headline": "Life Sciences Tools & Services Stocks Q4 Earnings: Illumina (NASDAQ:ILMN) Firing on All Cylinders",
+      "url": "https://finnhub.io/api/news?id=0c6f85073865aad76aa61a5a9e9d81e6041eb7f3b8848263b314330ea2072e55",
+      "ticker": "ILMN"
+    },
+    "139450438": {
+      "sent_at": "2026-03-23T15:30:03.288220",
+      "category": "stock",
+      "headline": "Illumina and Labcorp expand collaboration to broaden access to precision oncology testing",
+      "url": "https://finnhub.io/api/news?id=67d1d9f7a8bb8a45b6a18176d3624d5df1573fc935c07067b477fbabe6797b37",
+      "ticker": "ILMN"
+    },
+    "139481616": {
+      "sent_at": "2026-03-23T15:30:04.268625",
+      "category": "stock",
+      "headline": "Expeditors International of Washington, Inc. (EXPD) Discusses India's Strategic Positioning and Supply Chain Resilience in a Changing Trade Landscape Transcript",
+      "url": "https://finnhub.io/api/news?id=befc0987fa82fefbd54f52ec718abf6292f8f6982098a44b548ec730ca80a582",
+      "ticker": "EXPD"
+    },
+    "139480126": {
+      "sent_at": "2026-03-23T15:30:04.289417",
+      "category": "stock",
+      "headline": "Chip buyers in Europe are paying more and tapping backup stores as Iran war hits air freight",
+      "url": "https://finnhub.io/api/news?id=f57c5c7854c2bee899de6e7e77eea7cb41dabd91f8ba40ad2fc81d1cc7d6c29f",
+      "ticker": "EXPD"
+    },
+    "139453739": {
+      "sent_at": "2026-03-23T15:30:04.306997",
+      "category": "stock",
+      "headline": "Expeditors Stock: Is EXPD Underperforming the Industrial Sector?",
+      "url": "https://finnhub.io/api/news?id=6c5a9aa76fc65d2b73ec5a1d78ac0dd077abb8774ae8a182b634d4d21e4a422d",
+      "ticker": "EXPD"
+    },
+    "139431449": {
+      "sent_at": "2026-03-23T15:30:04.322131",
+      "category": "stock",
+      "headline": "Q4 Rundown: Expeditors (NYSE:EXPD) Vs Other Air Freight and Logistics Stocks",
+      "url": "https://finnhub.io/api/news?id=02976a2544d49ee2790a0dbfd8493f0aa171fc2887f0a5cd935b3b68e6c6d40e",
+      "ticker": "EXPD"
+    },
+    "139408135": {
+      "sent_at": "2026-03-23T15:30:04.336342",
+      "category": "stock",
+      "headline": "A Look At Expeditors (EXPD) Valuation After New US$3b Buyback And Earnings Beat",
+      "url": "https://finnhub.io/api/news?id=6d8f2e91dbbbcc3d6d4726feba12a5e6d39d6ec1ec6d3f98aeee1526608b7b5c",
+      "ticker": "EXPD"
+    },
+    "7684933": {
+      "sent_at": "2026-03-23T15:35:00.197367",
+      "category": "crypto",
+      "headline": "Strategy tops up capital-raising plans, bringing potential bitcoin buying power back to $42 billion",
+      "url": "https://www.coindesk.com/markets/2026/03/23/strategy-tops-up-capital-raising-plans-bringing-potential-bitcoin-buying-power-back-to-usd42-billion"
+    },
+    "7684934": {
+      "sent_at": "2026-03-23T15:35:00.968379",
+      "category": "crypto",
+      "headline": "Pharmaceutical firm pivots to stablecoins, holds nearly 9% of SKY's supply",
+      "url": "https://www.coindesk.com/business/2026/03/23/pharmaceutical-firm-pivots-to-stablecoins-holds-nearly-9-of-sky-s-supply"
+    },
+    "7684935": {
+      "sent_at": "2026-03-23T15:35:01.716839",
+      "category": "crypto",
+      "headline": "Backpack launches BP token on Solana with 25% airdrop, no insider allocation",
+      "url": "https://www.coindesk.com/business/2026/03/23/backpack-launches-bp-token-on-solana-with-25-airdrop-no-insider-allocation"
+    },
+    "7685140": {
+      "sent_at": "2026-03-23T16:20:00.199466",
+      "category": "stock",
+      "headline": "Trump administration plans to bring more diesel to market as fuel prices surge, Wright says",
+      "url": "https://www.cnbc.com/2026/03/23/chris-wright-trump-diesel-iran-war-oil-price.html"
+    },
+    "7685141": {
+      "sent_at": "2026-03-23T16:20:00.901425",
+      "category": "stock",
+      "headline": "Why some job seekers are spending thousands on reverse recruiters: 'The old rules are gone,' says one recruiter",
+      "url": "https://www.cnbc.com/2026/03/23/why-some-job-seekers-are-spending-thousands-on-reverse-recruiters-to-find-work.html"
+    },
+    "139513120": {
+      "sent_at": "2026-03-23T16:30:05.560275",
+      "category": "stock",
+      "headline": "Gapping S&P500 stocks in Monday's session",
+      "url": "https://finnhub.io/api/news?id=1ac0e6e476da413bd1dc90fbf18901912c1c6409e5417d7bb2a294b2788a6074",
+      "ticker": "EXPD"
+    },
+    "7685142": {
+      "sent_at": "2026-03-23T16:35:00.209787",
+      "category": "crypto",
+      "headline": "AIxCrypto Acknowledges Conclusion of SEC Investigation with no Enforcement Action Involving majority controlling stockholder, Faraday Future and Reaffirms Strategic Focus",
+      "url": "https://cryptocurrencynews.com/crypto/aixcrypto-acknowledges-conclusion-of-sec-investigation-with-no-enforcement-action-involving-majority-controlling-stockholder-faraday-future-and-reaffirms-strategic-focus/"
+    },
+    "7685251": {
+      "sent_at": "2026-03-23T16:50:00.148646",
+      "category": "stock",
+      "headline": "Here's how Jim Cramer is playing Monday's stock market rebound",
+      "url": "https://www.cnbc.com/2026/03/23/heres-how-jim-cramer-is-playing-mondays-stock-market-rebound-.html"
+    },
+    "7685463": {
+      "sent_at": "2026-03-23T17:55:00.285996",
+      "category": "crypto",
+      "headline": "Traders say Bitcoin still due for \u2018next leg lower\u2019 targeting $46K BTC price",
+      "url": "https://cointelegraph.com/news/traders-bitcoin-still-due-next-leg-lower-targeting-46k-btc-price?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7685464": {
+      "sent_at": "2026-03-23T17:55:01.026338",
+      "category": "crypto",
+      "headline": "Deloitte, Stablecorp plan stablecoin infrastructure for Canadian institutions",
+      "url": "https://cointelegraph.com/news/deloitte-stablecorp-qcad-canada-stablecoin-regulation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7685462": {
+      "sent_at": "2026-03-23T17:55:01.744800",
+      "category": "crypto",
+      "headline": "BlackRock is betting billions that tokenized funds will do for Wall Street what the internet did to mail",
+      "url": "https://www.coindesk.com/business/2026/03/23/blackrock-is-betting-billions-that-tokenized-funds-will-do-for-wall-street-what-the-internet-did-to-mail"
+    },
+    "7685565": {
+      "sent_at": "2026-03-23T18:20:00.152066",
+      "category": "stock",
+      "headline": "Here are the things we want to see to trust this stock market rally",
+      "url": "https://www.cnbc.com/2026/03/23/here-are-the-things-we-want-to-see-to-trust-this-stock-market-rally.html"
+    },
+    "139513959": {
+      "sent_at": "2026-03-23T18:29:59.748789",
+      "category": "stock",
+      "headline": "More than 40 Middle East energy assets \u2018severely damaged,\u2019 IEA chief says",
+      "url": "https://finnhub.io/api/news?id=01de7cace695ee31266275f3d51bd63c8c864493569261cc276c25cd8bf032fb",
+      "ticker": "MOS"
+    },
+    "139514817": {
+      "sent_at": "2026-03-23T18:30:01.625856",
+      "category": "stock",
+      "headline": "A Plunge in Aluminum Futures Sends Alcoa Stock Below Its 50-Day Moving Average. Should You Buy the Dip?",
+      "url": "https://finnhub.io/api/news?id=e0d2e2d765ba9856ccd4c6ae10be4d5b664296173606cd56d63cb297b1331bb7",
+      "ticker": "AA"
+    },
+    "139514640": {
+      "sent_at": "2026-03-23T18:30:03.818223",
+      "category": "stock",
+      "headline": "A $175 Million Move Into Sotera Health Signals Potential Opportunity Amid 21% Stock Drop",
+      "url": "https://finnhub.io/api/news?id=433a2efc132a497d427dbb04b23c5a195449994261bceb4e18584c449ed74194",
+      "ticker": "ILMN"
+    },
+    "139514380": {
+      "sent_at": "2026-03-23T18:30:05.093983",
+      "category": "stock",
+      "headline": "Monday's session: top gainers and losers in the S&P500 index",
+      "url": "https://finnhub.io/api/news?id=bb0bcfc0d7b3525ae7478286a92257faec654afad250ec9d3a394f2d97f87139",
+      "ticker": "EXPD"
+    },
+    "7685672": {
+      "sent_at": "2026-03-23T18:55:00.162853",
+      "category": "crypto",
+      "headline": "Polymarket tightens rules to curb manipulation, insider trading risks",
+      "url": "https://cointelegraph.com/news/polymarket-rules-update-manipulation-insider-trading?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7685673": {
+      "sent_at": "2026-03-23T18:55:00.853491",
+      "category": "crypto",
+      "headline": "Bitcoin spot volumes fall to 2023 lows as BTC rallies remain news-led",
+      "url": "https://cointelegraph.com/news/bitcoin-spot-volumes-fall-to-2023-lows-as-btc-rallies-remain-news-led?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7685674": {
+      "sent_at": "2026-03-23T18:55:01.576974",
+      "category": "crypto",
+      "headline": "MoonPay releases open-source wallet standard for AI agents",
+      "url": "https://cointelegraph.com/news/moonpay-releases-open-source-wallet-standard-for-ai-agents?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7685882": {
+      "sent_at": "2026-03-23T19:55:00.481785",
+      "category": "crypto",
+      "headline": "SEC sends proposed crypto interpretation to White House for review",
+      "url": "https://cointelegraph.com/news/sec-crypto-interpretation-laws-white-house?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "139515541": {
+      "sent_at": "2026-03-23T20:30:04.540359",
+      "category": "stock",
+      "headline": "Top S&P500 movers in Monday's session",
+      "url": "https://finnhub.io/api/news?id=d8fb228d165ab8c5106e1e9e61c9437ad4f20ea0b3ac6d9e117a67170cb321ae",
+      "ticker": "EXPD"
+    },
+    "7686101": {
+      "sent_at": "2026-03-23T21:05:00.203963",
+      "category": "crypto",
+      "headline": "Solana Foundation targets institutions with new privacy framework",
+      "url": "https://www.coindesk.com/tech/2026/03/23/solana-foundation-targets-institutions-with-new-privacy-framework"
+    },
+    "7686102": {
+      "sent_at": "2026-03-23T21:05:00.877976",
+      "category": "crypto",
+      "headline": "Prediction market boom spurs new VC fund backed by Polymarket, Kalshi CEOs",
+      "url": "https://www.coindesk.com/markets/2026/03/23/prediction-market-boom-spurs-new-vc-fund-backed-by-polymarket-kalshi-ceos"
+    },
+    "7686317": {
+      "sent_at": "2026-03-23T21:55:00.333243",
+      "category": "crypto",
+      "headline": "Stripe protocol could mark turning point for micropayments, Forrester says",
+      "url": "https://cointelegraph.com/news/stripe-mpp-ai-agents-micropayments-forrester?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7686318": {
+      "sent_at": "2026-03-23T21:55:01.053607",
+      "category": "crypto",
+      "headline": "Glider, Ondo launch platform for custom tokenized stock portfolios",
+      "url": "https://cointelegraph.com/news/glider-ondo-launch-platform-for-custom-tokenized-stock-portfolios?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "139515985": {
+      "sent_at": "2026-03-23T22:30:04.415488",
+      "category": "stock",
+      "headline": "3 Cash-Producing Stocks We Find Risky",
+      "url": "https://finnhub.io/api/news?id=93f31e9da1b9e953135b2cd1f9e17bc415bcda8825b49755966a0a4b1f3d48d4",
+      "ticker": "EXPD"
+    },
+    "7686419": {
+      "sent_at": "2026-03-23T22:35:00.295658",
+      "category": "crypto",
+      "headline": "Bitcoin holds above $70,000, but future direction hinges on Iran-U.S. 'talks'",
+      "url": "https://www.coindesk.com/markets/2026/03/23/bitcoin-holds-above-usd70-000-but-future-direction-hinges-on-iran-u-s-talks"
+    },
+    "7686521": {
+      "sent_at": "2026-03-23T22:50:00.168860",
+      "category": "stock",
+      "headline": "Jim Cramer says Monday\u2019s market rally may be short-lived",
+      "url": "https://www.cnbc.com/2026/03/23/jim-cramer-mondays-market-rally-may-be-short-lived.html"
+    },
+    "7686526": {
+      "sent_at": "2026-03-23T22:55:00.208812",
+      "category": "crypto",
+      "headline": "Bitcoin\u2019s battle for $70K continues as data shows traders avoiding bullish positioning",
+      "url": "https://cointelegraph.com/news/bitcoin-s-battle-for-70k-continues-as-data-shows-traders-avoiding-bullish-positioning?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7686527": {
+      "sent_at": "2026-03-23T22:55:00.874809",
+      "category": "crypto",
+      "headline": "Senator Warren questions whether MrBeast will market crypto to kids",
+      "url": "https://cointelegraph.com/news/senator-warren-mrbeast-crypto-children?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7686736": {
+      "sent_at": "2026-03-23T23:55:00.220729",
+      "category": "crypto",
+      "headline": "Stablecoin yield in crypto Clarity Act won't allow rewards on balances, latest text says",
+      "url": "https://www.coindesk.com/policy/2026/03/23/stablecoin-yield-in-crypto-clarity-act-won-t-allow-rewards-on-balances-latest-text-says"
+    },
+    "7686943": {
+      "sent_at": "2026-03-24T01:00:00.193119",
+      "category": "crypto",
+      "headline": "Strategy seeks another $44.1B to accelerate Bitcoin buying",
+      "url": "https://cointelegraph.com/news/strategy-44-billion-plan-fund-bitcoin-buys?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7687255": {
+      "sent_at": "2026-03-24T02:35:00.143788",
+      "category": "stock",
+      "headline": "Oil rises as markets assess supply risks after Iran denies US talks - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQNTAzcnlQVGZUNHlIbmhqMWt0ZS1sN3RYclMyTGd1endqLVhRTkJ5N2tVaG9ZODlQUjhRMTlWcmFCQmtUOXlqVVRROUM4SXNoQUJJRUZHeUlkTXYtQzN3QzJmSmV2dGw1U2RyaXNiblRsQkptWFpZampBeXZEVmlyVVhpaW9tdVd1WldBRDQzRnl0bFgzbi1iODJhVzlrVXF6ZHV4ZnMxakxoOUljZXl2TUd0TjRjaGs?oc=5"
+    },
+    "7687254": {
+      "sent_at": "2026-03-24T02:35:00.828004",
+      "category": "stock",
+      "headline": "Shares rally, oil rebounds as Trump extends Iran ultimatum - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPXzVEQTdvNG5fUnVrdWRwSGZabVBOSHJ5eU9mZUZhWVBUdmJmZkZiTWRvdk10YTBGa3VPdUE1R3lXRk85cjdrUGtqemUzZC0tbGdQUFNINkZ5VnBUQ0lieUlyaVMyN09jX1ViNUFuZkFlVE81QkxKUkFtcmRnVFNNV2dHRQ?oc=5"
+    },
+    "7687354": {
+      "sent_at": "2026-03-24T02:55:00.163807",
+      "category": "crypto",
+      "headline": "Kalshi joins Polymarket in sweeping user bans to head off insider trading",
+      "url": "https://cointelegraph.com/news/kalshi-joins-polymarket-user-bans-head-off-insider-trading?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7687355": {
+      "sent_at": "2026-03-24T02:55:00.839159",
+      "category": "crypto",
+      "headline": "Eyecare biotech jumps 19% after stablecoin-focused rebrand",
+      "url": "https://cointelegraph.com/news/eyecare-biotech-jumps-19-after-stablecoin-focused-rebrand?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7687558": {
+      "sent_at": "2026-03-24T03:55:00.160649",
+      "category": "crypto",
+      "headline": "Balancer Labs shuts down 4 months after $100M+ exploit, protocol to continue",
+      "url": "https://cointelegraph.com/news/balancer-labs-shuts-down-protocol-continues?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7687762": {
+      "sent_at": "2026-03-24T05:05:00.174766",
+      "category": "stock",
+      "headline": "Indian shares open higher after Trump postpones Iran grid strike - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYTcxaGFaMFFBR2pnSnE1c0x1VGZxUHl3NnI2d2VnUGRqQ2Q3aUxIMF9IZ1ZXLW12QlZpbG8tdlNUNWdhY3JNMnQ1cWo1UUkwWXpkcTRCeW1PWFNKak01bi14SlBLVVIzWndhUjN0RFBHbE9nWlJtanBid0hiRW5acnpQaUJwbEE5RlY5QmdxejlFZGtndmlwTHBqLVR3cHM4OE5CSzR1T2VaU1N0QlpySjhNUQ?oc=5"
+    },
+    "7687968": {
+      "sent_at": "2026-03-24T05:55:00.189599",
+      "category": "crypto",
+      "headline": "Circle asks EU to ease crypto thresholds in proposed markets framework",
+      "url": "https://cointelegraph.com/news/circle-provides-feedback-eu-market-integration-package?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7687969": {
+      "sent_at": "2026-03-24T05:55:00.902103",
+      "category": "crypto",
+      "headline": "TRON DAO expands AI fund to $1B as agentic economy race heats up",
+      "url": "https://cointelegraph.com/news/tron-dao-expands-ai-fund-1b-agentic-economy-race-heats-up?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7687970": {
+      "sent_at": "2026-03-24T05:55:01.591185",
+      "category": "crypto",
+      "headline": "Delaware to regulate stablecoins under banking framework in new bill",
+      "url": "https://cointelegraph.com/news/delaware-regulate-stablecoins-under-banking-framework-new-bill?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7687971": {
+      "sent_at": "2026-03-24T05:55:02.262400",
+      "category": "crypto",
+      "headline": "Bitmine chair sees \u2018mini-crypto winter\u2019 thaw for ETH as it hits 77% of goal",
+      "url": "https://cointelegraph.com/news/tom-lee-bitmine-ether-77-percent-crypto-winter-end?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7688073": {
+      "sent_at": "2026-03-24T06:05:00.237183",
+      "category": "crypto",
+      "headline": "Bitcoin, ether, solana prices move higher as Gulf allies inch toward joining Iran war",
+      "url": "https://www.coindesk.com/markets/2026/03/24/bitcoin-ether-solana-prices-move-higher-as-gulf-allies-inch-toward-joining-iran-war"
+    },
+    "7688074": {
+      "sent_at": "2026-03-24T06:05:00.940903",
+      "category": "crypto",
+      "headline": "Bitcoin's mining concentration just showed up in a rare 2-block reorg",
+      "url": "https://www.coindesk.com/tech/2026/03/24/bitcoin-s-mining-concentration-just-showed-up-in-a-rare-2-block-reorg"
+    },
+    "7688079": {
+      "sent_at": "2026-03-24T06:35:00.206351",
+      "category": "stock",
+      "headline": "Dollar stands tall as markets turn cautious on Middle East war - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOa2hRcnZDZGZHaHhLX0NDN2VOVVdJZGVEcy0tNHFsMUlWckxNNTdGbllreGctcm55SGY3OFZKekJpWTFLeHlOckFibkpDRGw3QjRSOW9sczhuenJ0Qm40aU5jZzVweU00SDFwNkxZUkJpdUFpbWJLTUtzVjZXYVNDT1NCbmFYNm5MVVNNR3F5STUzTDZrZjFIdlRxaEpUTUJlRnN6WGRPRWhHcVpyeHdlSkNaRlQ?oc=5"
+    },
+    "7688182": {
+      "sent_at": "2026-03-24T06:55:00.160479",
+      "category": "crypto",
+      "headline": "SEC\u2019s top enforcer clashed over Trump cases before quitting: Report",
+      "url": "https://cointelegraph.com/news/sec-top-enforcer-clashed-over-trump-cases-before-quitting-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7688183": {
+      "sent_at": "2026-03-24T06:55:00.886297",
+      "category": "crypto",
+      "headline": "Major Australian pension fund mulls crypto offerings amid growing demand",
+      "url": "https://cointelegraph.com/news/hostplus-considers-crypto-options-australia?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7688290": {
+      "sent_at": "2026-03-24T07:30:00.150810",
+      "category": "crypto",
+      "headline": "Balancer Labs will shut down as corporate entity became 'a liability' after $110 million exploit",
+      "url": "https://www.coindesk.com/tech/2026/03/24/balancer-labs-will-shut-down-as-corporate-entity-became-a-liability-after-usd110-million-exploit"
+    },
+    "7688496": {
+      "sent_at": "2026-03-24T08:05:00.195093",
+      "category": "crypto",
+      "headline": "Here\u2019s where Treasuries could shape Trump\u2019s Iran war \u2014 and bitcoin moves",
+      "url": "https://www.coindesk.com/markets/2026/03/24/here-s-where-treasuries-could-shape-trump-s-iran-war-and-bitcoin-moves"
+    },
+    "7688504": {
+      "sent_at": "2026-03-24T08:35:00.207329",
+      "category": "stock",
+      "headline": "In Iran fallout, US shares hold up better than global rivals, for now - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOanh1NFFkRFRsM1IxUE00bE8xSWRGQmdjZ01oTFpWWTN0QlZCTXFNcWJ1amRDcmJ6UDljZWlwWVZBSl9EUGFtOEFHQXJpSm5Yc3RVbDhLbWVPVE91RkJ2a0F5eFc1bEpqalYwSktPa2ZlM3dwZ2dYd0UwbU93R3BXbFF3SWF4YTFjVHBBcGZuX3NUSGFacmtkWmlpMXB5NHZwdE1PX19ocmU?oc=5"
+    },
+    "7688611": {
+      "sent_at": "2026-03-24T08:55:00.127353",
+      "category": "crypto",
+      "headline": "Aave DAO backs V4 mainnet plan in near-unanimous vote",
+      "url": "https://cointelegraph.com/news/aave-dao-backs-v4-deployment-near-unanimous-snapshot-vote?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7688612": {
+      "sent_at": "2026-03-24T08:55:00.819604",
+      "category": "crypto",
+      "headline": "As mass adoption approaches, crypto has forgotten its roots",
+      "url": "https://cointelegraph.com/news/crypto-has-forgotten-roots?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7688718": {
+      "sent_at": "2026-03-24T09:35:00.110721",
+      "category": "stock",
+      "headline": "Foreign outflows hit Asian stocks as Iran war drives oil shock fears - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQ0NNSG5uNFRpYXM5SDFrSlFaM1ZhaFdGU1FTbjRmaEZiVmI2NEFEWHZTXzlBX2dtY3g2RmE5WjM1eHdITERKVDEwWTJHQmNpem1sQkZFQnBKMTlFNG15Q2I1Y1E3NEJocWszaXI2b3Rsa1g4T3VSbHp0YzM2ODBrRmpjZDZpOS1NZGIxWTlGXy13bVNGYjNVWjZ2bzVMOXo5dk9OZ3lYVEtWemlKOXhYMnZEOW5waW9R?oc=5"
+    },
+    "7688822": {
+      "sent_at": "2026-03-24T09:55:00.250974",
+      "category": "crypto",
+      "headline": "Nasdaq, Talos target collateral bottleneck in institutional tokenization push",
+      "url": "https://cointelegraph.com/news/nasdaq-talos-target-collateral-bottleneck-tokenization?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7689031": {
+      "sent_at": "2026-03-24T10:55:00.381419",
+      "category": "crypto",
+      "headline": "Bitcoin leads crypto rebound to $71,000 as $550 million in shorts liquidated",
+      "url": "https://www.coindesk.com/markets/2026/03/24/bitcoin-leads-crypto-rebound-to-usd71-000-as-usd550-million-in-shorts-liquidated"
+    },
+    "7689032": {
+      "sent_at": "2026-03-24T10:55:01.128278",
+      "category": "crypto",
+      "headline": "Fund services giant Apex to tokenize Bitcoin mining note on Coinbase\u2019s Base platform",
+      "url": "https://www.coindesk.com/business/2026/03/24/fund-services-giant-apex-to-tokenize-bitcoin-mining-note-on-coinbase-s-base-platform"
+    },
+    "7689033": {
+      "sent_at": "2026-03-24T10:55:01.821720",
+      "category": "crypto",
+      "headline": "ECB says stablecoins, tokenized deposits need central bank money to scale",
+      "url": "https://cointelegraph.com/news/ecb-stablecoins-tokenized-deposits-central-bank-money?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7689034": {
+      "sent_at": "2026-03-24T11:05:00.221155",
+      "category": "crypto",
+      "headline": "Iran arrests 466 people accused of online activity undermining national security, IRNA says - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOYXhjYll0b2xyczh2NGhHNVV6ZFZDRVFRSWRIaTJ5c2VMQTltcFVHZXhUZlJWWkRzc1g4Snk2YXBBemdWTHFkbVlHREFqNklTMTltdnBvaTJIZ0RxeEstMGFEOXk4YlFUOGtnWG41VW5iNU9Ra2hpWFFYQm8wWV91ZVBqRTBKU3RqZHd1WEVhdkI4TEh3SjNFenU2RG54ZzVZZmFyWEI2YnJrMk4yM080TlNrS0FocWdYUzF4WDlzaTJTYUp1WGZsT2FlVQ?oc=5"
+    },
+    "7689236": {
+      "sent_at": "2026-03-24T11:35:00.178737",
+      "category": "crypto",
+      "headline": "Britain responds to Iran war energy shock by requiring solar panels and heat pumps in all new homes",
+      "url": "https://www.cnbc.com/2026/03/24/iran-war-britain-new-homes-solar-heat-pumps-energy-crisis.html"
+    },
+    "7689256": {
+      "sent_at": "2026-03-24T11:55:00.146108",
+      "category": "crypto",
+      "headline": "Zama integrates with Apex-backed T-REX for private tokenized assets",
+      "url": "https://cointelegraph.com/news/cryptography-firm-zama-taps-t-rex-to-bring-bank-grade-privacy-to-public-blockchains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7689257": {
+      "sent_at": "2026-03-24T11:55:00.839909",
+      "category": "crypto",
+      "headline": "Siren token slides 70% after analysts flag concentrated holdings",
+      "url": "https://cointelegraph.com/news/urgency-level-for-cover-news-title-siren-token-drops-63-a-day-after-wallet-concentration-drew-scrutiny?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7689258": {
+      "sent_at": "2026-03-24T11:55:01.516513",
+      "category": "crypto",
+      "headline": "What happens to Bitcoin if US bond yields soar above 5%?",
+      "url": "https://cointelegraph.com/news/what-happens-bitcoin-bond-yields-above-5percent?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7689259": {
+      "sent_at": "2026-03-24T11:55:02.183091",
+      "category": "crypto",
+      "headline": "Bitcoin value \u2018off the chart\u2019 as BTC price metric hits record lows in 2026",
+      "url": "https://cointelegraph.com/news/bitcoin-value-off-the-chart-btc-price-metric-hits-record-lows-in-2026?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7689361": {
+      "sent_at": "2026-03-24T12:05:00.185365",
+      "category": "crypto",
+      "headline": "Invesco joins tokenization race as it takes over Superstate\u2019s $900 million onchain fund",
+      "url": "https://www.coindesk.com/business/2026/03/24/invesco-joins-tokenization-race-as-it-takes-over-superstate-s-usd900-million-onchain-fund"
+    },
+    "7689362": {
+      "sent_at": "2026-03-24T12:05:00.895090",
+      "category": "crypto",
+      "headline": "The $75,000 line in the sand: What it\u2019ll take for bitcoin to go \"full bull\"",
+      "url": "https://www.coindesk.com/daybook-us/2026/03/24/the-usd75-000-line-in-the-sand-what-it-ll-take-for-bitcoin-to-go-full-bull"
+    },
+    "7689363": {
+      "sent_at": "2026-03-24T12:05:01.593013",
+      "category": "crypto",
+      "headline": "Crypto-friendly fintech Revolut sees profit soar 57% to $2.3 billion in 2025",
+      "url": "https://www.coindesk.com/business/2026/03/24/crypto-friendly-fintech-revolut-sees-profit-soar-57-to-usd2-3-billion-in-2025"
+    },
+    "7689493": {
+      "sent_at": "2026-03-24T12:55:00.261796",
+      "category": "crypto",
+      "headline": "Wall Street will eventually submit to the rules of DeFi",
+      "url": "https://cointelegraph.com/news/wall-street-will-submit-to-defi-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7689494": {
+      "sent_at": "2026-03-24T12:55:01.033910",
+      "category": "crypto",
+      "headline": "AI and stablecoins are winning despite 2026 crypto market slump",
+      "url": "https://cointelegraph.com/news/ai-and-stablecoins-winning-despite-2026-crypto-market-slump?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7689495": {
+      "sent_at": "2026-03-24T12:55:01.757335",
+      "category": "crypto",
+      "headline": "FSB flags dollar stablecoins as bigger risk for emerging markets in annual report",
+      "url": "https://cointelegraph.com/news/fsb-dollar-stablecoins-risk-emerging-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7689507": {
+      "sent_at": "2026-03-24T13:30:00.202809",
+      "category": "crypto",
+      "headline": "Solana Foundation taps Mastercard, Western Union, Worldpay for institutional developer platform",
+      "url": "https://www.coindesk.com/tech/2026/03/24/solana-foundation-taps-mastercard-western-union-worldpay-for-institutional-developer-platform"
+    },
+    "7689508": {
+      "sent_at": "2026-03-24T13:30:00.913236",
+      "category": "crypto",
+      "headline": "Coinbase says the 'second wave' of institutional money for crypto is here and it is all about yield",
+      "url": "https://www.coindesk.com/markets/2026/03/24/coinbase-says-the-second-wave-of-institutional-money-for-crypto-is-here-and-it-is-all-about-yield"
+    },
+    "7689509": {
+      "sent_at": "2026-03-24T13:30:01.634081",
+      "category": "crypto",
+      "headline": "Wall Street broker Bernstein calls bitcoin bottom, keeps $150,000 year-end target",
+      "url": "https://www.coindesk.com/markets/2026/03/24/wall-street-broker-bernstein-calls-bitcoin-bottom-keeps-usd150-000-year-end-target"
+    },
+    "7689510": {
+      "sent_at": "2026-03-24T13:30:02.375593",
+      "category": "crypto",
+      "headline": "ParaFi defies crypto market downturn with $125 million raise for new fund: Bloomberg",
+      "url": "https://www.coindesk.com/business/2026/03/24/parafi-defies-crypto-market-downturn-with-usd125-million-raise-for-new-fund-bloomberg"
+    },
+    "7689511": {
+      "sent_at": "2026-03-24T13:30:03.497065",
+      "category": "crypto",
+      "headline": "New York Stock Exchange taps Securitize to build its tokenized stock platform",
+      "url": "https://www.coindesk.com/business/2026/03/24/new-york-stock-exchange-taps-securitize-to-build-its-tokenized-stock-platform"
+    },
+    "7689512": {
+      "sent_at": "2026-03-24T13:30:07.190575",
+      "category": "crypto",
+      "headline": "BitGo, Susquehanna Crypto offering institutional OTC access to prediction markets",
+      "url": "https://www.coindesk.com/business/2026/03/24/bitgo-susquehanna-crypto-offering-institutional-otc-access-to-prediction-markets"
+    },
+    "7689513": {
+      "sent_at": "2026-03-24T13:30:07.868531",
+      "category": "crypto",
+      "headline": "Bitcoin finds stability at 2023 investor cost basis, echoing past cycle",
+      "url": "https://www.coindesk.com/markets/2026/03/24/bitcoin-finds-stability-at-2023-investor-cost-basis-echoing-past-cycle"
+    },
+    "7689616": {
+      "sent_at": "2026-03-24T13:35:00.474461",
       "category": "stock",
       "headline": "Jim Cramer's top 10 things to watch in the stock market Tuesday",
-      "url": "https://www.cnbc.com/2026/03/03/jim-cramers-top-10-things-to-watch-in-the-stock-market-tuesday.html"
+      "url": "https://www.cnbc.com/2026/03/24/jim-cramers-top-10-things-to-watch-in-the-stock-market-tuesday.html"
     },
-    "7580469": {
-      "sent_at": "2026-03-03T14:29:26.153423",
-      "category": "crypto",
-      "headline": "Visa and Stripe\u2019s Bridge plan stablecoin card expansion to over 100 countries",
-      "url": "https://cointelegraph.com/news/visa-stripe-bridge-stablecoin-card-rollout-test-onchain-settlement?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    "7580529": {
-      "sent_at": "2026-03-03T17:22:10.466477",
-      "category": "crypto",
-      "headline": "Mining companies move deeper into AI, HPC as MARA may sell Bitcoin",
-      "url": "https://cointelegraph.com/news/mining-companies-ai-hpc-mara-sell-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    "7580526": {
-      "sent_at": "2026-03-03T17:22:11.188324",
+    "7689742": {
+      "sent_at": "2026-03-24T14:39:05.434796",
       "category": "stock",
-      "headline": "Pinterest\u2019s stock is rising. Here\u2019s why investors are cheering a big boost to the buyback program.",
-      "url": "https://www.marketwatch.com/story/pinterests-stock-is-rising-heres-why-investors-are-cheering-a-big-boost-to-the-buyback-program-e46ab090"
+      "headline": "Home flippers see smallest profits since the Great Recession, real estate data firm says",
+      "url": "https://www.cnbc.com/2026/03/24/home-flippers-see-smallest-profits-since-great-recession-data-firm-says.html"
     },
-    "7580530": {
-      "sent_at": "2026-03-03T17:22:11.844721",
+    "7689743": {
+      "sent_at": "2026-03-24T14:39:06.211086",
+      "category": "crypto",
+      "headline": "CoinDesk 20 performance update: Polkadot (DOT) drops 2.3% as index trades lower",
+      "url": "https://www.coindesk.com/coindesk-indices/2026/03/24/coindesk-20-performance-update-polkadot-dot-drops-2-3-as-index-trades-lower"
+    },
+    "7689744": {
+      "sent_at": "2026-03-24T14:39:06.934854",
+      "category": "crypto",
+      "headline": "Tether hires a 'Big Four' firm for a full audit of USDT reserves",
+      "url": "https://www.coindesk.com/business/2026/03/24/tether-hires-a-big-four-firm-for-a-full-audit-of-usdt-reserves"
+    },
+    "7689745": {
+      "sent_at": "2026-03-24T14:39:07.613806",
+      "category": "crypto",
+      "headline": "Bitcoin may have already bottomed out near $60,000. Here\u2019s why.",
+      "url": "https://www.coindesk.com/markets/2026/03/24/bitcoin-volatility-signals-a-bottom-as-tradfi-reels-in-uncertainty"
+    },
+    "7689625": {
+      "sent_at": "2026-03-24T14:39:08.345110",
+      "category": "crypto",
+      "headline": "NYSE taps Securitize for 24/7 tokenized securities platform",
+      "url": "https://cointelegraph.com/news/nyse-securitize-24-7-tokenized-securities-platform?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7689626": {
+      "sent_at": "2026-03-24T14:39:12.169052",
+      "category": "crypto",
+      "headline": "Solana lands Mastercard, Western Union on new dev platform",
+      "url": "https://cointelegraph.com/news/solana-brings-mastercard-western-union-new-dev-platform?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7689627": {
+      "sent_at": "2026-03-24T14:39:12.874674",
+      "category": "crypto",
+      "headline": "Why Mastercard is buying stablecoin infrastructure instead of a token",
+      "url": "https://cointelegraph.com/explained/mastercard-bvnk-stablecoin-infrastructure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7689628": {
+      "sent_at": "2026-03-24T14:39:13.554107",
+      "category": "crypto",
+      "headline": "Omnes, Apex to tokenize Bitcoin mining exposure via structured note on Base",
+      "url": "https://cointelegraph.com/news/omnes-apex-tokenized-bitcoin-mining-note-base?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7689855": {
+      "sent_at": "2026-03-24T14:54:05.301642",
+      "category": "crypto",
+      "headline": "Fira launches fixed-rate DeFi lending market with $450M in deposits",
+      "url": "https://cointelegraph.com/news/fira-fixed-rate-defi-lending-450m-deposits?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7689856": {
+      "sent_at": "2026-03-24T14:54:06.042235",
+      "category": "crypto",
+      "headline": "Resolv temporarily halts protocol to \u2018contain the impact\u2019 of 80M USR exploit",
+      "url": "https://cointelegraph.com/news/resolv-protocol-temporarily-halted-80m-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7689857": {
+      "sent_at": "2026-03-24T14:54:06.817780",
+      "category": "crypto",
+      "headline": "Federal regulation looms as 11 states go after prediction markets",
+      "url": "https://cointelegraph.com/news/federal-regulation-looms-states-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7690501": {
+      "sent_at": "2026-03-24T18:29:05.545057",
+      "category": "crypto",
+      "headline": "Tether says \u2018Big Four\u2018 firm to handle first audit of USDT reserves",
+      "url": "https://cointelegraph.com/news/tether-big-four-audit-usdt-reserves?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7690278": {
+      "sent_at": "2026-03-24T18:29:06.295079",
       "category": "stock",
-      "headline": "We're exiting a financial already on its way out and adding again to our newest stock",
-      "url": "https://www.cnbc.com/2026/03/03/were-exiting-a-financial-already-on-its-way-out-and-adding-again-to-our-newest-stock.html"
+      "headline": "Why Cramer would rather be a buyer than a seller of this beat-up tech stock",
+      "url": "https://www.cnbc.com/2026/03/24/cramer-would-rather-be-a-buyer-than-a-seller-of-this-beat-up-tech-stock.html"
     },
-    "7580525": {
-      "sent_at": "2026-03-03T17:22:12.496765",
+    "7690283": {
+      "sent_at": "2026-03-24T18:29:06.964707",
       "category": "crypto",
-      "headline": "American Bitcoin boosts hashrate with 11,298 new mining machines",
-      "url": "https://cointelegraph.com/news/american-bitcoin-adds-3ehs-mining-capacity-expands-btc-treasury?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+      "headline": "BitGo, Susquehanna roll out institutional OTC access to prediction markets",
+      "url": "https://cointelegraph.com/news/bitgo-susquehanna-roll-out-institutional-otc-access-to-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
     },
-    "7580508": {
-      "sent_at": "2026-03-03T17:22:13.149760",
+    "7690172": {
+      "sent_at": "2026-03-24T18:29:07.697502",
       "category": "crypto",
-      "headline": "MEXC Completes Rollout of Six-Tool AI Trading Suite, Reaching Over 1.5 Million Users",
-      "url": "https://cryptocurrencynews.com/crypto/mexc-completes-rollout-of-six-tool-ai-trading-suite-reaching-over-1-5-million-users/"
+      "headline": "WEMADE\u2019s Legend of YMIR Launches on Steam April 7 with New Combat Class",
+      "url": "https://cryptocurrencynews.com/crypto/wemades-legend-of-ymir-launches-on-steam-april-7-with-new-combat-class/"
     },
-    "7580509": {
-      "sent_at": "2026-03-03T17:22:16.804129",
+    "7690389": {
+      "sent_at": "2026-03-24T18:29:08.390848",
+      "category": "crypto",
+      "headline": "Wall Street\u2019s crypto push has been years in the making, says Morgan Stanley",
+      "url": "https://www.coindesk.com/business/2026/03/24/morgan-stanley-says-wall-street-s-crypto-push-isn-t-about-fomo-it-s-been-years-in-the-making"
+    },
+    "7690390": {
+      "sent_at": "2026-03-24T18:29:12.620236",
+      "category": "crypto",
+      "headline": "Circle stock plunges 18% as a new draft of the Clarity Act threatens stablecoin rewards",
+      "url": "https://www.coindesk.com/markets/2026/03/24/circle-stock-plunges-18-as-a-new-draft-of-the-clarity-act-threatens-stablecoin-rewards"
+    },
+    "7690391": {
+      "sent_at": "2026-03-24T18:29:13.336173",
+      "category": "crypto",
+      "headline": "Crypto finance is beginning to look at lot more traditional, Aave and Ethena founders say",
+      "url": "https://www.coindesk.com/business/2026/03/24/crypto-finance-is-beginning-to-look-at-lot-more-traditional-aave-and-ethena-founders-say"
+    },
+    "7690392": {
+      "sent_at": "2026-03-24T18:29:14.037949",
+      "category": "crypto",
+      "headline": "Why cautious TradFi firms love staked ether",
+      "url": "https://www.coindesk.com/opinion/2026/03/24/why-cautious-tradfi-firms-love-staked-ether"
+    },
+    "7690393": {
+      "sent_at": "2026-03-24T18:29:14.743726",
+      "category": "crypto",
+      "headline": "Bitcoin slips below $70,000, Circle's 16% slide leads crypto stock sell-off",
+      "url": "https://www.coindesk.com/markets/2026/03/24/bitcoin-slips-below-usd70-000-circle-s-16-slide-leading-crypto-stock-sell-off"
+    },
+    "7690064": {
+      "sent_at": "2026-03-24T18:29:15.444481",
+      "category": "crypto",
+      "headline": "Bitcoin hints at 'regime shift' as BTC price dips to $69.5K on Iran nerves",
+      "url": "https://cointelegraph.com/news/bitcoin-hints-regime-shift-btc-price-dips-69-5k-iran-nerves?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7690065": {
+      "sent_at": "2026-03-24T18:29:19.391554",
+      "category": "crypto",
+      "headline": "Ethereum price rally pauses at $2.2K: What will trigger breakout?",
+      "url": "https://cointelegraph.com/news/ethereum-price-rally-pauses-at-2-200-what-will-trigger-breakout?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "139524131": {
+      "sent_at": "2026-03-24T18:34:05.286649",
       "category": "stock",
-      "headline": "Micron and other memory stocks see outsized losses. What\u2019s behind the big moves?",
-      "url": "https://www.marketwatch.com/story/micron-and-other-memory-stocks-see-outsized-losses-whats-behind-the-big-moves-c14882a0"
+      "headline": "MOS Trades at 14x Earnings While Its Brazil Business Just Grew EBITDA 190% In Q3 2025",
+      "url": "https://finnhub.io/api/news?id=4ba5ad7610098e8d6e3581e6650b1259c9ed633225eb99020b6ed4e50b0f68c1",
+      "ticker": "MOS"
     },
-    "7580521": {
-      "sent_at": "2026-03-03T17:22:17.500391",
-      "category": "crypto",
-      "headline": "Bitcoin attempting to make a stand as global stock markets melt down on Iran war",
-      "url": "https://www.coindesk.com/markets/2026/03/03/bitcoin-attempting-to-make-a-stand-as-global-stock-markets-melt-down-on-iran-war"
-    },
-    "7580507": {
-      "sent_at": "2026-03-03T17:22:18.224596",
+    "139525489": {
+      "sent_at": "2026-03-24T18:34:05.296651",
       "category": "stock",
-      "headline": "Investors are now learning a painful lesson: Buying a dip driven by geopolitics isn\u2019t a slam dunk.",
-      "url": "https://www.marketwatch.com/story/investors-are-now-learning-a-painful-lesson-buying-a-dip-driven-by-geopolitics-isnt-a-slam-dunk-219d6bbe"
+      "headline": "Is The Mosaic Company Stock Underperforming the Nasdaq?",
+      "url": "https://finnhub.io/api/news?id=d1ea4bb5a21f462bf6bdba86c85fb20925593aaa84bba302b4c855c6c84169f0",
+      "ticker": "MOS"
     },
-    "7580505": {
-      "sent_at": "2026-03-03T17:22:18.948916",
-      "category": "crypto",
-      "headline": "Bitcoin dives 3% on global asset rout as $5K gold 'smashed' on oil fears",
-      "url": "https://cointelegraph.com/news/bitcoin-dives-3-percent-asset-rout-5k-gold-smashed-oil-fears?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    "7580522": {
-      "sent_at": "2026-03-03T17:22:19.725282",
-      "category": "crypto",
-      "headline": "End of bitcoin 'HODL': public miners going all-in on AI, signaling more BTC selling",
-      "url": "https://www.coindesk.com/markets/2026/03/03/end-of-bitcoin-hodl-public-miners-going-all-in-on-ai-signaling-more-btc-selling"
-    },
-    "7580500": {
-      "sent_at": "2026-03-03T17:22:23.429161",
+    "139522934": {
+      "sent_at": "2026-03-24T18:34:05.321385",
       "category": "stock",
-      "headline": "These S&P 500 stocks are falling the hardest on Tuesday",
-      "url": "https://www.marketwatch.com/story/these-s-p-500-stocks-are-falling-the-hardest-on-tuesday-bedc2c07"
+      "headline": "Trump Vs. American Farmers: Strait Of Hormuz Closure Poses 'Food Security' Risk, Agriculture Groups Warn",
+      "url": "https://finnhub.io/api/news?id=90423d25717e42624ea8be56a59d92d05d88271d6edadaff54c2bd5e5834f4f8",
+      "ticker": "MOS"
     },
-    "7580523": {
-      "sent_at": "2026-03-03T17:22:24.165188",
-      "category": "crypto",
-      "headline": "CFTC chief Selig to clear path for U.S. perpetual futures in coming weeks",
-      "url": "https://www.coindesk.com/policy/2026/03/03/cftc-chief-selig-to-clear-path-for-u-s-perpetual-futures-in-coming-weeks"
-    },
-    "7580524": {
-      "sent_at": "2026-03-03T17:22:24.893645",
-      "category": "crypto",
-      "headline": "Here is why Harvard trimmed bitcoin and bought ether and why the move is bullish for crypto",
-      "url": "https://www.coindesk.com/business/2026/03/03/here-is-why-harvard-trimmed-bitcoin-and-bought-ether-and-why-the-move-is-bullish-for-crypto"
-    },
-    "7580489": {
-      "sent_at": "2026-03-03T17:22:25.561823",
+    "139522935": {
+      "sent_at": "2026-03-24T18:34:05.331339",
       "category": "stock",
-      "headline": "Palantir\u2019s stock could surge almost 40% as Iran conflict dispels a big concern, analyst says",
-      "url": "https://www.marketwatch.com/story/palantirs-stock-could-surge-almost-40-as-iran-conflict-dispels-a-big-concern-analyst-says-5ff1af36"
+      "headline": "Iran War Oil Shock Is Spreading \u2014 And Your Food Bill Could Be The Next Hit",
+      "url": "https://finnhub.io/api/news?id=2086233b99ede0d5c285bf5d9a32d9486d99d8d371563c61321d335d831daeb0",
+      "ticker": "MOS"
     },
-    "7580472": {
-      "sent_at": "2026-03-03T17:22:26.246383",
+    "139521213": {
+      "sent_at": "2026-03-24T18:34:05.849567",
       "category": "stock",
-      "headline": "I made a big mistake with my Roth IRA. Here\u2019s how I fixed it.",
-      "url": "https://www.marketwatch.com/story/i-made-a-big-mistake-with-my-roth-ira-heres-how-i-fixed-it-f7213d47"
+      "headline": "Adam Schiff Takes Swipe At Trump Amid TSA Chaos, Iran War: 'Paying $5/Gallon For Gas'",
+      "url": "https://finnhub.io/api/news?id=2901200b2fb2922118c5dea1ab68e4295fdfdb3e90a17796c0e57b89f1ba9cc4",
+      "ticker": "LYFT"
     },
-    "7580494": {
-      "sent_at": "2026-03-03T17:22:30.100456",
-      "category": "crypto",
-      "headline": "CoinDesk 20 performance update: AAVE plunges 10%, leading index lower",
-      "url": "https://www.coindesk.com/coindesk-indices/2026/03/03/coindesk-20-performance-update-aave-plunges-10-leading-index-lower"
-    },
-    "7580532": {
-      "sent_at": "2026-03-03T17:27:10.234533",
-      "category": "crypto",
-      "headline": "Why Bermuda is testing a fully onchain economy instead of crypto mandates",
-      "url": "https://cointelegraph.com/explained/why-bermuda-is-testing-a-fully-onchain-economy-instead-of-crypto-mandates?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
-    },
-    "7580539": {
-      "sent_at": "2026-03-03T17:51:45.844017",
+    "139521214": {
+      "sent_at": "2026-03-24T18:34:05.881631",
       "category": "stock",
-      "headline": "Energy investors go stock picking, benefiting Chevron over Exxon",
-      "url": "https://www.marketwatch.com/story/energy-investors-go-stock-picking-benefiting-chevron-over-exxon-bb36de39"
+      "headline": "DoorDash CEO Touts Savings Of Nearly $2/Per Gallon For Drivers As Gas Prices Surge To Nearly $4/Gallon",
+      "url": "https://finnhub.io/api/news?id=183db315214409487d73a5f4787f03089f5ed5373a819d8cd4a847b0f3f04201",
+      "ticker": "LYFT"
     },
-    "7580545": {
-      "sent_at": "2026-03-03T17:51:46.548058",
-      "category": "crypto",
-      "headline": "AI agents will be primary users of blockchain, NEAR co-founder says",
-      "url": "https://www.coindesk.com/tech/2026/03/03/ai-agents-will-be-primary-users-of-blockchain-near-co-founder-says"
+    "139523638": {
+      "sent_at": "2026-03-24T18:34:06.461419",
+      "category": "stock",
+      "headline": "Columbia Cornerstone Growth Fund Q4 2025 Quarterly Portfolio Recap",
+      "url": "https://finnhub.io/api/news?id=b76ed990f5514b7c75f8d2bc0ea392199469f8b83333a4c6149fffe486eb482a",
+      "ticker": "EXAS"
     },
-    "7580546": {
-      "sent_at": "2026-03-03T17:51:47.210117",
-      "category": "crypto",
-      "headline": "Aave governance rift deepens as major governance group exits $26 billion DeFi protocol",
-      "url": "https://www.coindesk.com/web3/2026/03/03/aave-governance-rift-deepens-as-major-governance-group-exits-usd26-billion-defi-protocol"
+    "139525451": {
+      "sent_at": "2026-03-24T18:34:07.505703",
+      "category": "stock",
+      "headline": "Struggling with Seasonal Energy Bills? Mon Power and Potomac Edison Can Help",
+      "url": "https://finnhub.io/api/news?id=94829b4e0749481b8d60012cf534ea9626393cddb7e9a94343bceadf1dc9656e",
+      "ticker": "FE"
     },
-    "7580547": {
-      "sent_at": "2026-03-03T17:51:47.946716",
-      "category": "crypto",
-      "headline": "Eric Trump\u2019s American Bitcoin buys 11,298 ASIC miners, increasing mining capacity by 12%",
-      "url": "https://www.coindesk.com/business/2026/03/03/eric-trump-s-american-bitcoin-buys-11-298-asic-miners-increasing-capacity-by-12"
+    "139524109": {
+      "sent_at": "2026-03-24T18:34:07.532981",
+      "category": "stock",
+      "headline": "FirstEnergy Pennsylvania Customers Can Get Help with Seasonal Energy Bills",
+      "url": "https://finnhub.io/api/news?id=b411fe087dc8334a7738bb26be0d41b1b64005b8d0169ae3445df338dd8d925e",
+      "ticker": "FE"
     },
-    "7580548": {
-      "sent_at": "2026-03-03T17:51:48.610388",
-      "category": "crypto",
-      "headline": "Bank of Japan expands blockchain settlement sandbox and says CBDC efforts are ongoing",
-      "url": "https://www.coindesk.com/business/2026/03/03/bank-of-japan-expands-blockchain-settlement-sandbox-as-2026-cbdc-decision-nears"
+    "139524110": {
+      "sent_at": "2026-03-24T18:34:07.546101",
+      "category": "stock",
+      "headline": "Potomac Edison Maryland Customers Can Get Help with Seasonal Energy Costs",
+      "url": "https://finnhub.io/api/news?id=e3bdc00532abdc9f70eca11e01aaad245f9a39c6f4eafd59433d16bb7decc547",
+      "ticker": "FE"
     },
-    "7580550": {
-      "sent_at": "2026-03-03T18:29:14.993519",
+    "139524111": {
+      "sent_at": "2026-03-24T18:34:07.557299",
+      "category": "stock",
+      "headline": "FirstEnergy Ohio Customers Can Get Assistance with Electric Bills",
+      "url": "https://finnhub.io/api/news?id=29e1036b774abae30389de4703ebaad964d585e9a2e2379a82d8809f7a5d7df5",
+      "ticker": "FE"
+    },
+    "139525461": {
+      "sent_at": "2026-03-24T18:34:08.665075",
+      "category": "stock",
+      "headline": "Schneider's EPS Estimates Southbound: Time to Sell the Stock?",
+      "url": "https://finnhub.io/api/news?id=ae3f220a373d18e9259ea0ffae1a5da5571a4a8b613b4ceab54409cab203afe9",
+      "ticker": "EXPD"
+    },
+    "7690707": {
+      "sent_at": "2026-03-24T18:49:05.476997",
+      "category": "stock",
+      "headline": "Strait of Hormuz tanker traffic won't return to normal for months, Kalshi bettors predict",
+      "url": "https://www.cnbc.com/2026/03/24/kalshi-polymarket-strait-of-hormuz-traffic-trump-iran.html"
+    },
+    "7690712": {
+      "sent_at": "2026-03-24T18:54:05.455225",
       "category": "crypto",
-      "headline": "Mastercard adds SoFiUSD as settlement option for card issuers",
-      "url": "https://cointelegraph.com/news/sofi-and-mastercard-move-stablecoin-settlement-into-global-card-network?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+      "headline": "Lombard taps Bitwise to offer Bitcoin yield and lending to institutional custody",
+      "url": "https://cointelegraph.com/news/lombard-taps-bitwise-to-bring-bitcoin-yield-and-lending-to-institutional-custody-embargo-tuesday-2-30-et?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7690713": {
+      "sent_at": "2026-03-24T18:54:06.160709",
+      "category": "crypto",
+      "headline": "Bitcoin holders shift from panic to cash-buffer discipline as volatility deepens",
+      "url": "https://cointelegraph.com/news/bitcoin-holders-shift-from-panic-to-cash-buffer-discipline-as-volatility-deepens?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7690816": {
+      "sent_at": "2026-03-24T19:09:05.505399",
+      "category": "stock",
+      "headline": "Home Depot makes another pro deal \u2014 plus, what's behind Corning's big rally",
+      "url": "https://www.cnbc.com/2026/03/24/home-depot-makes-another-pro-deal-plus-whats-behind-cornings-big-rally.html"
+    },
+    "7690930": {
+      "sent_at": "2026-03-24T19:54:05.409265",
+      "category": "crypto",
+      "headline": "BNY Mellon CEO says the future of crypto runs through big banks",
+      "url": "https://www.coindesk.com/business/2026/03/24/bny-mellon-ceo-says-the-future-of-crypto-runs-through-big-banks"
+    },
+    "7690932": {
+      "sent_at": "2026-03-24T20:04:05.451399",
+      "category": "crypto",
+      "headline": "US expected to send thousands more soldiers to Middle East, sources say - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMkFKaVFuOUpkY1NPMzUtWkd1TEdoY2JNbjhLM18tajNQWW5VRnBrR1dZdWdQVnFyU040alF5Y2Z6WFBmM1BQb3BUY21sMGFRVTdmdHU4TGNHcUgyeHd3RGF1alFGcF82UVJMN181aFZPUDdfV1dLVm9VYUc0ZDBNcVZFWGpGdVpyVFpXYjk2YnNHdnVFajY0WEl4UVYwdi1Ic2djTmFOdnY3WElWOURSbVRnMA?oc=5"
+    },
+    "139526272": {
+      "sent_at": "2026-03-24T20:34:05.043411",
+      "category": "stock",
+      "headline": "Exploring the top movers within the S&P500 index during today's session.",
+      "url": "https://finnhub.io/api/news?id=81070f8c0d64cfa87b2dcfe05c2fa93bc45e53158181aff39bf814832b246062",
+      "ticker": "MOS"
+    },
+    "7691142": {
+      "sent_at": "2026-03-24T20:54:05.642922",
+      "category": "crypto",
+      "headline": "CFTC chief launches innovation task force focused on crypto framework",
+      "url": "https://cointelegraph.com/news/cftc-innovation-task-force-crypto-framework?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7691255": {
+      "sent_at": "2026-03-24T21:39:05.521763",
+      "category": "crypto",
+      "headline": "Robinhood reloads stock repurchase plan to $1.5 billion as shares continue in downtrend",
+      "url": "https://www.coindesk.com/markets/2026/03/24/robinhood-stock-rises-after-usd1-5-billion-buyback-as-shares-stay-under-pressure"
+    },
+    "7691256": {
+      "sent_at": "2026-03-24T21:39:06.218559",
+      "category": "crypto",
+      "headline": "Bitcoin jolted modestly higher on Iran ceasefire report; oil tumbles 4%",
+      "url": "https://www.coindesk.com/markets/2026/03/24/bitcoin-jolted-modestly-higher-on-iran-ceasefire-report-oil-tumbles-4"
+    },
+    "7691257": {
+      "sent_at": "2026-03-24T21:39:06.908579",
+      "category": "crypto",
+      "headline": "BlackRock sees AI driving crypto\u2019s next bull phase as altcoin interest fades",
+      "url": "https://www.coindesk.com/business/2026/03/24/blackrock-flags-ai-as-crypto-s-next-big-use-case-not-token-boom"
+    },
+    "7691141": {
+      "sent_at": "2026-03-24T21:39:07.608876",
+      "category": "crypto",
+      "headline": "Circle taps African fintech Sasai to expand USDC adoption in cross-border payments",
+      "url": "https://cointelegraph.com/news/circle-taps-african-fintech-sasai-to-expand-usdc-adoption-in-cross-border-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7691358": {
+      "sent_at": "2026-03-24T21:54:05.398322",
+      "category": "crypto",
+      "headline": "21shares sees active strategies shaping next phase of crypto ETFs",
+      "url": "https://cointelegraph.com/news/active-management-seen-as-next-phase-for-crypto-etfs-21shares-duncan-moir?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7688186": {
+      "sent_at": "2026-03-24T23:24:05.478529",
+      "category": "crypto",
+      "headline": "Iran war makes second phase of LNG Canada more likely, TC Energy CEO says - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVWktVVFfSjQ2bFh1M09fWmlIQjFjWjV3OW5jNGppXzBRcmU5WjZaWkUzY1BUSnIxdGYtUEIxVHFsSndHOTdteGZ2ajg2V3pGWExSMEtkWEMyNmRTaGRGQmw2ZGpWWXI5VDlURzF4Tng0dVFqRFI1VWRVX3BnbXJBQkl2Y1Z2MEwtdWt3YVkzSWYyQ0REdTJRZk1vWGtIRTRNaDFJOWhBRHZhWWZ4cUMwNEFWc3RZd0g2c2tHTWFXRHpHaHVweTlLYTRn?oc=5"
+    },
+    "7681653": {
+      "sent_at": "2026-03-24T23:24:06.246774",
+      "category": "crypto",
+      "headline": "Oil prices plunge 11% on US-Iran talks to resolve hostilities in the Middle East - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQTHJVbUZ1OTc0S20tOFBzc0ItN2ZYcFRJa1RrenFMdGZGZlc3bVd2Rml4eGdTM2dtNlJUWEozTFg3WTdXUk5Qak42bzdiOHd4NU1jeVo1YmNtVE1SekNxbVRqS1FYV3dWd0RGQzAzQWJnMHdaNGpvQ1FzLTcxX2E5ZENJWjQxYUFkRHFqb2ZiYVdnTHp6cmduUTNJeUs5ZGJnSGh2dTMwbDBRdUs5TWRCTWFXMks5NWpLMGNFZF9R?oc=5"
+    },
+    "7691774": {
+      "sent_at": "2026-03-24T23:54:05.432363",
+      "category": "crypto",
+      "headline": "Rising US treasury yields, war in Iran, rising inflation risk pressure Bitcoin price",
+      "url": "https://cointelegraph.com/news/rising-us-treasury-yields-war-in-iran-rising-inflation-risk-pressure-bitcoin-price?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7693861": {
+      "sent_at": "2026-03-25T10:04:19.449784",
+      "category": "crypto",
+      "headline": "Crypto broker Bitpanda launches blockchain to connect EU banks with tokenized assets",
+      "url": "https://www.coindesk.com/business/2026/03/25/crypto-broker-bitpanda-launches-blockchain-to-connect-eu-banks-with-tokenized-assets"
+    },
+    "7693863": {
+      "sent_at": "2026-03-25T10:04:30.076710",
+      "category": "crypto",
+      "headline": "Indian court says \u2018no case\u2019 against CoinDCX founders in impersonation fraud",
+      "url": "https://cointelegraph.com/news/indian-court-says-no-case-against-coindcx-founders-in-impersonation-linked-fraud?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7693651": {
+      "sent_at": "2026-03-25T10:04:40.015327",
+      "category": "crypto",
+      "headline": "Ripple joins Singapore sandbox to test RLUSD in trade finance",
+      "url": "https://cointelegraph.com/news/ripple-singapore-sandbox-rlusd-trade-finance?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7693862": {
+      "sent_at": "2026-03-25T10:04:45.844079",
+      "category": "crypto",
+      "headline": "There's a huge $14 billion bitcoin options expiry this Friday and it points to $75,000 as price magnet",
+      "url": "https://www.coindesk.com/markets/2026/03/25/there-s-a-huge-usd14-billion-bitcoin-options-expiry-this-friday-and-it-points-to-usd75-000-as-price-magnet"
+    },
+    "7693227": {
+      "sent_at": "2026-03-25T10:04:50.785935",
+      "category": "crypto",
+      "headline": "Irish police open Bitcoin wallet years after keys were apparently lost",
+      "url": "https://cointelegraph.com/news/irish-police-recover-bitcoin-wallet-clifton-collins?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7693336": {
+      "sent_at": "2026-03-25T10:04:56.546544",
+      "category": "crypto",
+      "headline": "Crypto giant debuts oil trading, but it's a different model to Hyperliquid's perps",
+      "url": "https://www.coindesk.com/markets/2026/03/25/crypto-giant-debuts-oil-trading-but-it-s-a-different-model-to-hyperliquid-s-perps"
+    },
+    "7693228": {
+      "sent_at": "2026-03-25T10:05:02.717864",
+      "category": "crypto",
+      "headline": "Bitcoin exchange outflows show \u2018genuine accumulation by investors\u2019: Analyst",
+      "url": "https://cointelegraph.com/news/persistent-btc-exchange-outflow-suggests-genuine-accumulation-by-investors-analyst?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+    },
+    "7693337": {
+      "sent_at": "2026-03-25T11:04:51.699801",
+      "category": "crypto",
+      "headline": "Bitcoin steadies above $71,000 as oil falls below $100 after U.S. drafts 15\u2011point Iran peace plan",
+      "url": "https://www.coindesk.com/markets/2026/03/25/bitcoin-steadies-above-usd71-000-as-oil-drops-below-usd100-on-u-s-15-point-plan-to-end-iran-war"
+    },
+    "7693014": {
+      "sent_at": "2026-03-25T11:04:52.698870",
+      "category": "crypto",
+      "headline": "Ripple taps Singapore's central bank sandbox to test stablecoin-powered trade finance with RLUSD",
+      "url": "https://www.coindesk.com/business/2026/03/25/ripple-taps-singapore-s-central-bank-sandbox-to-test-stablecoin-powered-trade-finance-with-rlusd"
+    },
+    "7692913": {
+      "sent_at": "2026-03-25T11:04:53.706481",
+      "category": "stock",
+      "headline": "Indian shares extend gains as US pushes Iran ceasefire plan - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZ1ZRZjB3UjNVMkIxYjRMbkw2Y0x2VVFQRkg4QlVKMmxVYlVOTnRZWGxmSlE1eE9NZUVGSENPVEc1a2RoOGlOOVVBdGlnWGY3S2N5QWNnMld5T1RySGVneVlZdW9NdHZyX1FtQktpRE5aWTNlZEkyNEZ6QjBOeWticTJ6VFZxbFJ6Q0RXd3hrYTl1d1ozOXk5bDlyWmNPS3RfSE8ya0owWU4talk?oc=5"
     }
   },
-  "last_updated": "2026-03-03T18:29:15.025618"
+  "last_updated": "2026-03-25T11:04:53.708626"
 }
